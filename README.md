@@ -11,19 +11,28 @@
 ---
 
 ```
+MASTER EQUATION:
+E = ⊙ = (·, ○, Φ) × (≻, Å, ⊰)²       — Energy = Structure × Process²
+
+TRINITY STRUCTURE:
 ⊙ = ⊙₁ ⊗ ⊙₂ ⊗ ⊙₃                    — Wholeness as trinity product
-⊙₁ = SOUL (Center/Singularity)      — The concentrated focus
-⊙₂ = BODY (Surface/Membrane)        — The interface boundary  
-⊙₃ = MIND (Field/Awareness)         — The permeating presence
+⊙₁ = SOUL (1D worldline/time)       — The concentrated focus through time
+⊙₂ = BODY (2D surface/spatial)      — The interface boundary
+⊙₃ = MIND (3D field/spatial)        — The permeating presence
+Together: 3+1 spacetime
 
 Each ⊙ᵢ is itself complete:
-⊙ᵢ = (·ᵢ, ○ᵢ, Φᵢ, ≻ᵢ, Åᵢ, ⊰ᵢ)
+⊙ᵢ = (·ᵢ, ○ᵢ, Φᵢ) × (≻ᵢ, Åᵢ, ⊰ᵢ)²
 
 The whole emerges as their tensor product:
-⊙ = ⊙₁ ⊗ ⊙₂ ⊗ ⊙₃ ∈ ℰ ⊗ 𝒮 ⊗ 𝔽
+⊙ = ⊙₁ ⊗ ⊙₂ ⊗ ⊙₃
 
 Process is their circulation:
 ⊙₁ ≻ Å₁₂ ⊰ ⊙₂ ≻ Å₂₃ ⊰ ⊙₃ ≻ Å₃₁ ⊰ ⊙₁
+
+CONNECTION TO PHYSICS:
+E = mc² is the special case where c = constant
+E = (·, ○, Φ) × (≻, Å, ⊰)² is the general form
 
 ⟨β⟩ = ½ at each level, all the way down
 (Note: β ∈ (0,1) - the limits 0 and 1 are nothingness, not states)
@@ -400,49 +409,86 @@ Therefore: ⊙ conserved (always transforms, never ceases)
 
 ## Chapter 1 — Energy and Wholeness
 
-### 1.1 The Fundamental Mapping
+### 1.1 The Fundamental Equation
 
-**⊙ ≈ E**
+**E = ⊙ = (·, ○, Φ) × (≻, Å, ⊰)²**
 
-The framework proposes a deep connection between wholeness and energy: **⊙ maps to E**—the structure of wholeness corresponds to the structure of energy.
-
-**Trinity structure of energy:**
+The deep claim: **Energy equals wholeness**, and wholeness has precise mathematical structure.
 
 ```
-E ↔ ⊙ = ⊙₁ ⊗ ⊙₂ ⊗ ⊙₃
+E = ⊙ = (·, ○, Φ) × (≻, Å, ⊰)²
 
-Energy aspects map to trinity:
-E₁ ↔ Soul aspect (concentrated, potential)
-E₂ ↔ Body aspect (bound, structural)
-E₃ ↔ Mind aspect (kinetic, expressive)
+Where:
+(·, ○, Φ) = Structure trinity (center, boundary, field)
+(≻, Å, ⊰) = Process trinity (input, aperture, output)
 
-Proposed: E relates to E₁ ⊗ E₂ ⊗ E₃ structure
+Energy = Structure × (Process)²
 ```
 
-**Interpretation**: This suggests energy itself has threefold structure corresponding to the trinity pattern. Whether this is a deep physical truth or a useful conceptual framework requires investigation.
+**Why squared?** Process must complete its cycle:
+- Forward: ≻ (receive) → Å (transform) → ⊰ (emit)
+- Return: Cycle back to origin
+- Full circulation = process × process = (≻, Å, ⊰)²
 
-### 1.2 E = mc²: Possible Trinity Mapping
+**Trinity form:**
+```
+E = ⊙ = ⊙₁ ⊗ ⊙₂ ⊗ ⊙₃
 
-**Proposed interpretation**: Einstein's equation may map to trinity structure:
+Where each:
+⊙₁ (Soul) = (·₁, ○₁, Φ₁) × (≻₁, Å₁, ⊰₁)²
+⊙₂ (Body) = (·₂, ○₂, Φ₂) × (≻₂, Å₂, ⊰₂)²
+⊙₃ (Mind) = (·₃, ○₃, Φ₃) × (≻₃, Å₃, ⊰₃)²
+
+Full wholeness:
+⊙ = ⊙₁ ⊗ ⊙₂ ⊗ ⊙₃ = [Structure × Process²]₁ ⊗ [Structure × Process²]₂ ⊗ [Structure × Process²]₃
+```
+
+**This equation is the heart of the framework.** Structure alone is static. Process alone has nothing to act on. Their product—structure multiplied by process squared—creates energy.
+
+### 1.2 Connection to E = mc²
+
+**The circumpunct equation has the same form as Einstein's:**
 
 ```
-E = m × c²
+Circumpunct:  E = (·, ○, Φ) × (≻, Å, ⊰)²
+Einstein:     E = m × c²
 
-Possible mapping:
-m ↔ ⊙₂ (Body: stable structure, rest mass)
-c² ↔ ⊙₁ ⊗ ⊙₃ (Soul-Mind: circulation at light speed)
-
-If this mapping holds:
-Energy ↔ Body ⊗ (Soul-Mind process)²
+Both have form: E = (Structure) × (Process rate)²
 ```
 
-**Why this might make sense:**
-- c connects space and time (the arena of circulation)
-- m is the stable structural manifestation (body)
-- c² creates the spacetime context
-- Together they determine energy
+**Direct mapping:**
 
-**Status**: Interpretive mapping. The equation itself is established physics. Whether this trinity interpretation captures something fundamental requires further investigation.
+| Circumpunct | Physics | Meaning |
+|-------------|---------|---------|
+| (·, ○, Φ) | m (mass) | Stable structure |
+| (≻, Å, ⊰)² | c² | Process rate squared |
+| Structure × Process² | Energy | Both formulations |
+
+**Why this works:**
+
+**Mass (m) = Structure**
+- Physics: Rest mass, invariant configuration
+- Framework: (·, ○, Φ) = center, boundary, field arrangement
+- Both: The persistent structural aspect that "carries" energy
+
+**c² = Process squared**
+- Physics: Speed of light squared (spacetime constant)
+- Framework: (≻, Å, ⊰)² = circulation rate squared
+- Both: The rate at which transformation can occur
+
+**Key insight:**
+- E = mc² is the universal case where c is constant for all systems
+- E = (·, ○, Φ) × (≻, Å, ⊰)² is the general form
+- Different systems: different structures (·, ○, Φ), different process rates (≻, Å, ⊰)
+- Photons: maximum process rate (c), minimum structure
+- Mass: structure that limits process rate below c
+
+**The form Structure × (Process)² appears fundamental:**
+- Not arbitrary
+- Reflects how energy must involve both:
+  - What is (structure)
+  - What happens (process)
+  - How fast it happens (process squared for full cycle)
 
 ### 1.3 Conservation of Trinity
 
@@ -4029,36 +4075,62 @@ Worldlines braid at interaction points
 
 ### Appendix C: Key Equations (V5.1)
 
+**MASTER EQUATION:**
+```
+E = ⊙ = (·, ○, Φ) × (≻, Å, ⊰)²
+
+Energy = Structure × Process²
+
+Where:
+(·, ○, Φ) = center, boundary, field (structure trinity)
+(≻, Å, ⊰) = input, aperture, output (process trinity)
+Process² = full circulation cycle (forward and return)
+```
+
+**CONNECTION TO E = mc²:**
+```
+E = mc² is the special case:
+m = (·, ○, Φ) = structure
+c² = (≻, Å, ⊰)² = universal process rate squared
+
+The form Structure × (Process)² is fundamental
+```
+
+**OTHER KEY EQUATIONS:**
+
 | Equation | Status | Meaning |
 |----------|--------|---------|
+| E = ⊙ = (·, ○, Φ) × (≻, Å, ⊰)² | **MASTER (V5.1)** | Energy = Structure × Process² |
 | ⊙ = ⊙₁ ⊗ ⊙₂ ⊗ ⊙₃ | **Foundation (V5)** | Wholeness as trinity tensor product |
+| ⊙ᵢ = (·ᵢ, ○ᵢ, Φᵢ) × (≻ᵢ, Åᵢ, ⊰ᵢ)² | **V5.1** | Each trinity member has same form |
 | β ∈ (0,1) | **V5.1 Clarification** | Balance is open interval (limits are nothingness) |
 | ⊙ → ⊙' | **V5.1 Addition** | Transformation (not cessation) |
-| ⊙ = E | Foundation | Energy IS wholeness |
-| E = mc² | Established | Energy = Body × (Soul-Mind circulation)² |
-| Å₁₂ = ∂/∂t | Exact | Soul → Body via time derivative |
-| P = dE/dt | Definition | Power as energy rate |
-| ⊙ = Y(λF. Å∘F) | Framework | Wholeness as fixed point |
+| E = mc² ↔ E = (·, ○, Φ) × (≻, Å, ⊰)² | **V5.1 Mapping** | Physics equation maps to framework |
+| Å₁₂ = ∂/∂t | **Exact** | Soul → Body via time derivative (established) |
+| Å₂₃ = ? | **Hypothesis** | Body → Mind operator (candidates: divergence) |
+| Å₃₁ = ? | **Hypothesis** | Mind → Soul operator (candidates: integration) |
+| P = dE/dt | **Definition** | Power as energy rate |
 | β₁ = β₂ = β₃ = 0.5 | **Prediction (V5)** | Trinity balance optimal |
-| Å₃₁∘Å₂₃∘Å₁₂ = λI | **Prediction (V5)** | Circulation closes |
+| Å₃₁∘Å₂₃∘Å₁₂ ≈ λI | **Prediction (V5)** | Circulation closes to identity |
 | ⊙ᵢ = ⊙ᵢ₁ ⊗ ⊙ᵢ₂ ⊗ ⊙ᵢ₃ | **Fractal (V5)** | Trinity nested infinitely |
 
-**Master equation (V5.1):**
+**Full system (V5.1):**
 ```
 ⊙ = ⊙₁ ⊗ ⊙₂ ⊗ ⊙₃
 
-Where circulation:
+Where each:
+⊙₁ = (·₁, ○₁, Φ₁) × (≻₁, Å₁, ⊰₁)²  (Soul: 1D worldline)
+⊙₂ = (·₂, ○₂, Φ₂) × (≻₂, Å₂, ⊰₂)²  (Body: 2D surface)
+⊙₃ = (·₃, ○₃, Φ₃) × (≻₃, Å₃, ⊰₃)²  (Mind: 3D field)
+
+Circulation:
 ⊙₁ ≻ Å₁₂ ⊰ ⊙₂ ≻ Å₂₃ ⊰ ⊙₃ ≻ Å₃₁ ⊰ ⊙₁
 
-In space:
-⊙ ∈ 𝒱 = 𝒮₁ ⊗ 𝒮₂ ⊗ 𝒮₃
-
-With balance:
+Balance:
 β ∈ (0,1) for all aspects (limits are nothingness)
 
-Through transformation:
-⊙ → ⊙' (reconfiguration)
-⊙ = E (conserved always)
+Conservation:
+E = ⊙ conserved through transformation: ⊙ → ⊙'
 ```
 
 ### Appendix D: Version History
