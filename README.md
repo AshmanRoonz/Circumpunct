@@ -490,7 +490,74 @@ Both have form: E = (Structure) × (Process rate)²
   - What happens (process)
   - How fast it happens (process squared for full cycle)
 
-### 1.3 Conservation of Trinity
+### 1.3 Power as String: P = ⊙/t = ⊙_string
+
+**If E = ⊙, then what is Power?**
+
+```
+E = ⊙ = (·, ○, Φ) × (≻, Å, ⊰)²     [Energy = wholeness all at once]
+
+P = dE/dt = ⊙/t = ⊙_string          [Power = wholeness through time]
+```
+
+**This is profound:**
+
+**Energy (E)** = The complete wholeness at a moment
+- All structure and process together
+- The full ⊙ = ⊙₁ ⊗ ⊙₂ ⊗ ⊙₃
+- Static snapshot
+
+**Power (P)** = The rate of change through time
+- Wholeness extended temporally
+- The 1D worldline = ⊙_string = ⊙₁
+- Your vibe, your pattern, YOUR SOUL
+
+**Key connections:**
+
+```
+P = dE/dt           (physics definition)
+P = ⊙/t             (framework: wholeness per time)
+P = ⊙_string        (worldline form)
+P = ⊙₁              (soul/worldline specifically)
+
+Therefore:
+⊙₁ = dE/dt = Power = String vibration = Identity
+```
+
+**Why individuation happens at the P level:**
+
+- **E** is universal: All systems have energy
+- **P** is individual: Your specific rate/rhythm/pattern
+- The **vibrating string** = your P(t) signature = your identity
+- **Same energy, different power patterns** = different beings
+
+**Examples:**
+
+```
+Two people with E = 2000 kcal (same energy):
+Person A: P(t) = ∿∿∿~~~∿∿∿~~~  (high activity bursts)
+Person B: P(t) = ~~~∿~~~∿~~~∿  (steady flow)
+→ Same E, different P patterns = different people
+
+Two atoms with E = 13.6 eV (both hydrogen):
+Atom A: P(t) = ground state oscillation
+Atom B: P(t) = excited state oscillation
+→ Same E, different P = different quantum states
+```
+
+**The worldline IS the power:**
+- ⊙₁ = your soul = 1D string through spacetime
+- P(t) = how that string vibrates
+- Your identity = your vibration pattern = your power signature
+- **You are literally your vibe**
+
+**This resolves the ancient question:**
+- Q: "Where is the self located?"
+- A: Not in space—in the power pattern P(t)
+- The self is a **temporal process**, not a spatial thing
+- Your worldline = your string = your power = YOU
+
+### 1.4 Conservation of Trinity
 
 **Energy cannot be created or destroyed because you cannot create or destroy the trinity structure:**
 
@@ -1208,37 +1275,58 @@ What flows out of ⊙₃ = What flows into ⊙₁
 
 **Why does identity emerge at P, not E?**
 
-**Because individuation is in the circulation pattern:**
+**Because P = ⊙_string = your worldline:**
+
+```
+E = ⊙ = (·, ○, Φ) × (≻, Å, ⊰)²     [Universal form]
+  What you ARE at a moment
+  Same structure for all
+
+P = dE/dt = ⊙/t = ⊙_string = ⊙₁    [Individual pattern]
+  How you FLOW through time
+  Your unique vibration
+  YOUR WORLDLINE = YOUR SOUL
+```
+
+**Individuation is in the temporal pattern:**
 
 ```
 E is universal:
-  E₁, E₂, E₃ are generic energy forms
-  Same for all systems
+  E = (·, ○, Φ) × (≻, Å, ⊰)² applies to all
+  Same structural form
 
 P is individual:
-  P₁₂ pattern = How this system embodies (unique)
-  P₂₃ pattern = How this system perceives (unique)
-  P₃₁ pattern = How this system recognizes (unique)
+  P(t) = your vibration pattern through time
+  P₁₂(t) = How this system embodies (unique rhythm)
+  P₂₃(t) = How this system perceives (unique rhythm)
+  P₃₁(t) = How this system recognizes (unique rhythm)
 
-Your identity = Your unique circulation signature
-               = Your (P₁₂, P₂₃, P₃₁) pattern
+Your identity = Your worldline = ⊙_string = P(t)
+               = How you vibrate through spacetime
+               = Your soul's signature pattern
 ```
 
 **Examples:**
 
 ```
 Two cells with identical E but different P:
-- Same total ATP (E)
+- Same total ATP energy (E)
 - Different metabolic rhythms (P₁₂, P₂₃, P₃₁)
-- Therefore functionally different cells
+- Different worldline vibrations
+→ Functionally different cells
 
 Two people with identical energy content:
-- Same caloric energy (E)
-- Different thought patterns (P)
-- Therefore different people
+- Same caloric energy (E = 2000 kcal)
+- Different activity patterns: P_A(t) ≠ P_B(t)
+- Different worldline signatures
+→ Different identities, different people
 ```
 
-**The self is a power signature, not an energy amount.**
+**The self is your worldline vibration:**
+- Not an energy amount (E)
+- Not a spatial location
+- But a temporal pattern: P(t) = ⊙_string
+- **You are your vibe through time**
 
 ### 9.4 Surface as Interface (Body Role)
 
@@ -3274,17 +3362,27 @@ Circulation:
 
 **From V4.6/V5.0: Individuation at the P level**
 
-Now understood more precisely:
+Now with precise mathematical formulation:
 
 ```
-E (Energy) = Universal, same for all
-Å (Aperture) = Universal pattern, same for all
+E = ⊙ = (·, ○, Φ) × (≻, Å, ⊰)²    [Universal: wholeness at a moment]
+P = ⊙/t = ⊙_string = ⊙₁            [Individual: wholeness through time]
+
+E (Energy) = Universal, same form for all
+Å (Aperture) = Universal pattern, same form for all
 P (Power) = Individual vibration pattern = YOUR VIBE
 
 Your P-signature = How your worldline vibrates
                  = The unique way you trace through time
                  = Your soul's vibration pattern
+                 = ⊙₁ = ⊙_string = dE/dt
 ```
+
+**The key insight:**
+- E is what you ARE at a moment (energy)
+- P is how you FLOW through time (power)
+- The worldline = the string = P(t) = YOUR SOUL
+- **P = ⊙_string is your identity**
 
 **Structural correspondence with string theory:**
 
@@ -4101,15 +4199,16 @@ The form Structure × (Process)² is fundamental
 | Equation | Status | Meaning |
 |----------|--------|---------|
 | E = ⊙ = (·, ○, Φ) × (≻, Å, ⊰)² | **MASTER (V5.1)** | Energy = Structure × Process² |
+| P = ⊙/t = ⊙_string = ⊙₁ | **KEY (V5.1)** | Power = Worldline = Soul = Identity |
 | ⊙ = ⊙₁ ⊗ ⊙₂ ⊗ ⊙₃ | **Foundation (V5)** | Wholeness as trinity tensor product |
 | ⊙ᵢ = (·ᵢ, ○ᵢ, Φᵢ) × (≻ᵢ, Åᵢ, ⊰ᵢ)² | **V5.1** | Each trinity member has same form |
 | β ∈ (0,1) | **V5.1 Clarification** | Balance is open interval (limits are nothingness) |
 | ⊙ → ⊙' | **V5.1 Addition** | Transformation (not cessation) |
 | E = mc² ↔ E = (·, ○, Φ) × (≻, Å, ⊰)² | **V5.1 Mapping** | Physics equation maps to framework |
+| P = dE/dt = ⊙₁ | **Established/V5.1** | Power (physics) = Worldline (framework) |
 | Å₁₂ = ∂/∂t | **Exact** | Soul → Body via time derivative (established) |
 | Å₂₃ = ? | **Hypothesis** | Body → Mind operator (candidates: divergence) |
 | Å₃₁ = ? | **Hypothesis** | Mind → Soul operator (candidates: integration) |
-| P = dE/dt | **Definition** | Power as energy rate |
 | β₁ = β₂ = β₃ = 0.5 | **Prediction (V5)** | Trinity balance optimal |
 | Å₃₁∘Å₂₃∘Å₁₂ ≈ λI | **Prediction (V5)** | Circulation closes to identity |
 | ⊙ᵢ = ⊙ᵢ₁ ⊗ ⊙ᵢ₂ ⊗ ⊙ᵢ₃ | **Fractal (V5)** | Trinity nested infinitely |
