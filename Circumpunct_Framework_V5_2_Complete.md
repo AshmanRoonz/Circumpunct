@@ -3072,6 +3072,8 @@ c² ↔ (≻, Å, ⊰)² = Convergence rate squared
 | β = 0.5 in biology | Maintained | Confirm open interval |
 | Aperture operators | Updated | Connect to σ₁, σ₂ generators |
 
+### Appendix F: Worked Example – [Quantum Harmonic Oscillator in a Thermal Bath](https://github.com/AshmanRoonz/Circumpunct/blob/main/quantum_oscillator_circumpunct.md)
+
 ---
 
 **Version:** 5.2  
