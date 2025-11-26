@@ -486,11 +486,14 @@ Therefore: β ∈ (0, 1) always (open interval)
 NOT = Reaching β = 1 or β = 0
 NOT = Complete cessation
 NOT = Breaking ⊗ into complete separation
+There is no physical process that takes a real system to β = 0 or β = 1 in finite time. Approaching the limits forces transformation of the configuration instead.
+
 
 Because:
 ⊙ = E (wholeness IS energy)
 E conserved (first law of thermodynamics)
 Therefore: ⊙ conserved (always transforms, never ceases)
+
 ```
 
 **V5.2 adds braid perspective:**
