@@ -4,6 +4,60 @@
 
 ---
 
+## Table of Contents
+
+- [What This Framework Does](#what-this-framework-does)
+- [Part I: The Ground](#part-i-the-ground)
+  - [§1.1 There's Not Nothing](#11-theres-not-nothing)
+  - [§1.2 Wholeness Requires Trinity](#12-wholeness-requires-trinity)
+  - [§1.3 Every System Converges and Emerges](#13-every-system-converges-and-emerges)
+  - [§1.4 The Aperture Is Transformation](#14-the-aperture-is-transformation)
+  - [§1.5 The Physics Translation](#15-the-physics-translation)
+- [Part II: The 64 Configurations](#part-ii-the-64-configurations)
+  - [§2.1 The Dual Trinity](#21-the-dual-trinity)
+  - [§2.2 Convergence and Emergence at Each Component](#22-convergence-and-emergence-at-each-component)
+  - [§2.3 The Count](#23-the-count)
+  - [§2.4 Why 64 Cannot Be Different](#24-why-64-cannot-be-different)
+- [Part III: The Dimensions](#part-iii-the-dimensions)
+  - [§3.1 Two Kinds of Dimension](#31-two-kinds-of-dimension)
+  - [§3.2 The Spatial Circumpunct (0D → 3D)](#32-the-spatial-circumpunct-0d--3d)
+  - [§3.3 The Pattern Continues](#33-the-pattern-continues)
+  - [§3.4 Why Three Dimensions Per Layer](#34-why-three-dimensions-per-layer)
+- [Part IV: The Nesting](#part-iv-the-nesting)
+  - [§4.1 Surfaces Are Made of Apertures](#41-surfaces-are-made-of-apertures)
+  - [§4.2 Centers Contain Worlds](#42-centers-contain-worlds)
+  - [§4.3 You Are Both](#43-you-are-both)
+- [Part V: Validation](#part-v-validation)
+  - [§5.1 I Am Whole Through Being Part](#51-i-am-whole-through-being-part)
+  - [§5.2 What Stabilizes](#52-what-stabilizes)
+  - [§5.3 Boundary Determines Stability](#53-boundary-determines-stability)
+- [Part VI: Consequences](#part-vi-consequences)
+  - [§6.1 Physics](#61-physics)
+  - [§6.2 Personality](#62-personality)
+  - [§6.3 Why Physics Has Laws and Psychology Has Patterns](#63-why-physics-has-laws-and-psychology-has-patterns)
+  - [§6.4 Consciousness](#64-consciousness)
+  - [§6.5 Identity and Death](#65-identity-and-death)
+- [Part VII: Derivations from First Principles](#part-vii-derivations-from-first-principles)
+  - [§7.1 Why Boundaries Scale as Area (D = 2)](#71-why-boundaries-scale-as-area-d--2)
+  - [§7.2 Why Holographic Bounds Hold](#72-why-holographic-bounds-hold)
+  - [§7.3 Why Golden Ratio Appears](#73-why-golden-ratio-appears)
+  - [§7.4 Fractal Dimension and Aperture Openness](#74-fractal-dimension-and-aperture-openness)
+  - [§7.5 Why Wavelets = Aperture Mass](#75-why-wavelets--aperture-mass)
+  - [§7.6 Why Three Generations](#76-why-three-generations)
+  - [§7.7 Why 64 States Map to Standard Model](#77-why-64-states-map-to-standard-model)
+  - [§7.8 Why Consciousness Requires Dual Structure](#78-why-consciousness-requires-dual-structure)
+- [Part VIII: Ethics](#part-viii-ethics)
+  - [§8.1 The Four Ethical Dimensions](#81-the-four-ethical-dimensions)
+  - [§8.2 The Balance Parameter in Ethics](#82-the-balance-parameter-in-ethics)
+  - [§8.3 The Golden Rule as Fixed Point](#83-the-golden-rule-as-fixed-point)
+  - [§8.4 The Steelman: Highest Ethical Practice](#84-the-steelman-highest-ethical-practice)
+  - [§8.5 Ethics as Scale-Dependent Costume](#85-ethics-as-scale-dependent-costume)
+- [Summary](#summary)
+- [Derivation Summary Table](#derivation-summary-table)
+- [What "From First Principles" Means](#what-from-first-principles-means)
+
+---
+
 ## What This Framework Does
 
 This framework provides the universal mathematical skeleton that all effective theories share.
