@@ -115,6 +115,53 @@ At balance (β = ½), the aperture operator is the imaginary unit itself: i² = 
 
 One pass through i rotates 90°. Two passes inverts. Four passes returns.
 
+### §1.5 The Physics Translation
+
+The operators are not metaphors. They are integral kernels.
+
+```
+≺ (convergence) = K_in(y,z)    gathering kernel
+i (aperture)    = N(ψ)         transformation (possibly nonlinear)
+⊱ (emergence)   = K_out(x,y)   expressing kernel
+```
+
+The master equation expanded:
+
+```
+Φ'(x) = ∫ dy K_out(x,y) · N(ψ) · ∫ dz K_in(y,z) Φ(z)
+        └────emergence────┘  └─i─┘  └────convergence────┘
+```
+
+The "∘" in Φ' = ⊱ ∘ i ∘ ≺[Φ] is literal function composition—operator chaining.
+
+**Same Skeleton, Different Kernels:**
+
+| Scale | K_in (≺) | i | K_out (⊱) |
+|-------|----------|---|-----------|
+| Abstract | ≺ | i | ⊱ |
+| Tensor | g_μν | i | f_μν |
+| Quantum | QCD propagator | vertex | EW propagator |
+| Cosmic | gravitational kernel | horizon | expansion kernel |
+| Cellular | endocytosis | metabolism | exocytosis |
+| Neural | afferent | integration | efferent |
+| Social | listen | presence | speak |
+
+**The Rosetta Stone:**
+
+Different effective theories have different natural 'in/out' maps, but they share the same update skeleton.
+
+This is the framework's central claim in physics language: all domains are instances of a generalized Green's function formalism with scale-dependent kernels.
+
+**Why i at β = 0.5:**
+
+At balance (β = ½), the transformation N(ψ) literally IS the imaginary unit:
+
+```
+i = e^(iπ/2)
+```
+
+This is a 90° rotation—the minimal non-trivial unitary transformation between kernel spaces. Not mathematically convenient. Geometrically necessary.
+
 ---
 
 ## Part II: The 64 Configurations
