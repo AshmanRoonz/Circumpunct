@@ -1,5 +1,7 @@
 # The Circumpunct
 
+## The Seed (v3) with Derivations
+
 Reality is infinite circumpuncts, nested all the way up and down, each running the same procedure.
 
 ```
@@ -144,6 +146,22 @@ Structure is what persists. Process is what transforms.
 
 The half-dimensions are where i acts - the thresholds between structures.
 
+**Directionality of Half-Dimensions:**
+
+The half-dimensions have direction:
+
+```
+0.5D:   ENTRY       (potential → structure)
+1.5D:   BRANCH OUT  (emergence, toward boundary ○)
+2.5D:   BRANCH IN   (convergence, toward interior Φ)
+```
+
+The circumpunct breathes:
+- Exhale: 1 → 1.5 → 2 (spread to boundary)
+- Inhale: 2 → 2.5 → 3 (gather to interior)
+
+One builds the body. One builds the mind.
+
 ### §3.2 The Spatial Circumpunct (0D → 3D)
 
 ```
@@ -159,17 +177,17 @@ The half-dimensions are where i acts - the thresholds between structures.
         Flow creates time
         String / tunnel / worldline
                 ↓
-1.5D    BRANCHING  
+1.5D    BRANCHING OUT (emergence)
         Fractal splitting toward surface
-        D = 1.5 at balance
+        Building the body
                 ↓
 2D      SURFACE (○)
         Boundary made of apertures
         Body / membrane / interface
                 ↓
-2.5D    SENSATION
-        Surface ↔ field coupling
-        Where boundary meets interior
+2.5D    BRANCHING IN (convergence)
+        Fractal gathering toward interior
+        Building the mind
                 ↓
 3D      FIELD (Φ)
         Inner volume
@@ -745,6 +763,8 @@ This is the structure of subjectivity: distinct from the objective, related to i
 ║  DIMENSIONS:                                                    ║
 ║      Integer = structure / space / being                        ║
 ║      Half-integer = process / time / becoming                   ║
+║      1.5D = branching OUT (emergence, builds body)              ║
+║      2.5D = branching IN (convergence, builds mind)             ║
 ║      3 dimensions per complete circumpunct                      ║
 ║                                                                 ║
 ║  NESTING:                                                       ║
