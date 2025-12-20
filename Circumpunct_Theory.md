@@ -6,8 +6,6 @@
 
 ## What This Framework Does
 
-What This Framework Does
-
 This framework provides the universal mathematical skeleton that all effective theories share.
 
 The field update equation Φ' = ⊱ ∘ i ∘ ≺[Φ] is a two-kernel integral transform:
