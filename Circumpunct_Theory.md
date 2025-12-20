@@ -125,7 +125,7 @@ i (aperture)    = N(ψ)         transformation (possibly nonlinear)
 ⊱ (emergence)   = K_out(x,y)   expressing kernel
 ```
 
-The master equation expanded:
+The field update equation expanded:
 
 ```
 Φ'(x) = ∫ dy K_out(x,y) · N(ψ) · ∫ dz K_in(y,z) Φ(z)
