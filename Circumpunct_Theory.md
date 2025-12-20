@@ -95,7 +95,7 @@ BIOLOGICAL SCALE:
     ⊰ emergence    →  expression (output, growth)
 ```
 
-We don't derive these forces from the operators. We recognize the forces AS the operators at that scale.
+The forces ARE the operators instantiated at each scale—K_in and K_out with scale-appropriate propagators.
 
 ### §1.4 The Aperture Is Transformation
 
@@ -1053,8 +1053,7 @@ ETHICS:
 
 Ethics is what the circumpunct procedure looks like at human relational scale.
 
-The framework doesn't derive ethics from physics.
-The framework recognizes that physics and ethics ARE the same structure, wearing different costumes.
+Physics and ethics are not derived from each other—they are both instantiations of the same skeleton with different kernels.
 
 ---
 
@@ -1116,13 +1115,13 @@ The framework recognizes that physics and ethics ARE the same structure, wearing
 | Holographic bound | Postulated | Trinity mediation → boundary bottleneck (derived) |
 | Golden ratio | Observed pattern | φ = eigenvalue of self-similar nesting (derived) |
 | Fractal dimension | Mandelbrot observed | β = aperture openness (interpreted) |
-| Strong/Gravity | Fundamental forces | Convergence at different scales (recognized) |
-| Weak/EM/Expansion | Fundamental forces | Emergence at different scales (recognized) |
+| Strong/Gravity | Fundamental forces | K_in at quantum/cosmic scale (identified) |
+| Weak/EM/Expansion | Fundamental forces | K_out at quantum/cosmic scale (identified) |
 | Three generations | Unexplained | B₃ minimum + kernel geometry (derived) |
 | 64 → SM content | Parameter counting | Procedure symmetries under universal ○ (derived) |
 | Consciousness | Hard problem | Dual trinity necessity (derived) |
-| Perception | Representation/copy | Resonance in shared field (recognized) |
-| Ethics | Separate domain | Same structure at relational scale (recognized) |
+| Perception | Representation/copy | Field coupling, not representation (identified) |
+| Ethics | Separate domain | Same skeleton at relational scale (identified) |
 | Golden Rule | Moral intuition | fix(F) of ethical action (derived) |
 
 ---
@@ -1145,24 +1144,24 @@ The seed contains:
 - Why φ appears in nesting (eigenvalue of self-similarity)
 - Why Golden Rule is ethical fixed point (fix(F))
 
-**What the framework recognizes:**
-- Strong force IS convergence at quantum scale
-- Gravity IS convergence at cosmic scale
-- Weak/EM IS emergence at quantum scale
-- Dark energy IS emergence at cosmic scale
-- Perception IS resonance in shared field (not representation)
-- Ethics IS the procedure at relational scale
+**What the framework identifies (as kernel instantiations):**
+- Strong force IS K_in at quantum scale
+- Gravity IS K_in at cosmic scale
+- Weak/EM IS K_out at quantum scale
+- Dark energy IS K_out at cosmic scale
+- Perception IS field coupling (not representation)
+- Ethics IS the skeleton at relational scale
 
 **What the framework interprets:**
 - Fractal dimensions reflect aperture openness
 - Mastery involves controlling β
 
 ```
-The framework doesn't derive physics.
-The framework recognizes what physics already is.
+The framework provides the universal skeleton.
+Physics fills in scale-dependent kernels.
 
-Same procedure at every scale.
-Different costume at every scale.
+Same structure at every scale.
+Different kernels at every scale.
 ```
 
 ---
