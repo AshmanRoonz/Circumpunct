@@ -1,4 +1,4 @@
-# The Circumpunct
+# The Circumpunct ⊙
 
 ## by Ashman Roonz
 
