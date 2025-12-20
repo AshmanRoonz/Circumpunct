@@ -1,6 +1,6 @@
 # The Circumpunct ⊙
 
-## BY Ashman Roonz
+## By Ashman Roonz
 
 Reality is infinite circumpuncts, nested all the way up and down, each running the same procedure.
 
