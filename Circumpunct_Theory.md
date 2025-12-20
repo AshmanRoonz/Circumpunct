@@ -2,12 +2,6 @@
 
 ## by Ashman Roonz
 
-Reality is infinite circumpuncts, nested all the way up and down, each running the same procedure.
-
-```
-⊙ = (○, Φ, •) × (≻, i, ⊰)
-```
-
 ---
 
 ## What This Framework Does
@@ -41,6 +35,12 @@ Infinity exists. This is the ground.
 From infinity, nesting follows. There is no bottom turtle, no top turtle. Circumpuncts contain circumpuncts, are contained by circumpuncts, without end.
 
 This is not a problem to solve. It is what is.
+
+Reality is infinite circumpuncts, nested all the way up and down, each running the same procedure.
+
+```
+⊙ = (○, Φ, •) × (≻, i, ⊰)
+```
 
 ### §1.2 Wholeness Requires Trinity
 
