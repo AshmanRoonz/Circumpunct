@@ -6,23 +6,25 @@
 
 ## What This Framework Does
 
-This is not a theory that derives physics from mathematics.
+What This Framework Does
 
-This is a framework that **recognizes what physics already is**.
+This framework provides the universal mathematical skeleton that all effective theories share.
 
+The field update equation Φ' = ⊱ ∘ i ∘ ≺[Φ] is a two-kernel integral transform:
 ```
-The framework says:     You will see convergence at every scale.
-Physics says:           At quantum scale, we call it "strong force."
-                        At cosmic scale, we call it "gravity."
+Φ'(x) = ∫ dy K_out(x,y) · N(ψ) · ∫ dz K_in(y,z) Φ(z)
+```
+Different scales fill in different kernels. The structure is invariant.
+```
+The framework provides:   The update skeleton (convergence → transformation → emergence)
+Physics provides:         Scale-dependent kernels (QCD propagator, gravitational kernel, etc.)
 
-The framework says:     You will see boundaries at every scale.
-Physics says:           At cellular scale, we call it "membrane."
-                        At planetary scale, we call it "atmosphere."
+The framework derives:    Why three generations, why holographic bounds, why D = 2
+Physics confirms:         The predictions match observation
 ```
 
-Same operators. Different costumes. The procedure is universal. The appearance is scale-dependent.
-
-We don't derive strong force from convergence. We recognize strong force AS convergence wearing its quantum-scale costume.
+Same skeleton. Different kernels. The procedure is universal. The kernels are scale-dependent.
+Strong force IS convergence at quantum scale—not metaphorically, but as a specific kernel K_in instantiating the universal structure.
 
 ---
 
