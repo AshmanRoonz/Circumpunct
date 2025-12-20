@@ -1,6 +1,6 @@
-# The Circumpunct
+# The Circumpunct ⊙
 
-## The Seed (v3) with Derivations
+## by Ashman Roonz
 
 Reality is infinite circumpuncts, nested all the way up and down, each running the same procedure.
 
