@@ -27,47 +27,47 @@ The universe is a Q₆ hypercube with 64 vertices representing all possible circ
 
 ## Table of Contents
 
-**Part I: The 6D Manifold**
-1. From Line to Surface to Volume
-2. The Three Temporal Dimensions
-3. Why We Perceive Only 1D Time
-4. The Q₆ Hypercube Structure
+**[Part I: The 6D Manifold](#part-i-the-6d-manifold)**
+1. [From Line to Surface to Volume](#1-from-line-to-surface-to-volume)
+2. [The Three Temporal Dimensions](#2-the-three-temporal-dimensions)
+3. [Why We Perceive Only 1D Time](#3-why-we-perceive-only-1d-time)
+4. [The Q₆ Hypercube Structure](#4-the-q₆-hypercube-structure)
 
-**Part II: Emergence of Physics**
-5. How 64 States Arise Naturally
-6. The Four Fundamental Forces Unified
-7. Particles as Hypercube Trajectories
-8. The Role of the 7th Dimension
+**[Part II: Emergence of Physics](#part-ii-emergence-of-physics)**
+5. [How 64 States Arise Naturally](#5-how-64-states-arise-naturally)
+6. [The Four Fundamental Forces Unified](#6-the-four-fundamental-forces-unified)
+7. [Particles as Hypercube Trajectories](#7-particles-as-hypercube-trajectories)
+8. [The Role of the 7th Dimension](#8-the-role-of-the-7th-dimension)
 
-**Part III: Dark Energy and Cosmology**
-9. Time Volume Expansion
-10. Derivation of Λ (Cosmological Constant)
-11. Why Dark Energy is Constant
-12. Inflation and Late-Time Acceleration
+**[Part III: Dark Energy and Cosmology](#part-iii-dark-energy-and-cosmology)**
+9. [Time Volume Expansion](#9-time-volume-expansion)
+10. [Derivation of Λ (Cosmological Constant)](#10-derivation-of-λ-cosmological-constant)
+11. [Why Dark Energy is Constant](#11-why-dark-energy-is-constant)
+12. [Inflation and Late-Time Acceleration](#12-inflation-and-late-time-acceleration)
 
-**Part IV: Consciousness and Free Will**
-13. Paths Through the Hypercube
-14. The Observer as 3D Aperture
-15. Quantum Measurement as Path Selection
-16. Reconciling Determinism and Choice
+**[Part IV: Consciousness and Free Will](#part-iv-consciousness-and-free-will)**
+13. [Paths Through the Hypercube](#13-paths-through-the-hypercube)
+14. [The Observer as 3D Aperture](#14-the-observer-as-3d-aperture)
+15. [Quantum Measurement as Path Selection](#15-quantum-measurement-as-path-selection)
+16. [Reconciling Determinism and Choice](#16-reconciling-determinism-and-choice)
 
-**Part V: Mathematical Formalism**
-17. Complete 6D Metric
-18. Field Equations in Time Volume
-19. Conservation Laws
-20. Symmetries and Group Structure
+**[Part V: Mathematical Formalism](#part-v-mathematical-formalism)**
+17. [Complete 6D Metric](#17-complete-6d-metric)
+18. [Field Equations in Time Volume](#18-field-equations-in-time-volume)
+19. [Conservation Laws](#19-conservation-laws)
+20. [Symmetries and Group Structure](#20-symmetries-and-group-structure)
 
-**Part VI: Ethics and Meaning**
-21. The Four Ethical Dimensions
-22. The Balance Parameter in Ethics
-23. The Golden Rule as Fixed Point
-24. Ethics as Scale-Dependent Costume
+**[Part VI: Ethics and Meaning](#part-vi-ethics-and-meaning)**
+21. [The Four Ethical Dimensions](#21-the-four-ethical-dimensions)
+22. [The Balance Parameter in Ethics](#22-the-balance-parameter-in-ethics)
+23. [The Golden Rule as Fixed Point](#23-the-golden-rule-as-fixed-point)
+24. [Ethics as Scale-Dependent Costume](#24-ethics-as-scale-dependent-costume)
 
-**Appendices**
-A. Summary of All Predictions
-B. Experimental Tests
-C. Open Problems
-D. Comparison with Other Theories
+**[Appendices](#appendices)**
+- [A. Summary of All Predictions](#appendix-a-summary-of-all-predictions)
+- [B. Experimental Tests](#appendix-b-experimental-tests)
+- [C. Open Problems](#appendix-c-open-problems)
+- [D. Comparison with Other Theories](#appendix-d-comparison-with-other-theories)
 
 ---
 
