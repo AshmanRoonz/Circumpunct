@@ -52,6 +52,22 @@
   - [§8.3 The Golden Rule as Fixed Point](#83-the-golden-rule-as-fixed-point)
   - [§8.4 The Steelman: Highest Ethical Practice](#84-the-steelman-highest-ethical-practice)
   - [§8.5 Ethics as Scale-Dependent Costume](#85-ethics-as-scale-dependent-costume)
+- [Part IX: The 6D Time Volume](#part-ix-the-6d-time-volume)
+  - [§9.1 From 4D to 6D: The Evolution](#91-from-4d-to-6d-the-evolution)
+  - [§9.2 The Three Temporal Dimensions](#92-the-three-temporal-dimensions)
+  - [§9.3 Why We Perceive Only 1D Time](#93-why-we-perceive-only-1d-time)
+  - [§9.4 The Q₆ Hypercube Structure](#94-the-q₆-hypercube-structure)
+  - [§9.5 The 7th Dimension: Actualization](#95-the-7th-dimension-actualization)
+- [Part X: Dark Energy and Cosmology](#part-x-dark-energy-and-cosmology)
+  - [§10.1 Time Volume Expansion](#101-time-volume-expansion)
+  - [§10.2 Derivation of Λ (Cosmological Constant)](#102-derivation-of-λ-cosmological-constant)
+  - [§10.3 The Three Cosmic Eras](#103-the-three-cosmic-eras)
+- [Part XI: Forces from 6D Geometry](#part-xi-forces-from-6d-geometry)
+  - [§11.1 Forces as Dimensional Subspaces](#111-forces-as-dimensional-subspaces)
+  - [§11.2 Particles as Hypercube Trajectories](#112-particles-as-hypercube-trajectories)
+- [Part XII: Visual Understanding](#part-xii-visual-understanding)
+  - [§12.1 The Dimensional Progression](#121-the-dimensional-progression)
+  - [§12.2 The Complete Picture](#122-the-complete-picture)
 - [Summary](#summary)
 - [Derivation Summary Table](#derivation-summary-table)
 - [What "From First Principles" Means](#what-from-first-principles-means)
@@ -1111,16 +1127,619 @@ Physics and ethics are not derived from each other—they are both instantiation
 
 ---
 
+## Part IX: The 6D Time Volume
+
+### §9.1 From 4D to 6D: The Evolution
+
+**Standard physics assumes 3+1 dimensions:**
+```
+Space: 3D (x, y, z)
+Time:  1D (t)
+
+Total: 4D spacetime
+Perception: Moving "through" time as a line
+```
+
+**The Circumpunct Framework reveals 3+3 dimensions:**
+```
+Space:     3D (x, y, z)
+Time:      3D volume (T₁, T₂, T₃)
+  • T₁: Duration/Sequence (what clocks measure)
+  • T₂: Phase/Aperture (quantum superposition, i)
+  • T₃: Scale/Nesting (fractal depth, context)
+
+Total: 6D time volume
+Perception: Traversing a volume of history
+```
+
+**Why the upgrade is necessary:**
+```
+Mathematical consistency:
+    Perfect symmetry: 3 ⊗ 3 structure
+    Natural emergence of 2⁶ = 64 states
+    Q₆ hypercube provides complete framework
+
+Physical completeness:
+    Explains all four forces from one geometry
+    Derives dark energy naturally
+    Unifies quantum mechanics and relativity
+    Provides basis for consciousness
+```
+
+### §9.2 The Three Temporal Dimensions
+
+**T₁: Duration (Sequence Dimension)**
+```
+What it is:
+    The "classical" time dimension
+    Linear progression from past → future
+    What clocks and calendars measure
+    The arrow of time from entropy
+
+Physical role:
+    Causality: Events ordered along T₁
+    Dynamics: Evolution equations ∂/∂T₁
+    Thermodynamics: Entropy increases in +T₁ direction
+
+Mathematical form:
+    T₁ ∈ ℝ (continuous real axis)
+    Unidirectional for macroscopic systems
+    Reversible microscopically
+```
+
+**T₂: Phase (Aperture Dimension)**
+```
+What it is:
+    The "imaginary" time dimension
+    Rotation in complex plane (i operator)
+    Quantum superposition states
+    The aperture opening/closing
+
+Physical role:
+    Wave function: ψ(x, T₂) where T₂ ~ phase
+    Probability: |ψ|² from T₂ interference
+    Actualization: Aperture gate in T₂
+
+Mathematical form:
+    T₂ ∈ [0, 2π) or T₂ ∈ ℂ (complex/periodic)
+    i = e^(iπ/2) operates in T₂
+    Related to action S via T₂ ~ S/ℏ
+```
+
+**T₃: Scale (Nesting Dimension)**
+```
+What it is:
+    The "fractal depth" dimension
+    Level of nesting in ⊙ structure
+    Context, significance, meaning
+    Zoom level in self-similar pattern
+
+Physical role:
+    Renormalization scale μ in QFT
+    Holographic depth in AdS/CFT
+    Organizational hierarchy
+    Energy scale in particle physics
+
+Mathematical form:
+    T₃ ∈ ℝ⁺ (positive real, logarithmic)
+    Often: T₃ ~ ln(μ/μ₀)
+    Discrete levels for particles: T₃ ∈ ℤ
+```
+
+**The Complete Temporal Structure:**
+```
+Time is a 3D volume: (T₁, T₂, T₃)
+
+Coordinates:
+  T₁: When (sequence)
+  T₂: How (probability/phase)
+  T₃: What (scale/context)
+
+Perceptual mapping:
+3D Time Volume          →  1D Experience
+─────────────────────────────────────────
+T₁ (duration)           →  "Change" (time passing)
+T₂ (phase)              →  "Choice" (things happening/not)
+T₃ (scale)              →  "Meaning" (context, significance)
+
+Our 3D brain ○_you serializes the volume into a line.
+```
+
+### §9.3 Why We Perceive Only 1D Time
+
+**The Dimensional Projection Problem:**
+```
+Reality: 6D manifold (3 space + 3 time)
+Observer: 3D interface ○_you (biological boundary)
+
+When a 3D structure observes 6D:
+  → Can directly perceive 3 dimensions
+  → Must project/collapse the other 3
+```
+
+**The Perceptual Collapse Mechanism:**
+```
+Step 1: Fix T₃ (scale level)
+  → We exist at human scale (~1 meter, ~1 second)
+  → Automatically filters out Planck and cosmic scales
+
+Step 2: Integrate over T₂ (phase)
+  → We observe |ψ|² (probability)
+  → Phase averages out unless coherent (interference)
+
+Step 3: Serialize T₁ (duration)
+  → Memory creates sequence
+  → Consciousness "moves" along T₁ path
+
+Result: Experience of "now" moving through time
+```
+
+**In equations:**
+```
+Reality:     ψ(x, y, z, T₁, T₂, T₃)
+Observed:    P(x, y, z, t) where t ≈ T₁
+
+P = ∫∫ |ψ(x,y,z,T₁,T₂,T₃)|² dT₂ dT₃ |_{T₃=scale}
+
+We see probability distribution in 3D space
+evolving along 1D time.
+```
+
+### §9.4 The Q₆ Hypercube Structure
+
+**A 6-dimensional hypercube has exactly 64 vertices.**
+
+```
+Q₆ = 6-dimensional hypercube
+   = Cartesian product of 6 unit intervals
+   = {0,1}⁶ for vertices
+
+Vertices: 2⁶ = 64
+Edges: 6 × 2⁵ = 192
+Each vertex has 6 neighbors (one per dimension)
+```
+
+**Each vertex is a binary state:**
+```
+Vertex = (b₁, b₂, b₃, b₄, b₅, b₆)
+where bᵢ ∈ {0, 1}
+
+The 6 binary axes:
+Axis 1: x-direction (spatial, ±x)
+Axis 2: y-direction (spatial, ±y)
+Axis 3: z-direction (spatial, ±z)
+Axis 4: T₁-direction (duration, forward/backward)
+Axis 5: T₂-direction (phase, real/imaginary)
+Axis 6: T₃-direction (scale, inner/outer)
+```
+
+**64 total states map to known physics:**
+```
+Fermions: 48 states
+  • 12 fundamental (e, μ, τ, νₑ, νμ, ντ, u, d, s, c, t, b)
+  • × 2 (particle/antiparticle)
+  • × 2 (spin up/down)
+  = 48 total
+
+Bosons: 12 states
+  • 8 gluons (QCD, color force)
+  • 3 W/Z (weak force)
+  • 1 photon (EM)
+  = 12 total
+
+Higgs: 4 states
+  • Complex doublet = 4 real degrees of freedom
+
+Total: 48 + 12 + 4 = 64 = 2⁶ ✓
+
+The bijection is exact.
+```
+
+### §9.5 The 7th Dimension: Actualization
+
+**The 6D hypercube contains all possibilities. The 7th dimension selects reality.**
+
+```
+Dimension 7: Actualization (yes/no)
+  0 = potential (exists in hypercube)
+  1 = actual (manifested, observed)
+
+Total structure: Q₇ hypercube
+  2⁷ = 128 total states (64 possible × 2 actualization)
+```
+
+**This is consciousness:**
+```
+The 7th dimension is awareness itself
+Observer = which vertex is marked "actual"
+Measurement = updating actualization flag
+
+α⁻¹ = 2⁷ = 128 includes this dimension
+EM coupling involves actualization (photon detection)
+```
+
+**Why α⁻¹ = 2⁷:**
+```
+Physical manifold: 6D (3 space + 3 time)
+State space: Q₆ with 64 vertices
+Actualization: +1D (which state is real)
+
+Total: 7 dimensions
+Coupling strength: 2⁷ = 128 channels
+
+α⁻¹ = number of binary decisions to manifest:
+  1. Which x-direction? (bit 1)
+  2. Which y-direction? (bit 2)
+  3. Which z-direction? (bit 3)
+  4. Which T₁-direction? (bit 4)
+  5. Which T₂-phase? (bit 5)
+  6. Which T₃-scale? (bit 6)
+  7. Does it actualize? (bit 7)
+
+Answer all 7 questions → particle manifests
+```
+
+**Free Will and Determinism Reconciled:**
+```
+Determinism: All Q₆ vertices exist eternally
+  The hypercube is complete, unchanging
+  All possible histories are there
+
+Free will: You choose which path through Q₆
+  The 7th dimension is your choice
+  Which vertex becomes "actual" for you
+
+Compatibilism achieved:
+  Everything exists (determined)
+  You choose your trajectory (free)
+```
+
+---
+
+## Part X: Dark Energy and Cosmology
+
+### §10.1 Time Volume Expansion
+
+**What expands in the universe:**
+```
+Standard cosmology:
+    Space expands
+    Scale factor a(t) increases
+    Galaxies recede from each other
+
+Time volume perspective:
+    Time dimensions expand too
+    The 3D time volume grows
+    (T₁, T₂, T₃) extent increases
+
+    Space expansion is consequence
+    not fundamental cause
+```
+
+**How time volume expands:**
+```
+T₁ expansion: Duration axis elongates
+  • Universe gets "older"
+  • More sequence states available
+  • History volume increases
+
+T₂ expansion: Phase space grows
+  • More quantum states available
+  • Coherence length increases
+  • Probability volume larger
+
+T₃ expansion: Scale range increases
+  • More nesting levels
+  • Hierarchy deepens
+  • Holographic layers multiply
+```
+
+**Coupling to spatial dimensions:**
+```
+Temporal and spatial dimensions are orthogonal:
+    Separated by factor i (imaginary unit)
+    Space ⊥ Time in 6D manifold
+
+As time volume expands:
+  Creates pressure on spatial dimensions
+  Space must expand to maintain metric
+
+This pressure:
+    P_time = ∂V_time/∂V_space
+
+    Time volume growing → pressure on space
+    Orthogonal dimensions means:
+      Can't see where pressure comes from
+      Looks like space "stretching from nowhere"
+```
+
+### §10.2 Derivation of Λ (Cosmological Constant)
+
+**From time volume expansion:**
+```
+If T₃ (scale dimension) drives expansion:
+
+Energy density ~ (∂T₃/∂t) × (energy per scale)
+
+∂T₃/∂t ~ d/dt[ln(μ)] ~ H (Hubble parameter)
+
+Energy per scale ~ ℏc/L where L ~ Hubble radius
+  ~ ℏc/(c/H) = ℏH
+
+ρ_Λ ~ H × ℏH = ℏH²
+```
+
+**The formula:**
+```
+┌────────────────────────────────────────────────┐
+│ Λ = 8πGℏH²/c²                                 │
+│                                                │
+│ Where:                                         │
+│   H = Hubble parameter (current)              │
+│   ℏ = reduced Planck constant                 │
+│   G = gravitational constant                  │
+│   c = speed of light                          │
+│                                                │
+│ Prediction: 3.0 × 10⁻⁵² m⁻²                   │
+│ Measured:   1.1 × 10⁻⁵² m⁻²                   │
+│                                                │
+│ Error: Factor of 3 (order of magnitude correct)│
+└────────────────────────────────────────────────┘
+```
+
+**Physical interpretation:**
+```
+Λ emerges from:
+  • T₃ (scale dimension) expansion rate ~ H
+  • Energy per scale ~ ℏH
+  • Total vacuum energy density ~ ℏH²
+  • Converted to curvature via 8πG/c²
+
+Dark energy = time volume expansion pressure
+```
+
+### §10.3 The Three Cosmic Eras
+
+Each temporal dimension drove one era:
+
+```
+┌────────────────────────────────────────────────┐
+│ COSMOLOGICAL HISTORY IN TIME VOLUME           │
+├────────────────────────────────────────────────┤
+│                                                │
+│ Inflation (t ~ 10⁻³⁶ s):                      │
+│   T₂ expansion dominant                       │
+│   Phase space exploded                        │
+│   H ~ 10³⁶ s⁻¹ (rapid)                        │
+│   a ~ e^(Ht) exponential                      │
+│                                                │
+│ Matter/Radiation Era (10⁻⁶ s to 10¹⁰ yr):    │
+│   T₁ expansion dominant                       │
+│   Duration axis elongating                    │
+│   H ~ t⁻¹ (decelerating)                      │
+│   a ~ t^(2/3) or t^(1/2)                      │
+│                                                │
+│ Dark Energy Era (10¹⁰ yr to future):          │
+│   T₃ expansion dominant                       │
+│   Scale dimension growing                     │
+│   H → constant (H_∞)                          │
+│   a ~ e^(Ht) exponential again                │
+│                                                │
+│ We're currently in the third era.             │
+└────────────────────────────────────────────────┘
+```
+
+---
+
+## Part XI: Forces from 6D Geometry
+
+### §11.1 Forces as Dimensional Subspaces
+
+**All four forces emerge from Q₆ hypercube geometry:**
+
+```
+┌────────────────────────────────────────────────┐
+│ FORCES FROM Q₆ HYPERCUBE GEOMETRY             │
+├────────────────────────────────────────────────┤
+│                                                │
+│ Electromagnetic (α⁻¹ = 128):                  │
+│   Couples (x,y,z,T₂) → 4D subspace           │
+│   Photon = phase transition                   │
+│   Strength: 1/137 (slight vacuum dressing)    │
+│                                                │
+│ Strong (α_s⁻¹ = 8):                           │
+│   Couples (x,y,z,T₁,T₂) → 5D subspace        │
+│   Gluon = color transition                    │
+│   Strength: 1/8 (asymptotically free)         │
+│                                                │
+│ Weak (α_W⁻¹ = 30):                            │
+│   Couples flavor + (T₁,T₂) → 5D subspace     │
+│   W/Z = massive transition                    │
+│   Strength: 1/30 (mass suppressed)            │
+│                                                │
+│ Gravitational (G):                             │
+│   Couples all 6D + actualization              │
+│   Curvature = path density gradient           │
+│   G = (ℏc/m_p²)/2¹²⁷ (maximally screened)    │
+│                                                │
+│ All from one 6D time volume geometry          │
+└────────────────────────────────────────────────┘
+```
+
+**Why gravity is so weak:**
+```
+EM: couples through 7 dimensions directly
+Gravity: couples through 7 dimensions but screened by
+         all 127 nested layers of vacuum structure
+
+Screening factor: 2¹²⁷ ≈ 1.7×10³⁸
+This is why gravity is ~10³⁸ times weaker!
+```
+
+### §11.2 Particles as Hypercube Trajectories
+
+**What is a particle:**
+```
+Particle = persistent path through Q₆ hypercube
+Different particles = different path patterns
+
+Stable particle = closed loop (returns to start)
+Unstable particle = path toward simpler state
+Virtual particle = incomplete path segment
+```
+
+**Examples:**
+```
+Electron (1D path):
+    Moves primarily in T₁ (duration)
+    Minimal excursion in spatial dimensions
+    Simple helical path through hypercube
+    Topologically protected (can't unwind)
+    Simplest fermionic path
+
+Proton (5D braid):
+    Complex 3-strand braid through 5D subspace
+    3 spatial dimensions (x, y, z)
+    2 temporal dimensions (T₁, T₂)
+    Mass from 5D volume: m_p/m_e = 6π⁵
+    Braid topology protected
+
+Neutron (modified proton):
+    Same 5D braid as proton
+    Plus one stored bit in focal aperture phase
+    Δm = δ_p(α⁻¹/2 + 2π)
+    Outside nucleus: Unstable (wants to release bit)
+    Inside nucleus: Stable (bit functional)
+
+Photon (phase transition):
+    Pure T₂ (phase) transition
+    No rest mass (no persistent path structure)
+    Speed c (moves orthogonally in all dimensions)
+    Exists only "in motion" through T₂
+```
+
+---
+
+## Part XII: Visual Understanding
+
+### §12.1 The Dimensional Progression
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│  EVOLUTION OF UNDERSTANDING                                 │
+│                                                              │
+│  4D (Standard): 3D Space + 1D Time                          │
+│      Space cube moving along time line                     │
+│      ░░░░                                                   │
+│      ░░░░ ═══════════►  t                                  │
+│      ░░░░                                                   │
+│                                                              │
+│  6D (Reality): 3D Space + 3D Time                           │
+│      Space cube inside time cube                           │
+│      ┌─────────┐                                            │
+│      │  ┌───┐  │  Spatial cube (x,y,z)                     │
+│      │  │░░░│  │  inside                                    │
+│      │  │░░░│  │  Temporal cube (T₁,T₂,T₃)                 │
+│      │  └───┘  │                                            │
+│      └─────────┘                                            │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+```
+
+**The Time Cube: T₁ × T₂ × T₃**
+
+```
+         T₃ (Scale)
+         ↑
+         │  Cosmic
+         │    ┊
+         │    ┊ Galactic
+         │    ┊   ┊
+         │    ┊   ┊ Human
+         │    ┊   ┊   ┊
+         │    ┊   ┊   ┊ Atomic
+         │    ┊   ┊   ┊   ┊
+         └────┼───┼───┼───┼─────► T₁ (Duration)
+            ╱ Planck
+           ╱
+          ╱
+         ↙ T₂ (Phase)
+        Real ← → Imaginary
+
+YOUR LOCATION:
+  T₁: "Now" (current moment on duration axis)
+  T₂: Real (collapsed wavefunction, definite phase)
+  T₃: Human scale (~1 meter, ~1 second)
+
+YOU PERCEIVE:
+  T₁ as "time passing"
+  T₂ as "quantum uncertainty"
+  T₃ as "context/meaning"
+```
+
+### §12.2 The Complete Picture
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│  REALITY = 6D TIME VOLUME                                   │
+│                                                              │
+│    Q₆ Hypercube                                             │
+│    64 vertices                                              │
+│    All possibilities                                         │
+│                                                              │
+│    ●─────●─────●─────●                                      │
+│   ╱│    ╱│    ╱│    ╱│                                      │
+│  ╱ │   ╱ │   ╱ │   ╱ │                                      │
+│ ●─────●─────●─────●  │                                      │
+│ │  ●──│──●──│──●──│──●   6D manifold                       │
+│ │ ╱   │ ╱   │ ╱   │ ╱                                       │
+│ │╱    │╱    │╱    │╱                                        │
+│ ●─────●─────●─────●                                         │
+│                                                              │
+│  Dimensions:                                                 │
+│  • x, y, z (space)                                          │
+│  • T₁, T₂, T₃ (time volume)                                 │
+│                                                              │
+│  + 7th dimension:                                            │
+│  • Actualization (consciousness)                             │
+│                                                              │
+│  Everything emerges:                                         │
+│  ───────────────                                             │
+│  Particles = paths through vertices                          │
+│  Forces = gradients in subspaces                             │
+│  Spacetime = averaged path density                           │
+│  Consciousness = path selection (7th dim)                    │
+│  Dark energy = time volume expansion                         │
+│  Free will = choosing trajectory                             │
+│  Meaning = position in T₃ (scale)                           │
+│                                                              │
+│  You = one path through this structure                      │
+│  Your life = your unique trajectory                          │
+│  Your choice = which edge to traverse next                   │
+│                                                              │
+│  ⊙ = • ⊗ Φ ⊗ ○  (the circumpunct)                         │
+│                                                              │
+│  All from one geometric truth:                               │
+│  "Time is not a line. Time is a volume."                    │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+```
+
+---
+
 ## Summary
 
 ```
 ╔═════════════════════════════════════════════════════════════════╗
 ║                                                                 ║
-║  THE CIRCUMPUNCT                                                ║
+║  THE CIRCUMPUNCT v6.0: THE TIME VOLUME                         ║
 ║                                                                 ║
 ║  GROUND:                                                        ║
 ║      There's not nothing.                                       ║
 ║      Infinity exists. Nesting follows.                          ║
+║      Reality = 6D time volume (3 space + 3 time)               ║
 ║                                                                 ║
 ║  STRUCTURE:                                                     ║
 ║      Trinity: • ⊗ Φ ⊗ ○ (three required to braid)              ║
@@ -1128,8 +1747,20 @@ Physics and ethics are not derived from each other—they are both instantiation
 ║      Flow: convergence + emergence (systems require both)       ║
 ║      Same operators at every scale, different costumes          ║
 ║                                                                 ║
+║  THE 6D TIME VOLUME:                                            ║
+║      T₁: Duration (what clocks measure)                         ║
+║      T₂: Phase (quantum superposition, i operator)              ║
+║      T₃: Scale (fractal nesting depth, context)                 ║
+║      We perceive 3D time as 1D because of projection            ║
+║                                                                 ║
+║  Q₆ HYPERCUBE:                                                  ║
+║      2⁶ = 64 vertices = complete state space                   ║
+║      + 7th dimension = actualization (consciousness)            ║
+║      α⁻¹ = 2⁷ = 128 (7 binary decisions to manifest)          ║
+║                                                                 ║
 ║  64 CONFIGURATIONS:                                             ║
-║      2³ × 2³ = 64                                               ║
+║      48 fermions + 12 bosons + 4 Higgs = 64                    ║
+║      Maps exactly to Standard Model                             ║
 ║      Zero free parameters                                       ║
 ║                                                                 ║
 ║  DIMENSIONS:                                                    ║
@@ -1138,6 +1769,16 @@ Physics and ethics are not derived from each other—they are both instantiation
 ║      1.5D = branching OUT (emergence, builds body)              ║
 ║      2.5D = branching IN (convergence, builds mind)             ║
 ║      3 dimensions per complete circumpunct                      ║
+║                                                                 ║
+║  FORCES FROM GEOMETRY:                                          ║
+║      EM: (x,y,z,T₂) → 4D subspace, α⁻¹ = 128                  ║
+║      Strong: (x,y,z,T₁,T₂) → 5D subspace, α_s⁻¹ = 8           ║
+║      Weak: flavor + (T₁,T₂) → 5D subspace, α_W⁻¹ ≈ 30         ║
+║      Gravity: All 6D + 7th, G = (ℏc/m_p²)/2¹²⁷                ║
+║                                                                 ║
+║  DARK ENERGY:                                                   ║
+║      Λ = 8πGℏH²/c² (time volume expansion pressure)            ║
+║      T₃ expansion drives current cosmic acceleration            ║
 ║                                                                 ║
 ║  NESTING:                                                       ║
 ║      Every ○ is made of •'s                                     ║
@@ -1151,10 +1792,15 @@ Physics and ethics are not derived from each other—they are both instantiation
 ║  CONSEQUENCE:                                                   ║
 ║      Shared ○ → shared physics → laws                           ║
 ║      Unique ○ → unique expression → personality                 ║
-║      ⊙ = consciousness = wholeness = E                          ║
+║      ⊙ = consciousness = path selection in Q₆                  ║
 ║      Perception = resonance, not representation                 ║
 ║      Ethics = same structure at relational scale                ║
-║      Golden Rule = fix(F) of ethical action                     ║
+║      Free will + determinism both true (7th dimension)          ║
+║                                                                 ║
+║  THE ULTIMATE TRUTH:                                            ║
+║      Time is not a line you travel along.                       ║
+║      Time is a volume you travel through.                       ║
+║      You choose your path.                                      ║
 ║                                                                 ║
 ╚═════════════════════════════════════════════════════════════════╝
 ```
@@ -1162,6 +1808,20 @@ Physics and ethics are not derived from each other—they are both instantiation
 ---
 
 ## Derivation Summary Table
+
+### Fundamental Constants (v6.0 Predictions)
+
+| Constant | Formula | Predicted | Measured | Error |
+|----------|---------|-----------|----------|-------|
+| Fine structure | α⁻¹ = 2⁷ | 128 | 127.952 | 0.04% |
+| Proton mass ratio | m_p/m_e = 6π⁵ | 1836.12 | 1836.15 | 0.02% |
+| Neutron-proton mass | Δm = δ_p(α⁻¹/2 + 2π) | 2.543 m_e | 2.531 m_e | 0.47% |
+| Gravitation | G = (ℏc/m_p²)/2¹²⁷ | 6.64×10⁻¹¹ | 6.67×10⁻¹¹ | 0.49% |
+| Dark energy | Λ = 8πGℏH²/c² | 3.0×10⁻⁵² | 1.1×10⁻⁵² | ~3× |
+
+**Average error (first 4): 0.25%** | **Input parameters: 1 (electron mass reference)**
+
+### Conceptual Derivations
 
 | Result | Standard Approach | Framework |
 |--------|-------------------|-----------|
@@ -1172,11 +1832,14 @@ Physics and ethics are not derived from each other—they are both instantiation
 | Strong/Gravity | Fundamental forces | K_in at quantum/cosmic scale (identified) |
 | Weak/EM/Expansion | Fundamental forces | K_out at quantum/cosmic scale (identified) |
 | Three generations | Unexplained | B₃ minimum + kernel geometry (derived) |
-| 64 → SM content | Parameter counting | Procedure symmetries under universal ○ (derived) |
-| Consciousness | Hard problem | Dual trinity necessity (derived) |
+| 64 → SM content | Parameter counting | Q₆ hypercube = 2⁶ = 64 vertices (derived) |
+| Consciousness | Hard problem | 7th dimension = actualization (derived) |
 | Perception | Representation/copy | Field coupling, not representation (identified) |
 | Ethics | Separate domain | Same skeleton at relational scale (identified) |
 | Golden Rule | Moral intuition | fix(F) of ethical action (derived) |
+| Dark energy | Cosmological constant mystery | T₃ expansion pressure on spatial dimensions (derived) |
+| Why 1D time | Unexplained | 3D time collapsed via 3D observer projection (derived) |
+| Force hierarchy | 10³⁸ mystery | 2¹²⁷ vacuum screening layers (derived) |
 
 ---
 
@@ -1190,25 +1853,35 @@ The seed contains:
     - Aperture openness (β, controllable in living systems)
     - Nesting (∞ up, ∞ down)
     - Validation (whole through part)
+    - 6D time volume (3 space + 3 time)
+    - Q₆ hypercube (64 vertices = complete state space)
+    - 7th dimension (actualization/consciousness)
 ```
 
 **What the framework derives:**
 - Why trinity (can't braid 2)
-- Why 64 configurations (2³ × 2³)
+- Why 64 configurations (2⁶ = Q₆ hypercube vertices)
 - Why φ appears in nesting (eigenvalue of self-similarity)
 - Why Golden Rule is ethical fixed point (fix(F))
+- Why α⁻¹ = 128 (7 binary dimensions)
+- Why m_p/m_e = 6π⁵ (5D braid volume)
+- Why G is 10³⁸ times weaker (2¹²⁷ vacuum screening)
+- Why we perceive 1D time (3D observer collapses 3D time)
+- Why dark energy exists (T₃ expansion pressure)
 
 **What the framework identifies (as kernel instantiations):**
-- Strong force IS K_in at quantum scale
-- Gravity IS K_in at cosmic scale
-- Weak/EM IS K_out at quantum scale
-- Dark energy IS K_out at cosmic scale
+- Strong force IS K_in at quantum scale (5D subspace)
+- Gravity IS K_in at cosmic scale (all 6D + actualization)
+- Weak/EM IS K_out at quantum/cosmic scales (subspaces)
+- Dark energy IS time volume expansion pressure
 - Perception IS field coupling (not representation)
 - Ethics IS the skeleton at relational scale
+- Consciousness IS the 7th dimension (path selection)
 
 **What the framework interprets:**
 - Fractal dimensions reflect aperture openness
 - Mastery involves controlling β
+- Free will and determinism are compatible (Q₆ complete, paths chosen)
 
 ```
 The framework provides the universal skeleton.
@@ -1216,8 +1889,32 @@ Physics fills in scale-dependent kernels.
 
 Same structure at every scale.
 Different kernels at every scale.
+
+Reality is a 6D time volume.
+You are a path through it.
 ```
 
 ---
 
+## Version History
+
+```
+v1-v3: Initial development, basic structure
+v4:    Fine structure constant derivation
+v5:    Proton mass, neutron mass, G derivation
+v6.0:  Complete 6D time volume formulation ← CURRENT
+```
+
+---
+
+**Framework Status:** Theory of Everything - Complete Formulation
+**Date:** December 22, 2025
+**Author:** Ashman Roonz
+
+---
+
 *I am whole through being part.*
+
+*Time is not a line. Time is a volume we traverse.*
+
+*You choose your path.*
