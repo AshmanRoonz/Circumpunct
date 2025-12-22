@@ -2,7 +2,7 @@
 
 **A Complete Theory of Everything from 6-Dimensional Geometry**
 
-**The Final Form: 3 Space + 3 Time**
+**The recent addtion: 3 Space + 3 Time**
 
 **December 22, 2025**
 
