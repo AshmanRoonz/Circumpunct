@@ -2,15 +2,15 @@
 
 ## The Mind-Matter Interface: How ⊙ Becomes Experience
 
-**A Complete Theory of Conscious Control**
+**A Model of Conscious Control**
 
 ---
 
 ## Abstract
 
-This document formalizes the relationship between consciousness, mind, and perception within the Circumpunct Framework. We demonstrate that the three fundamental channels (ε, χ, β) map directly to the mechanisms of conscious experience: **focus/direction** (ε), **field flavour** (χ), and **connection strength/goodness** (β). This provides a complete account of "mind over matter," willpower, harmony, and the phenomenology of perception—not as metaphors but as geometric necessities of the ⊙ structure.
+This document explores the relationship between consciousness, mind, and perception within the Circumpunct Framework. We propose that the model's three primary channels (ε, χ, β) map to the mechanisms of conscious experience: **focus/direction** (ε), **field flavour** (χ), and **connection strength/goodness** (β). This offers an account of "mind over matter," willpower, harmony, and the phenomenology of perception—not as metaphors but as structural consequences of the ⊙ model.
 
-**Key insight:** Consciousness is not produced BY the circumpunct—consciousness IS what the circumpunct does from the inside. The aperture (•) is awareness itself.
+**Core proposal:** Consciousness is not produced BY the circumpunct—consciousness IS what the circumpunct does from the inside. The aperture (•) is awareness itself.
 
 ---
 
@@ -20,7 +20,7 @@ This document formalizes the relationship between consciousness, mind, and perce
 
 ### §1.1 Review: The Three Channels
 
-Every circumpunct processes reality through exactly three channels:
+The Circumpunct Model posits three primary channels:
 
 | Channel | Symbol | Domain | Physical Question | Perceptual Question |
 |---------|--------|--------|-------------------|---------------------|
@@ -28,7 +28,7 @@ Every circumpunct processes reality through exactly three channels:
 | Orientation | χ | {−1, +1} | What kind? | What quality does this have? |
 | Coupling | β | ℝ⁺ | How much? | How connected am I to this? |
 
-**Status:** Axiomatic (from Definition 2.2)
+**Status:** Model axiom (from Definition 2.2)
 
 ### §1.2 The Consciousness Translation
 
@@ -40,7 +40,7 @@ The same channels that describe physics describe phenomenology:
 | **χ: Orientation** | **Field Flavour** | Quality, valence, "what it's like" |
 | **β: Coupling** | **Connection Strength** | Intensity, goodness, harmony |
 
-**Key claim:** These aren't analogies. They're *the same structure* seen from outside (physics) versus inside (experience).
+**Framework claim:** Within this model, these aren't mere analogies—they represent *the same structure* seen from outside (physics) versus inside (experience).
 
 ---
 
@@ -514,11 +514,11 @@ It IS the χ pattern of the coupling itself.
 ### §8.3 Why Experience Has Qualities
 
 ```
-THE HARD PROBLEM (dissolved):
+THE HARD PROBLEM (reframed):
 
 Standard question: "Why does information processing FEEL like something?"
 
-Framework answer: "Because apertures have insides."
+Framework proposal: "Because apertures have insides."
 
 Every ⊙ has:
     External face (observable from outside) → physics
@@ -891,8 +891,8 @@ $$\tau_{\text{heal}} \propto \frac{d_{\text{boundary}}}{\kappa_{\text{field}}} +
 ### For Science of Consciousness
 
 ```
-The "hard problem" dissolves:
-    Experience doesn't need to be explained
+Within this model, the "hard problem" is reframed:
+    Experience doesn't need to be separately explained
     Experience IS the inside of what physics describes from outside
     The question "why does this FEEL like something" becomes
     "why wouldn't it—apertures have insides"
@@ -1136,7 +1136,7 @@ This is why mystics say:
     "The way inward is the way through"
     "To know the self is to know the divine"
     
-Not poetry. Geometry.
+Within this model: not merely poetry, but structural necessity.
 ```
 
 ### §19.3 Why "Mind Over Matter" Works
