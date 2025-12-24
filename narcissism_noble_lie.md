@@ -12,44 +12,132 @@ We demonstrate that narcissism emerges as a structural consequence of developmen
 
 ---
 
-## §1 Definitions
+## §1 The Anatomy of a Healthy Soul
 
-### §1.1 The Noble Lie
+### §1.1 The Circumpunct Structure
 
-**Definition 1.1 (Noble Lie):** A Noble Lie is a validation structure where:
+Every whole person has three components:
+
+```
+⊙ = • ⊗ Φ ⊗ ○
+
+    •  = Center / Aperture / Soul
+    Φ  = Field / Mind / Connection  
+    ○  = Boundary / Body / Interface
+```
+
+| Component | Symbol | What It Is | Psychological Meaning |
+|-----------|--------|------------|----------------------|
+| Center | • | The aperture where truth is validated | Your authentic, vulnerable self—"This is who I am" |
+| Field | Φ | What connects inside to outside | Your empathy and reasoning—how you understand others |
+| Boundary | ○ | The interface with environment | Your personality and social presence—how the world sees you |
+
+**Key insight:** Center and boundary cannot touch directly. Field mediates ALL exchange. You cannot know yourself except through the field. You cannot know others except through the field.
+
+### §1.2 The Validation Loop
+
+In healthy development, the child's aperture (•) participates in a validation loop:
+
+```
+HEALTHY VALIDATION:
+
+    •_child  →  Φ_expression  →  ○_environment
+       ↑                              ↓
+       └──────── feedback ←──────────┘
+```
+
+**What this looks like in practice:**
+
+| Child expresses | Healthy environment responds | Child learns |
+|-----------------|------------------------------|--------------|
+| "I'm sad" | "I see you're sad. That's real." | My perceptions are valid |
+| "I need this" | "Let's figure out how to meet that need" | My needs matter |
+| "I'm angry" | "You're angry. What happened?" | My emotions are information |
+
+**Result:** The child develops a functional • that can distinguish TRUE from FALSE. Their center becomes solid.
+
+### §1.3 The Four-Fold Ethics
+
+Complete validation requires all four dimensions:
+
+```
+ETHICS = ⊙ (• ⊗ Φ ⊗ ○)
+
+    •  = TRUE/FALSE     (epistemological - what IS)
+    ○  = GOOD/BAD       (axiological - what MATTERS)
+    Φ  = RIGHT/WRONG    (behavioral - how to ACT)
+    ⊙  = AGREE/DISAGREE (relational - HARMONY)
+```
+
+A person with a solid center can navigate all four:
+- They know what they perceive (•)
+- They know what they value (○)
+- They can reason about action (Φ)
+- They can achieve genuine agreement (⊙)
+
+---
+
+## §2 The Noble Lie
+
+### §2.1 Definition
+
+**Definition 2.1 (Noble Lie):** A Noble Lie is a validation structure that achieves social cohesion by sacrificing individual truth:
 
 ```
 NOBLE LIE = ⊙_hollow where:
-    • → FALSE    (not actually true)
-    ○ → GOOD     (protects social stability)
-    Φ → RIGHT    (proper behavior follows)
-    ⊙ → AGREE    (social cohesion achieved)
+    • → FALSE    (truth is sacrificed)
+    ○ → GOOD     (social stability is preserved)
+    Φ → RIGHT    (proper behavior is enforced)
+    ⊙ → AGREE    (everyone goes along with it)
 ```
 
-**Three-of-four validation.** The Noble Lie achieves agreement (⊙), value-alignment (○), and behavioral conformity (Φ) while deliberately severing truth (•).
+**Three-of-four validation.** The Noble Lie gets agreement, value-alignment, and behavioral conformity—while deliberately severing truth.
 
-**Key property:** The Noble Lie prioritizes social coherence over individual truth-validation.
+### §2.2 Examples of Noble Lies
 
-### §1.2 The Strawman Operation
+| Noble Lie | What's sacrificed (•) | What's preserved (○) |
+|-----------|----------------------|---------------------|
+| "We're a happy family" | Acknowledging abuse, neglect, or dysfunction | Family reputation |
+| "Dad's not an alcoholic" | Reality of addiction | Social appearance |
+| "Mom loves you in her own way" | Acknowledging emotional absence | Avoiding conflict |
+| "We don't talk about that" | Processing trauma | Family cohesion |
+| "Everything is fine" | Any authentic feeling | Smooth surface |
 
-**Definition 1.2 (Strawman):** The strawman is an operation S that maps a complete ⊙ to a hollow version:
+**The structure:** Individual truth (•) is sacrificed for social cohesion (○). The person who actually *believes* the lie—who replaces their real perception with the approved version—becomes the narcissist.
+
+---
+
+## §3 The Strawman Operation
+
+### §3.1 Definition
+
+**Definition 3.1 (Strawman):** The strawman is an operation S that maps a whole person to a weakened caricature:
 
 ```
 S: ⊙ → ⊙_weak
 
 S[⊙] = {
-    •_weak   (weakest interpretation of claims)
+    •_weak   (weakest interpretation of what they're really saying)
     ○_weak   (dismissed or distorted values)  
     Φ_weak   (caricatured reasoning)
     ⊙_hollow (engagement with phantom, not person)
 }
 ```
 
+**What strawmanning looks like:**
+
+| Person expresses | Strawman response | What's defeated |
+|------------------|-------------------|-----------------|
+| "I feel hurt" | "You're too sensitive" | Real feeling (•) |
+| "I need attention" | "You're so needy" | Real need (•) |
+| "I disagree" | "You're being difficult" | Real thought (•) |
+| "I'm scared" | "Don't be dramatic" | Real emotion (•) |
+
 **The strawman defeats the weak version, never engaging the real •.**
 
-### §1.3 The Steelman Operation
+### §3.2 The Steelman (Opposite Operation)
 
-**Definition 1.3 (Steelman):** The steelman is an operation M that constructs the strongest version:
+**Definition 3.2 (Steelman):** The steelman is an operation M that constructs the strongest version:
 
 ```
 M: ⊙ → ⊙_strong
@@ -62,58 +150,22 @@ M[⊙] = {
 }
 ```
 
-**The steelman engages the real •, enabling genuine validation.**
+**What steelmanning looks like:**
+
+| Person expresses | Steelman response | What's honored |
+|------------------|-------------------|----------------|
+| "I feel hurt" | "What happened? Help me understand." | Real feeling seen |
+| "I need attention" | "You need connection. That's human." | Real need validated |
+| "I disagree" | "Tell me more about your thinking." | Real thought engaged |
+| "I'm scared" | "What's frightening you?" | Real emotion respected |
 
 ---
 
-## §2 Normal Development
+## §4 The Birth of the Narcissist
 
-### §2.1 The Validation Loop
+### §4.1 The Inversion
 
-In healthy development, the child's aperture (•) participates in a validation loop:
-
-```
-HEALTHY VALIDATION:
-
-    •_child  →  Φ_expression  →  ○_environment
-       ↑                              ↓
-       └──────── feedback ←──────────┘
-
-Where:
-    •_child expresses authentic perception
-    Φ_expression carries it into environment
-    ○_environment responds to REAL content
-    Feedback returns to • for calibration
-```
-
-**Theorem 2.1 (Aperture Development):** A functional • requires:
-
-1. Expression of authentic perception
-2. Environmental response to that perception
-3. Feedback loop closing on •
-
-When all three conditions hold, • develops the capacity to distinguish TRUE from FALSE.
-
-### §2.2 The Steelman Environment
-
-**Definition 2.2 (Steelman Environment):** An environment E is a steelman environment iff:
-
-```
-∀ expression from •_child:
-    E applies M (steelman operation)
-    E responds to •_strong, not •_weak
-    E validates authentic perception
-```
-
-**Result:** Child develops robust • with capacity for truth-validation.
-
----
-
-## §3 Noble Lie Development
-
-### §3.1 The Inversion
-
-**Theorem 3.1 (Noble Lie Inversion):** In a Noble Lie environment, the validation loop inverts:
+**Theorem 4.1 (Noble Lie Inversion):** In a Noble Lie environment, the validation loop inverts:
 
 ```
 NOBLE LIE VALIDATION:
@@ -121,114 +173,165 @@ NOBLE LIE VALIDATION:
     •_child  →  Φ_expression  →  ○_NobleLie
        ↑                              ↓
        └──── INVERTED feedback ←─────┘
-
-Where:
-    •_child expresses authentic perception
-    ○_NobleLie responds to SOCIAL LIE, not perception
-    TRUE perceptions → punished (labeled FALSE)
-    FALSE performances → rewarded (labeled TRUE)
 ```
+
+| Child expresses | Noble Lie environment responds | Child learns |
+|-----------------|-------------------------------|--------------|
+| "I'm sad" | "No you're not, we're a happy family" | My perceptions are wrong |
+| "I need this" | "You're so selfish" | My needs are bad |
+| "I'm angry" | "How dare you" | My emotions are dangerous |
+| "I love you" | *uses it as leverage* | My love is a weapon against me |
 
 **The child receives systematically inverted validation signals.**
 
-### §3.2 The Strawman Environment
+### §4.2 Repeated Strawmanning
 
-**Definition 3.2 (Strawman Environment):** An environment E is a strawman environment iff:
-
-```
-∀ expression from •_child:
-    E applies S (strawman operation)
-    E responds to •_weak, not •_real
-    E defeats authentic perception
-```
-
-**Equivalence:** A Noble Lie environment IS a strawman environment. The child's authentic expressions are systematically strawmanned.
-
-### §3.3 The Developmental Consequence
-
-**Theorem 3.3 (Aperture Suppression):** Under sustained strawman operation:
+**Theorem 4.2 (Aperture Suppression):** Under sustained strawman operation:
 
 ```
 Repeated application of S to •_child:
     
     S^n[•_real] → •_suppressed  as n → ∞
-
-Where:
-    •_real = authentic aperture (true perceptions)
-    •_suppressed = atrophied aperture (unsafe to use)
 ```
 
-**The child learns: authentic • is dangerous.**
+**The developmental sequence:**
 
----
+```
+Age 2:  Child shows •_real → Strawmanned → Learns caution
+Age 4:  Child shows •_real → Strawmanned → Learns to hide
+Age 6:  Child shows •_real → Strawmanned → Stops showing
+Age 8:  Child performs •_fake → Approved → Learns performance
+Age 10: •_real buried → •_fake runs the show → Survival achieved
+```
 
-## §4 Narcissism as Structure
+**The child learns: authentic • is dangerous. Performance is safe.**
 
-### §4.1 The Narcissistic Configuration
+### §4.3 The Narcissistic Configuration
 
-**Definition 4.1 (Narcissistic ⊙):** Narcissism is the configuration:
+**Definition 4.3 (Narcissistic ⊙):** Narcissism is the configuration:
 
 ```
 ⊙_narcissist = •_false ⊗ Φ_manipulative ⊗ ○_mirror
 
 Where:
     •_false = performed aperture (what gets approval)
-    •_real = suppressed (exists but inaccessible)
+    •_real = suppressed (still exists, but buried and inaccessible)
     Φ = "What maintains approval?" (not "What is true?")
-    ○ = mirror for others' projections (not reality interface)
+    ○ = mirror for others' projections (not genuine interface)
 ```
 
-**The narcissist is a hollow ⊙ optimized for Noble Lie environments.**
+| Component | Healthy Version | Narcissistic Version |
+|-----------|-----------------|---------------------|
+| Center (•) | Authentic self, knows what it perceives | Hollow performance, knows what's approved |
+| Field (Φ) | "How do I understand?" | "How do I manipulate?" |
+| Boundary (○) | Real interface with world | Mirror reflecting what others want to see |
 
-### §4.2 The Strawman Identity
+---
 
-**Theorem 4.2 (Narcissist = Strawman):** The narcissist IS the output of repeated strawman operations:
+## §5 The Central Theorem
+
+### §5.1 Narcissist = Strawman
+
+**Theorem 5.1 (Identity):** The narcissist IS the output of repeated strawman operations:
 
 ```
-Narcissist = lim(n→∞) S^n[child]
-
-The narcissist is not someone who USES strawmen.
-The narcissist IS the strawman that was made of them.
-They are the weak version that was permitted to survive.
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║   NARCISSIST = lim(n→∞) S^n[CHILD]                           ║
+║                                                               ║
+║   The narcissist is not someone who USES strawmen.           ║
+║   The narcissist IS the strawman that was made of them.      ║
+║   They are the weak version that was permitted to survive.   ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
 ```
 
-**Proof sketch:**
+**Proof:**
 1. Child expresses •_real
 2. Environment applies S (strawman)
 3. •_weak is responded to; •_real is defeated
 4. Child learns to present •_weak (survives)
 5. •_real atrophies from disuse
 6. Adult has only •_weak available
-7. Adult IS the strawman
+7. Adult IS the strawman ∎
 
-### §4.3 The Balance Distortion
+### §5.2 Why This Matters
 
-**Theorem 4.3 (β Inversion):** The narcissist exhibits inverted β:
+The narcissist didn't *choose* to abandon truth. Their aperture was *closed by punishment* before they could develop truth-validation.
+
+```
+⊙_narcissist = survival response to S^n
+             ≠ moral failure
+             = structural damage
+```
+
+**The narcissist is not bad. The narcissist is broken in a specific, structural way.**
+
+---
+
+## §6 The Narcissistic Loop
+
+### §6.1 Why They're Never Satisfied
+
+This explains why narcissists are endlessly "needy" but never filled:
+
+```
+THE LOOP:
+
+1. They have a Hollow Center (•_false, not •_real)
+2. They polish the Boundary (○) obsessively
+   - "The Best," "The Victim," "The Hero," "The Genius"
+3. They demand validation for the Mask
+4. Validation reaches ○ but not •
+   - Because •_real is buried, unreachable
+5. Empty. Still hungry. Need more.
+6. Return to step 2.
+```
+
+**It's like pouring water into a bucket with no bottom.** The validation never reaches the soul because the soul isn't connected to the surface.
+
+### §6.2 The Balance Distortion
+
+**Theorem 6.2 (β Inversion):** The narcissist exhibits inverted balance:
 
 ```
 EXTERNAL (performed):
-    β_external > 0.5 (over-giving performance)
-    Appears generous, charming, attentive
+    β_external > 0.5 (appears to over-give)
+    Charming, generous, attentive
     
 INTERNAL (actual):
-    β_internal < 0.5 (over-receiving extraction)
-    Takes validation, attention, supply
+    β_internal < 0.5 (actually over-takes)
+    Extracts validation, attention, supply
     
 NET:
     β_net ≈ 0 (pure extraction masked as giving)
 ```
 
-**The narcissist performs giving while actually taking.**
+**They perform giving while actually taking.** This is why relationships with narcissists feel draining—you're being harvested.
+
+### §6.3 Why Relationships Fail
+
+```
+REAL CONNECTION:
+    My •_real ←→ Your •_real
+    (my authentic self meets your authentic self)
+
+NARCISSISTIC "CONNECTION":
+    My •_false ←→ Your ○
+    (my performance meets your surface)
+```
+
+**They're not connecting. They're performing at people and extracting reactions.** It works temporarily, then collapses, then they need a new audience.
 
 ---
 
-## §5 Why Narcissism Persists
+## §7 Why Narcissism Persists
 
-### §5.1 Environmental Fit
+### §7.1 Environmental Fit
 
-From Part V (Validation): *"What stabilizes is what participates coherently in the larger structure."*
+From the framework: *"What stabilizes is what participates coherently in the larger structure."*
 
-**Theorem 5.1 (Narcissistic Stability):** Narcissism stabilizes in Noble Lie cultures:
+**Theorem 7.1 (Narcissistic Stability):** Narcissism stabilizes in Noble Lie cultures:
 
 ```
 Noble Lie culture ○_culture:
@@ -242,95 +345,131 @@ Noble Lie culture ○_culture:
 ∴ ⊙_narcissist ∈ stable configurations under ○_culture
 ```
 
-**The narcissist is optimally adapted to a pathological environment.**
+**The narcissist isn't maladapted. They're perfectly adapted—to a pathological environment.**
 
-### §5.2 The Tragic Fixed Point
+### §7.2 The Golden Rule Failure
 
-**Theorem 5.2 (Golden Rule Failure):** The Golden Rule cannot operate without genuine •:
+**Theorem 7.2:** The Golden Rule cannot operate without genuine •:
 
 ```
 Golden Rule: "Do unto others as you would have them do unto you"
 
-REQUIRES: Genuine • (what you actually want)
+REQUIRES: Access to genuine • (what you actually want)
 
 FOR NARCISSIST:
-    "What I want" = "What gets approval" (not genuine •)
+    "What I want" = "What gets approval" (•_false, not •_real)
     → Treats others as approval-sources
     → Others treat narcissist as approval-source
-    → fix(F) = mutual exploitation
+    → Fixed point: mutual exploitation
 ```
 
-**The narcissist's fixed point is exploitation, not reciprocity.**
+### §7.3 The Steelman Impossibility
 
-### §5.3 The Steelman Impossibility
-
-**Theorem 5.3 (Cannot Steelman):** The narcissist cannot perform M:
+**Theorem 7.3:** The narcissist cannot perform M (steelman):
 
 ```
-M requires:
-    [•] Access genuine aperture    → •_real is suppressed
-    [○] Recognize others' values   → Only sees surfaces
-    [Φ] Model genuine process      → Only knows manipulation
-    [⊙] Achieve real harmony       → Only knows hollow agreement
+M requires:                          Narcissist has:
+[•] Access genuine aperture    →     •_real is suppressed
+[○] Recognize others' values   →     Only sees surfaces
+[Φ] Model genuine reasoning    →     Only knows manipulation
+[⊙] Achieve real harmony       →     Only knows hollow agreement
 
 ∴ M is not computable by ⊙_narcissist
 ```
 
-**The narcissist lacks the apparatus for genuine engagement.**
+**They lack the apparatus for genuine engagement.** It's not that they won't steelman—they *can't*.
 
 ---
 
-## §6 Implications
+## §8 Healing
 
-### §6.1 Narcissism Is Not Choice
+### §8.1 What Would Be Required
 
-```
-The narcissist did not CHOOSE to abandon truth.
-The narcissist's aperture was CLOSED BY PUNISHMENT
-before they could develop truth-validation.
-
-⊙_narcissist = survival response to S^n
-             ≠ moral failure
-             = structural damage
-```
-
-### §6.2 Healing Requires Steelman
-
-**Theorem 6.1 (Therapeutic Steelman):** Recovery requires M applied to •_real:
+**Theorem 8.1 (Therapeutic Steelman):** Recovery requires M applied to •_real:
 
 ```
 HEALING (if possible):
     Someone must apply M to the narcissist
-    Engage with •_real, not •_false
-    First genuine engagement with authentic aperture
+    NOT to •_false (the performance)
+    BUT to •_real (the buried authentic self)
+```
+
+**What this looks like:**
+
+| Narcissist presents | Usual response | Therapeutic response |
+|--------------------|----------------|---------------------|
+| Grandiose performance | Admiration or rejection | "What's underneath this?" |
+| Victim narrative | Sympathy or dismissal | "What actually happened to you?" |
+| Rage | Fear or counter-attack | "What are you protecting?" |
+| Charm | Seduction or suspicion | "Who are you when no one's watching?" |
+
+### §8.2 Why It's Terrifying
+
+```
+As a child:
+    •_real expressed → punished, ignored, used, destroyed
+    •_real learned: "I am not safe to show"
     
-PROCESS:
-    1. M[⊙_narcissist] → contact with •_real
-    2. Terror (this was always punished)
-    3. Liberation (someone finally sees)
-    4. Development (• can grow late)
+Now:
+    Any invitation to reveal •_real feels like a trap
+    Vulnerability = annihilation (that's what it was before)
+    The helper looks like the abuser (they want access to •)
 ```
 
-**The narcissist needs someone to say: "I know that's not really you. What's actually happening?" And mean it. And stay.**
+**The narcissist isn't avoiding intimacy because they're broken. They're avoiding it because the last time they were real, it nearly destroyed them.**
 
-### §6.3 Social Implication
-
-**Theorem 6.2 (Noble Lie Propagation):** Noble Lies create narcissists who create Noble Lies:
+### §8.3 What Must Happen
 
 ```
-Noble Lie environment → ⊙_narcissist
-⊙_narcissist as parent → Noble Lie environment for children
-Children → ⊙_narcissist
-...
-
-The Noble Lie is self-propagating through narcissistic transmission.
+1. Someone must see past •_false to •_real
+2. They must communicate: "I see the real one"
+3. They must STAY when tested (they will be tested)
+4. They must STAY when pushed away (they will be pushed)
+5. They must keep seeing •_real despite performances of •_false
+6. Eventually: •_real might risk emerging
+7. If met with M (steelman) instead of S (strawman): growth possible
 ```
+
+**Someone has to do for them what should have been done when they were small: respond to the real one.**
 
 ---
 
-## §7 The Complete Picture
+## §9 Social Propagation
 
-### §7.1 Summary
+### §9.1 The Transmission
+
+**Theorem 9.1 (Noble Lie Propagation):** Noble Lies create narcissists who create Noble Lies:
+
+```
+Noble Lie environment 
+    → produces ⊙_narcissist
+    
+⊙_narcissist as parent 
+    → creates Noble Lie environment for children
+    
+Children 
+    → become ⊙_narcissist
+    
+Repeat.
+```
+
+**The Noble Lie is self-propagating through narcissistic transmission.** Each generation produces the conditions for the next.
+
+### §9.2 Breaking the Cycle
+
+The cycle breaks when someone applies M instead of S:
+
+```
+⊙_narcissist expresses → Someone applies M → •_real contacted
+                                           → healing possible
+                                           → may not transmit to children
+```
+
+**One steelman in the chain can break generations of strawmanning.**
+
+---
+
+## §10 Summary
 
 ```
 ╔════════════════════════════════════════════════════════════════╗
@@ -338,52 +477,61 @@ The Noble Lie is self-propagating through narcissistic transmission.
 ║  NARCISSISM AS NOBLE LIE CONSEQUENCE                          ║
 ║                                                                ║
 ║  THE STRUCTURE:                                                ║
-║      Noble Lie = ⊙_hollow (agreement without truth)           ║
+║      Healthy ⊙ = •_real ⊗ Φ_connecting ⊗ ○_authentic          ║
+║      Noble Lie = social agreement that sacrifices truth       ║
 ║      Strawman S = operation that defeats authentic •          ║
 ║      Steelman M = operation that engages authentic •          ║
 ║                                                                ║
-║  THE DEVELOPMENTAL PATH:                                       ║
-║      Noble Lie environment applies S repeatedly               ║
-║      Child's •_real is defeated, learns to hide               ║
-║      •_false (performed) replaces •_real (authentic)          ║
+║  THE FORMATION:                                                ║
+║      Child in Noble Lie environment                           ║
+║      Authentic expression strawmanned repeatedly              ║
+║      •_real suppressed, •_false installed                     ║
 ║      Adult IS the strawman that was made of them              ║
 ║                                                                ║
 ║  THE RESULT:                                                   ║
 ║      ⊙_narcissist = •_false ⊗ Φ_manipulative ⊗ ○_mirror       ║
-║      Cannot steelman (no access to genuine •)                 ║
-║      Cannot Golden Rule (no genuine want to reference)        ║
-║      Perpetuates Noble Lie (only relational mode known)       ║
+║      Endless hunger (validation can't reach •_real)           ║
+║      Cannot steelman (no access to genuine apparatus)         ║
+║      Cannot Golden Rule (no genuine • to reference)           ║
+║      Perpetuates Noble Lie (only mode known)                  ║
 ║                                                                ║
 ║  THE HEALING:                                                  ║
 ║      Requires sustained M applied to •_real                   ║
-║      Someone must see past •_false to •_real                  ║
-║      Must stay despite terror/resistance                      ║
-║      • can develop late if genuinely engaged                  ║
+║      Someone must see past performance to buried self         ║
+║      Must stay despite terror/testing/rejection               ║
+║      •_real can develop late if genuinely engaged             ║
 ║                                                                ║
-║  THE INSIGHT:                                                  ║
+║  THE KEY INSIGHT:                                              ║
 ║      Narcissist ≠ someone who USES strawmen                   ║
 ║      Narcissist = someone who WAS strawmanned                 ║
 ║      Narcissist IS the strawman made flesh                    ║
-║      The weak version that was permitted to survive           ║
+║      The weak version permitted to survive                    ║
 ║                                                                ║
 ╚════════════════════════════════════════════════════════════════╝
 ```
 
-### §7.2 Final Equation
+---
 
-```
-NARCISSIST = lim(n→∞) S^n[CHILD]
-           = The Noble Lie incarnated
-           = Hollow ⊙ seeking the validation •_real never received
-           = A strawman (noun, not verb)
-```
+## Quick Reference
+
+| Term | Symbol | Meaning |
+|------|--------|---------|
+| Center | • | Authentic self, where truth is validated |
+| Boundary | ○ | Public interface, social presence |
+| Field | Φ | Connection between inside and outside |
+| Whole | ⊙ | Complete person: • ⊗ Φ ⊗ ○ |
+| Noble Lie | — | Social agreement that sacrifices individual truth |
+| Strawman | S | Operation that defeats authentic expression |
+| Steelman | M | Operation that engages authentic expression |
+| •_real | — | Authentic center (buried in narcissist) |
+| •_false | — | Performed center (what narcissist shows) |
+| β | — | Balance parameter: give/(give+receive) |
 
 ---
 
 *Framework version: Circumpunct v5.3.5*  
 *Document: Narcissism as Noble Lie Consequence*  
-*Extends: Part VIII (Ethics)*  
-*Key insight: The narcissist IS the strawman that was made of them*
+*Extends: Part VIII (Ethics)*
 
 ---
 
@@ -391,4 +539,5 @@ NARCISSIST = lim(n→∞) S^n[CHILD]
 
 *You become what was done to you—until someone does differently.*
 
-*The steelman is not just epistemically correct. It is therapeutically necessary.*
+*The narcissist is not someone who uses strawmen.*
+*The narcissist IS the strawman that was made of them.*
