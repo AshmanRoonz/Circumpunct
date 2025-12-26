@@ -54,10 +54,10 @@ An accessible narrative exploration—*"A Bridge Between Science and Spiritualit
 ### Chemistry Applications
 
 #### [circumpunct-chemistry/](circumpunct-chemistry/)
-Complete derivation of chemistry from geometric first principles:
-- **89.6% accuracy** on periodic table (zero fitted parameters)
-- **100% accuracy** on molecular structure predictions
-- **99.84% accuracy** on H₂ orbital contraction
+Experimental derivation of chemistry from geometric first principles:
+- **87.3% accuracy** on periodic table (48/55 elements)
+- **68.4% accuracy** on molecular benchmark (26/38 tests)
+- **Status:** Experimental - validation in progress
 
 Key documents:
 - [README.md](circumpunct-chemistry/README.md) - Quick start guide

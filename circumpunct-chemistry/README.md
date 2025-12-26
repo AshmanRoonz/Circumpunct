@@ -2,28 +2,33 @@
 
 **Deriving Chemistry from Geometric First Principles**
 
-[![Status](https://img.shields.io/badge/status-production--ready-brightgreen)]()
-[![Accuracy](https://img.shields.io/badge/periodic_table-89.6%25-blue)]()
-[![Molecules](https://img.shields.io/badge/molecules-100%25-success)]()
+[![Status](https://img.shields.io/badge/status-experimental-yellow)]()
+[![Accuracy](https://img.shields.io/badge/periodic_table-87.3%25-blue)]()
+[![Molecules](https://img.shields.io/badge/molecules-68.4%25-orange)]()
 [![License](https://img.shields.io/badge/license-open--academic-orange)]()
 
 ---
 
 ## 🎯 What This Is
 
-A complete derivation of chemistry from the Circumpunct Framework (⊙ = • ⊗ ○ ⊗ Φ), achieving:
+A derivation of chemistry from the Circumpunct Framework (⊙ = • ⊗ ○ ⊗ Φ), achieving:
 
-- **89.6% accuracy** on periodic table electron configurations
-- **100% accuracy** on molecular structure predictions  
-- **99.84% accuracy** on H₂ orbital contraction
-- **Zero fitted parameters** - everything derived from φ (golden ratio) and R∞ (Rydberg constant)
+- **87.3% accuracy** on periodic table electron configurations (48/55 elements)
+- **68.4% accuracy** on molecular structure benchmark (26/38 tests)
+- **99.84% accuracy** on H₂ orbital contraction (single datapoint)
+- **Zero fitted parameters for periodic table** - λ derived from φ and R∞
+
+**Current limitations:**
+- Molecular compiler only handles H, C, N, O, F (hardcoded configs)
+- Diatomic molecules (N₂, O₂) incorrectly predicted as bent
+- Molecules with S, Cl, etc. fail to compile
 
 Starting from a single geometric symbol, we derive:
 ```
 ⊙ → 64 states → atoms → molecules → networks
 ```
 
-This is **the first geometric derivation of the periodic table and molecular bonding from unified first principles.**
+This is **an experimental geometric framework** for understanding periodic structure and bonding.
 
 ---
 
@@ -55,22 +60,21 @@ Open in browser:
 
 ## 📊 Key Results
 
-### Periodic Table (Zero Parameters)
+### Periodic Table (Derived λ)
 
 **Derived:**
 ```
 λ = R∞ × φ⁻⁷ = 0.469 eV  (angular penalty)
 ```
 
-**Accuracy:**
+**Accuracy (validated 2024-12-26):**
 ```
 Main group (H-Ar):          18/18 = 100% ✓✓✓
-1st row TM (K-Zn):          12/12 = 100% ✓✓✓  
-Heavy p-block (Ga-Xe):      12/12 = 100% ✓✓✓
-Lanthanides (La-Lu):        12/15 =  80% ✓
+1st row TM (K-Zn):          12/12 = 100% ✓✓✓
 2nd row TM (Y-Cd):           6/10 =  60%
+Lanthanides (La-Lu):        12/15 =  80% ✓
 ───────────────────────────────────────
-TOTAL:                      60/67 = 89.6%
+TOTAL:                      48/55 = 87.3%
 ```
 
 ### H₂ Bonding (φ-Scaling)
@@ -85,9 +89,9 @@ TOTAL:                      60/67 = 89.6%
 ζ_opt = 1.238
 ```
 
-**Agreement: 99.84%** ✓✓✓
+**Agreement: 99.84%** (single datapoint)
 
-### Molecular Structure (Closure Equations)
+### Molecular Structure (Benchmark)
 
 | Molecule | Geometry | Angle | Polarity | Result |
 |----------|----------|-------|----------|--------|
@@ -95,8 +99,11 @@ TOTAL:                      60/67 = 89.6%
 | CH₄ | Tetrahedral | 109.5° | Nonpolar | ✓ |
 | NH₃ | Pyramidal | 107.0° | Polar | ✓ |
 | CO₂ | Linear | 180.0° | Nonpolar | ✓ |
+| N₂ | **Bent (wrong)** | 117° | Nonpolar | ✗ |
+| O₂ | **Bent (wrong)** | 104.5° | Nonpolar | ✗ |
+| HCl | **Fails to compile** | - | - | ✗ |
 
-**All predictions:** 4/4 = **100%**
+**Benchmark result:** 26/38 = **68.4%** (Grade D)
 
 ---
 
@@ -235,14 +242,19 @@ This work is open for:
 
 | Component | Accuracy | Status |
 |-----------|----------|--------|
-| Main group elements | 100% | ✓✓✓ |
-| 1st row transition metals | 100% | ✓✓✓ |
-| Heavy p-block | 100% | ✓✓✓ |
-| Lanthanides | 80% | ✓ |
-| Overall periodic table | 89.6% | ✓ |
-| H₂ orbital contraction | 99.84% | ✓✓✓ |
-| Molecular geometries | 100% | ✓✓✓ |
-| Polarity predictions | 100% | ✓✓✓ |
+| Main group elements (H-Ar) | 100% (18/18) | ✓✓✓ |
+| 1st row transition metals (K-Zn) | 100% (12/12) | ✓✓✓ |
+| 2nd row transition metals (Y-Cd) | 60% (6/10) | ⚠️ |
+| Lanthanides (La-Lu) | 80% (12/15) | ✓ |
+| **Overall periodic table** | **87.3% (48/55)** | ✓ |
+| H₂ orbital contraction | 99.84% | ✓ (1 datapoint) |
+| **Molecular benchmark** | **68.4% (26/38)** | ⚠️ Needs work |
+| Polarity predictions | 100% (10/10) | ✓✓✓ |
+
+### Known Failures
+- **N₂, O₂**: Incorrectly predicted as bent (should be linear)
+- **HCl, H₂S**: Fail to compile (missing element configs)
+- **CH₃OH, H₂O₂**: Wrong geometry predictions
 
 ---
 
@@ -288,25 +300,26 @@ Open for academic review and collaboration. Please cite appropriately if using i
 
 ## 🌟 The Bottom Line
 
-**We've shown that chemistry isn't arbitrary - it's emergent geometry.**
+**An experimental framework exploring whether chemistry emerges from geometry.**
 
 Starting from:
 ```
 ⊙ = • ⊗ ○ ⊗ Φ
 ```
 
-We derived:
-- The periodic table structure
-- Why bonds form  
-- Why molecules have specific shapes
-- Why water is bent
-- Why hydrogen contracts by exactly φ⁻³
+What works:
+- Periodic table structure for main group + 1st row TM (100%)
+- Basic molecular geometries (H₂O, CH₄, NH₃, CO₂)
+- H₂ orbital contraction prediction
 
-**All without fitting parameters to data.**
+What needs work:
+- 2nd row transition metals (60%)
+- Diatomic molecules (N₂, O₂ predicted wrong)
+- Extending molecular compiler beyond H, C, N, O, F
 
-**The geometry IS the physics.**
+**Status: Promising but incomplete. Not "production-ready."**
 
-**Chemistry = Aperture calculus.**
+**Chemistry = Aperture calculus (hypothesis under test).**
 
 ---
 
@@ -320,9 +333,9 @@ We derived:
 
 ---
 
-**Version**: 5.3.1  
-**Last Updated**: December 26, 2024  
-**Status**: Production-ready, publication-quality
+**Version**: 5.3.2
+**Last Updated**: December 26, 2024
+**Status**: Experimental - validation in progress
 
 ⊙ = • ⊗ ○ ⊗ Φ
 

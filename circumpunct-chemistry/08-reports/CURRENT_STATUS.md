@@ -3,27 +3,27 @@
 > **Navigation:** [← Back to Chemistry README](../README.md) | [Root Framework](../../README.md) | [Core Theory](../01-core-theory/THE_COMPLETE_CIRCUMPUNCT_FRAMEWORK.md)
 
 **Last Updated**: December 26, 2024
-**Framework Version**: 5.3.1
-**Status**: Production-Ready, Publication-Quality
+**Framework Version**: 5.3.2
+**Status**: Experimental - Validation In Progress
 
 ---
 
 ## 🎯 EXECUTIVE SUMMARY
 
-We have successfully derived chemistry from geometric first principles using the Circumpunct Framework (⊙ = • ⊗ ○ ⊗ Φ). Starting from pure geometry, we achieved:
+An experimental framework deriving chemistry from geometric first principles using the Circumpunct Framework (⊙ = • ⊗ ○ ⊗ Φ). Current validated results:
 
-- **89.6% accuracy** on periodic table electron configurations
-- **100% success** on molecular structure predictions (H₂O, CH₄, NH₃, CO₂)
-- **99.84% accuracy** on H₂ orbital contraction (ζ = 1 + φ⁻³)
-- **Zero fitted parameters** - all values derived from φ and R∞
+- **87.3% accuracy** on periodic table electron configurations (48/55 elements)
+- **68.4% accuracy** on molecular structure benchmark (26/38 tests)
+- **99.84% match** on H₂ orbital contraction (single datapoint)
+- **Derived λ** = R∞ × φ⁻⁷ for angular penalty
 
-**This is the first geometric derivation of the periodic table and molecular bonding from a unified framework.**
+**This is an experimental geometric framework. Not production-ready.**
 
 ---
 
 ## ✅ VALIDATED ACHIEVEMENTS
 
-### 1. Zero-Parameter Periodic Table (89.6%)
+### 1. Periodic Table Electron Configurations (87.3%)
 
 **Derived λ from First Principles:**
 ```
@@ -31,44 +31,47 @@ We have successfully derived chemistry from geometric first principles using the
 ```
 - Physical constant R∞ = 13.6057 eV (Rydberg)
 - Golden ratio φ = 1.618034...
-- No empirical fitting required!
 
-**Accuracy by Region:**
+**Accuracy by Region (validated 2024-12-26):**
 ```
 Main group (H-Ar):          18/18 = 100.0% ✓✓✓
 1st row TM (K-Zn):          12/12 = 100.0% ✓✓✓
-2nd row TM (Y-Cd):           6/10 =  60.0%
+2nd row TM (Y-Cd):           6/10 =  60.0% ⚠️
 Lanthanides (La-Lu):        12/15 =  80.0% ✓
-Heavy p-block (Ga-Xe):      12/12 = 100.0% ✓✓✓
 ─────────────────────────────────────────────
-TOTAL:                      60/67 =  89.6%
+TOTAL:                      48/55 =  87.3%
 ```
 
-**What This Proves:**
-- Periodic table structure emerges from geometry
-- Shell filling (Aufbau) derived from energy minimization
-- Orbital types (s, p, d, f) from geometric necessity
-- Period lengths (2, 8, 8, 18, 18, 32) from first principles
+**What This Shows:**
+- Main group + 1st row TM: excellent results
+- 2nd row TM and lanthanides: needs refinement
+- Gating rules (3d after 4s, etc.) work consistently
 
-### 2. Molecular Bonding from Closure Equations
+### 2. Molecular Bonding Benchmark (68.4%)
 
-**Framework:** 5-pass molecular compiler  
-**Test Molecules:** H₂O, CH₄, NH₃, CO₂
+**Framework:** 5-pass molecular compiler
+**Test:** 12 molecules, 38 individual tests
 
-**Perfect Results (4/4):**
+**Benchmark Results (validated 2024-12-26):**
 
-| Molecule | Geometry | Angle | Polarity | Status |
-|----------|----------|-------|----------|--------|
-| H₂O | Bent | 104.5° | Polar (β=0.61) | ✓✓✓ |
-| CH₄ | Tetrahedral | 109.5° | Nonpolar (β≈0.5) | ✓✓✓ |
-| NH₃ | Pyramidal | 107.0° | Polar (β=0.58) | ✓✓✓ |
-| CO₂ | Linear | 180.0° | Nonpolar (symmetric) | ✓✓✓ |
+| Category | Score | Status |
+|----------|-------|--------|
+| Shape | 6/10 = 60% | ⚠️ |
+| Angle | 6/10 = 60% | ⚠️ |
+| Polarity | 10/10 = 100% | ✓✓✓ |
+| H-bonding | 3/6 = 50% | ⚠️ |
+| **Overall** | **26/38 = 68.4%** | Grade D |
 
-**Derived Properties:**
-- Bond counts from closure deficit matching: Δ = T - V
-- VSEPR geometry from domain counting + minimization
-- Polarity from balance parameter: β = χ_A/(χ_A + χ_B)
-- H-bonding network prediction (H₂O)
+**What Works:**
+- H₂O, CH₄, NH₃, CO₂: correct geometry
+- Polarity predictions: 100% accurate
+
+**Known Failures:**
+- **N₂, O₂**: Predicted bent (should be linear)
+- **HCl, H₂S**: Fail to compile (missing element configs)
+- **CH₃OH, H₂O₂**: Wrong geometry
+
+**Root Cause:** Molecular compiler uses hardcoded configs for only H, C, N, O, F
 
 ### 3. H₂ Bonding: Orbital Contraction Prediction
 
