@@ -1,5 +1,7 @@
 # THE 64-STATE CHEMISTRY: PERIODIC TABLE FROM CIRCUMPUNCT GEOMETRY
 
+> **Navigation:** [← Back to Chemistry README](../README.md) | [Root Framework](../../README.md) | [Core Theory](../01-core-theory/THE_COMPLETE_CIRCUMPUNCT_FRAMEWORK.md) | [Physics Paper](../01-core-theory/PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md)
+
 ## EXECUTIVE SUMMARY
 
 The circumpunct 64-state architecture (8 input × 8 output = 64 total states) doesn't just explain particle physics—it provides the fundamental geometric structure underlying the periodic table and all of chemistry. This document shows how:

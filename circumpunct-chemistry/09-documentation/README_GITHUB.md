@@ -20,20 +20,20 @@ This repository contains the complete theoretical framework, validation code, an
 ## Contents
 
 ### 📄 Main Paper
-- **[PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md](./PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md)** - Complete manuscript in markdown format
+- **[PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md](../01-core-theory/PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md)** - Complete manuscript in markdown format
 
 ### 💻 Code
-- **[validate_periodic_table_derived_lambda.py](./validate_periodic_table_derived_lambda.py)** - Complete validation implementation
-- **[verify_64state_COMPLETE.py](./verify_64state_COMPLETE.py)** - Original Z=1-55 validation
+- **[validate_periodic_table_derived_lambda.py](../04-validation/CURRENT/validate_periodic_table_derived_lambda.py)** - Complete validation implementation
+- **[verify_64state_COMPLETE_v2_optimizer.py](../04-validation/CURRENT/verify_64state_COMPLETE_v2_optimizer.py)** - Latest validation with optimizer
 
 ### 📊 Documentation
-- **[FINAL_REPORT_ZERO_PARAMETERS.md](./FINAL_REPORT_ZERO_PARAMETERS.md)** - Comprehensive technical report
-- **[derive_lambda.md](./derive_lambda.md)** - Detailed derivation of λ = R∞φ⁻⁷
-- **[FINAL_VALIDATED_FRAMEWORK.md](./FINAL_VALIDATED_FRAMEWORK.md)** - Complete framework documentation
+- **[FINAL_REPORT_ZERO_PARAMETERS.md](../08-reports/FINAL_REPORT_ZERO_PARAMETERS.md)** - Comprehensive technical report
+- **[derive_lambda.md](../01-core-theory/derive_lambda.md)** - Detailed derivation of λ = R∞φ⁻⁷
+- **[FINAL_VALIDATED_FRAMEWORK.md](../01-core-theory/FINAL_VALIDATED_FRAMEWORK.md)** - Complete framework documentation
 
 ### 📈 Analysis
-- **[SESSION_SUMMARY.md](./SESSION_SUMMARY.md)** - Research journey summary
-- **[OPTIMIZER_V2_REPORT.md](./OPTIMIZER_V2_REPORT.md)** - Promotion optimizer analysis
+- **[SESSION_SUMMARY.md](../08-reports/archive/SESSION_SUMMARY.md)** - Research journey summary
+- **[OPTIMIZER_V2_REPORT.md](../08-reports/archive/OPTIMIZER_V2_REPORT.md)** - Promotion optimizer analysis
 
 ---
 
@@ -228,13 +228,13 @@ We welcome contributions! Areas of interest:
 3. **Theoretical extensions**: Molecular bonding, relativity, QFT connections
 4. **Educational materials**: Visualizations, interactive demos, tutorials
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+See [CONTRIBUTING.md](../../CONTRIBUTING.md) for guidelines.
 
 ---
 
 ## License
 
-MIT License - see [LICENSE](./LICENSE) file for details
+MIT License - see [LICENSE.md](../../LICENSE.md) for details
 
 ---
 
