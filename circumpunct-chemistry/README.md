@@ -102,32 +102,17 @@ TOTAL:                      60/67 = 89.6%
 
 ## 📂 Repository Structure
 
-```
-circumpunct-chemistry/
-├── 01-core-theory/          # Framework foundations
-│   ├── THE_COMPLETE_CIRCUMPUNCT_FRAMEWORK.md
-│   ├── PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md
-│   └── derive_lambda.md
-├── 02-chemistry-theory/     # Chemical applications
-│   ├── circumpunct_chemistry_64state.md (MAIN)
-│   ├── H2_BONDING_PUBLICATION_DRAFT.md
-│   └── shared_field_bonding.md
-├── 03-implementation/       # Python modules
-│   ├── molecular_compiler.py (MAIN)
-│   ├── integrated_chemistry.py
-│   └── chemistry_gallery_benchmark.py
-├── 04-validation/
-│   └── CURRENT/            # Latest validation scripts
-│       ├── verify_64state_COMPLETE_v2_optimizer.py
-│       ├── validate_periodic_table_derived_lambda.py
-│       └── validate_with_optimizer_v4.py
-├── 05-demos/               # Quick demonstrations
-├── 06-visualizations/      # Interactive HTML tools
-├── 07-results/            # Test data
-├── 08-reports/            # Status & summaries
-│   └── CURRENT_STATUS.md  # ⭐ Read this first!
-└── 09-documentation/      # Guides & references
-```
+| Folder | Description | Key Files |
+|--------|-------------|-----------|
+| [01-core-theory/](01-core-theory/) | Framework foundations | [THE_COMPLETE_CIRCUMPUNCT_FRAMEWORK.md](01-core-theory/THE_COMPLETE_CIRCUMPUNCT_FRAMEWORK.md), [PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md](01-core-theory/PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md) |
+| [02-chemistry-theory/](02-chemistry-theory/) | Chemical applications | [circumpunct_chemistry_64state.md](02-chemistry-theory/circumpunct_chemistry_64state.md) ⭐, [H2_BONDING_PUBLICATION_DRAFT.md](02-chemistry-theory/H2_BONDING_PUBLICATION_DRAFT.md) |
+| [03-implementation/](03-implementation/) | Python modules | [molecular_compiler.py](03-implementation/molecular_compiler.py) ⭐ |
+| [04-validation/CURRENT/](04-validation/CURRENT/) | Validation scripts | [verify_64state_COMPLETE_v2_optimizer.py](04-validation/CURRENT/verify_64state_COMPLETE_v2_optimizer.py) |
+| [05-demos/](05-demos/) | Quick demonstrations | [demo_molecular_compiler.py](05-demos/demo_molecular_compiler.py) |
+| [06-visualizations/](06-visualizations/) | Interactive HTML tools | [64state_chemistry_visualizer.html](06-visualizations/64state_chemistry_visualizer.html) |
+| [07-results/](07-results/) | Test data | test_results_FINAL.log |
+| [08-reports/](08-reports/) | Status & summaries | [CURRENT_STATUS.md](08-reports/CURRENT_STATUS.md) ⭐ |
+| [09-documentation/](09-documentation/) | Guides & references | [QUICK_REFERENCE.md](09-documentation/QUICK_REFERENCE.md) |
 
 ---
 
@@ -172,36 +157,36 @@ Network:    Φ: M₁ → M₂       (field coupling)
 ## 📖 Read These First
 
 ### For Understanding
-1. `08-reports/CURRENT_STATUS.md` - Current achievements
-2. `01-core-theory/THE_COMPLETE_CIRCUMPUNCT_FRAMEWORK.md` - Theory
-3. `02-chemistry-theory/circumpunct_chemistry_64state.md` - Chemistry
+1. [CURRENT_STATUS.md](08-reports/CURRENT_STATUS.md) - Current achievements
+2. [THE_COMPLETE_CIRCUMPUNCT_FRAMEWORK.md](01-core-theory/THE_COMPLETE_CIRCUMPUNCT_FRAMEWORK.md) - Theory
+3. [circumpunct_chemistry_64state.md](02-chemistry-theory/circumpunct_chemistry_64state.md) - Chemistry
 
 ### For Validation
-1. `04-validation/CURRENT/verify_64state_COMPLETE_v2_optimizer.py`
-2. `07-results/test_results_FINAL.log`
-3. `08-reports/RESULTS_VISUAL_SUMMARY.md`
+1. [verify_64state_COMPLETE_v2_optimizer.py](04-validation/CURRENT/verify_64state_COMPLETE_v2_optimizer.py)
+2. [test_results_FINAL.log](07-results/test_results_FINAL.log)
+3. [RESULTS_VISUAL_SUMMARY.md](08-reports/RESULTS_VISUAL_SUMMARY.md)
 
 ### For Publications
-1. `01-core-theory/PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md` (ready)
-2. `02-chemistry-theory/H2_BONDING_PUBLICATION_DRAFT.md` (ready)
-3. `09-documentation/PUBLICATION_GUIDE.md` (roadmap)
+1. [PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md](01-core-theory/PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md) (ready)
+2. [H2_BONDING_PUBLICATION_DRAFT.md](02-chemistry-theory/H2_BONDING_PUBLICATION_DRAFT.md) (ready)
+3. [PUBLICATION_GUIDE.md](09-documentation/PUBLICATION_GUIDE.md) (roadmap)
 
 ---
 
 ## 🎓 Publications (In Preparation)
 
 ### Paper 1: Geometric Periodic Table ⭐ READY
-- **File**: `01-core-theory/PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md`
+- **File**: [PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md](01-core-theory/PHYSICS_PAPER_GEOMETRIC_PERIODIC_TABLE.md)
 - **Target**: Physical Review Letters / Nature Physics
 - **Key**: 89.6% accuracy, λ = R∞φ⁻⁷, zero parameters
 
-### Paper 2: H₂ Bonding from φ-Scaling ⭐ READY  
-- **File**: `02-chemistry-theory/H2_BONDING_PUBLICATION_DRAFT.md`
+### Paper 2: H₂ Bonding from φ-Scaling ⭐ READY
+- **File**: [H2_BONDING_PUBLICATION_DRAFT.md](02-chemistry-theory/H2_BONDING_PUBLICATION_DRAFT.md)
 - **Target**: Journal of Chemical Physics
 - **Key**: ζ = 1 + φ⁻³ prediction, 99.84% agreement
 
 ### Paper 3: Molecular Compiler 📝 IN PROGRESS
-- **Source**: `03-implementation/molecular_compiler.py`
+- **Source**: [molecular_compiler.py](03-implementation/molecular_compiler.py)
 - **Target**: Journal of Computational Chemistry
 - **Key**: VSEPR from aperture calculus, 100% accuracy
 
@@ -327,10 +312,11 @@ We derived:
 
 ## 🔗 Links
 
-- **Documentation**: See `09-documentation/`
-- **Interactive Tools**: See `06-visualizations/`
-- **Full Status**: `08-reports/CURRENT_STATUS.md`
-- **Navigation Guide**: `NAVIGATION_GUIDE.md`
+- **Documentation**: [09-documentation/](09-documentation/)
+- **Interactive Tools**: [06-visualizations/](06-visualizations/)
+- **Full Status**: [CURRENT_STATUS.md](08-reports/CURRENT_STATUS.md)
+- **Master Navigation**: [README_MASTER.md](README_MASTER.md)
+- **Parent Framework**: [../README.md](../README.md) (Root Circumpunct)
 
 ---
 

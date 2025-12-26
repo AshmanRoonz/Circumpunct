@@ -3,6 +3,8 @@
 
 **Ultimate Master Document - December 25, 2024**
 
+> **Navigation:** [← Back to Chemistry README](../README.md) | [Root Framework](../../README.md) | [Current Status](../08-reports/CURRENT_STATUS.md)
+
 **Amalgamation of:**
 - Complete Circumpunct Theory
 - Theory of Everything (1.1MB document)

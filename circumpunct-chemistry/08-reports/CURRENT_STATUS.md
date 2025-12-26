@@ -1,7 +1,9 @@
 # ⊙ CIRCUMPUNCT CHEMISTRY: CURRENT STATUS ⊙
 
-**Last Updated**: December 26, 2024  
-**Framework Version**: 5.3.1  
+> **Navigation:** [← Back to Chemistry README](../README.md) | [Root Framework](../../README.md) | [Core Theory](../01-core-theory/THE_COMPLETE_CIRCUMPUNCT_FRAMEWORK.md)
+
+**Last Updated**: December 26, 2024
+**Framework Version**: 5.3.1
 **Status**: Production-Ready, Publication-Quality
 
 ---
