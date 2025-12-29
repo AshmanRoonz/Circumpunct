@@ -1,0 +1,963 @@
+/* ===================================
+   Circumpunct - Interactive Demo
+   =================================== */
+
+:root {
+    --bg: #0a0a0f;
+    --body-color: #a371f7;
+    --mind-color: #f0b429;
+    --soul-color: #58a6ff;
+    --circumpunct-color: #ffffff;
+    --text: #e6edf3;
+    --text-dim: #8b949e;
+    --panel-bg: #161b22;
+    --border: #30363d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Space Grotesk', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Particle Background */
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+/* Main Container */
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* ===================================
+   RESPONSIVE LAYOUT (Mobile-first)
+   =================================== */
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.side-panel {
+    width: 100%;
+    max-width: 400px;
+}
+
+.center-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header - Hero Equation Section */
+.header {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.hero-equation {
+    margin-bottom: 0.5rem;
+}
+
+.equation-title {
+    font-family: 'Space Grotesk', monospace;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--soul-color);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 20px rgba(88, 166, 255, 0.4);
+}
+
+.equation-explanation {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.equation-summary {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--text);
+    font-weight: 400;
+}
+
+.tagline {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    font-weight: 300;
+    max-width: 420px;
+    margin: 0 auto 1rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Dimension Section (below circumpunct) */
+.dimension-section {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* ===================================
+   DIMENSION TABLE (Body/Mind/Soul + Math)
+   =================================== */
+.dimension-table {
+    border-collapse: collapse;
+    margin: 0 auto 0.5rem;
+}
+
+.dimension-row td {
+    padding: 0.15rem 0.5rem;
+    vertical-align: middle;
+}
+
+.dimension-text {
+    text-align: left;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+}
+
+.dimension-math {
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.dimension-math code {
+    font-family: 'Space Grotesk', monospace;
+    letter-spacing: 0.03em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, text-shadow 0.3s ease;
+}
+
+.dimension-table:hover .dimension-math code {
+    opacity: 1;
+}
+
+/* Color-coded symbols */
+.symbol-body { color: var(--body-color); }
+.symbol-mind { color: var(--mind-color); }
+.symbol-soul { color: var(--soul-color); }
+.symbol-whole {
+    color: var(--circumpunct-color);
+    text-shadow: 0 0 6px var(--soul-color);
+}
+
+/* Color-coded math */
+.math-body { color: var(--body-color); }
+.math-mind { color: var(--mind-color); }
+.math-soul { color: var(--soul-color); }
+.math-whole {
+    color: var(--circumpunct-color);
+    text-shadow: 0 0 4px var(--soul-color);
+}
+
+/* First row (You ARE ⊙) special styling */
+.dimension-circumpunct .dimension-text {
+    color: var(--text);
+}
+
+.dimension-circumpunct .dimension-math code {
+    color: var(--soul-color);
+    font-size: 0.85rem;
+}
+
+/* "Everything shares this structure" line */
+.everything-line {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    margin-top: 0.5rem;
+}
+
+/* Helix principle header */
+.helix-principle {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.02em;
+}
+
+.helix-principle strong {
+    color: var(--soul-color);
+}
+
+/* Full helix table */
+.helix-full {
+    width: 100%;
+    font-size: 0.75rem;
+}
+
+.helix-full thead th {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--text-dim);
+    text-align: left;
+    padding: 0.2rem 0.3rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.helix-full tbody td {
+    padding: 0.2rem 0.3rem;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.helix-full code {
+    font-family: 'Space Grotesk', monospace;
+    font-size: 0.7rem;
+    color: var(--soul-color);
+    opacity: 0.8;
+}
+
+.helix-full sub {
+    font-size: 0.55rem;
+    color: var(--soul-color);
+}
+
+.dim-num {
+    color: var(--soul-color);
+    font-weight: 500;
+    margin-right: 0.2rem;
+}
+
+/* Simulator links */
+.sim-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.sim-links a {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 14px;
+    transition: all 0.25s ease;
+    letter-spacing: 0.02em;
+}
+
+/* Golden Predictions button */
+.sim-links a.link-golden {
+    color: var(--mind-color);
+    border: 1.5px solid var(--mind-color);
+    background: rgba(240, 180, 41, 0.1);
+    box-shadow: 0 0 12px rgba(240, 180, 41, 0.2);
+}
+
+.sim-links a.link-golden:hover {
+    color: #fff;
+    background: rgba(240, 180, 41, 0.25);
+    border-color: #ffd066;
+    box-shadow: 0 0 20px rgba(240, 180, 41, 0.4), 0 0 40px rgba(240, 180, 41, 0.2);
+    transform: translateY(-1px);
+}
+
+/* Braid Simulator button */
+.sim-links a.link-braid {
+    color: var(--soul-color);
+    border: 1.5px solid var(--soul-color);
+    background: rgba(88, 166, 255, 0.1);
+    box-shadow: 0 0 12px rgba(88, 166, 255, 0.2);
+}
+
+.sim-links a.link-braid:hover {
+    color: #fff;
+    background: rgba(88, 166, 255, 0.25);
+    border-color: #8fd4ff;
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.4), 0 0 40px rgba(88, 166, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+/* Circumpunct Narrative button */
+.sim-links a.link-narrative {
+    color: #c9a227;
+    border: 1.5px solid #c9a227;
+    background: rgba(201, 162, 39, 0.1);
+    box-shadow: 0 0 12px rgba(201, 162, 39, 0.2);
+}
+
+.sim-links a.link-narrative:hover {
+    color: #fff;
+    background: rgba(201, 162, 39, 0.25);
+    border-color: #f4d03f;
+    box-shadow: 0 0 20px rgba(201, 162, 39, 0.4), 0 0 40px rgba(201, 162, 39, 0.2);
+    transform: translateY(-1px);
+}
+
+/* ===================================
+   THE BIG CIRCUMPUNCT
+   =================================== */
+.circumpunct-container {
+    position: relative;
+    width: 80vw;
+    height: 80vw;
+    max-width: 340px;
+    max-height: 340px;
+    margin: 0.5rem 0;
+}
+
+.circumpunct {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Zones */
+.zone {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.zone-body { filter: url(#organic-membrane); }
+.zone-mind { filter: url(#glow-gold); }
+/* Soul styled as eye - no cyan glow filter */
+
+/* Hover/Active states */
+.zone-body:hover, .zone-body.active {
+    stroke: rgba(163, 113, 247, 1);
+    stroke-width: 28;
+}
+
+.zone-mind:hover, .zone-mind.active {
+    fill: rgba(240, 180, 41, 0.3);
+    stroke: rgba(240, 180, 41, 0.8);
+}
+
+.zone-soul:hover, .zone-soul.active {
+    filter: brightness(1.2);
+}
+
+/* Animations */
+@keyframes pulse {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+}
+
+@keyframes breathe {
+    0%, 100% { stroke-opacity: 0.6; }
+    50% { stroke-opacity: 0.9; }
+}
+
+@keyframes shimmer {
+    0%, 100% { fill-opacity: 0.15; }
+    50% { fill-opacity: 0.25; }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Soul eye doesn't pulse - it watches */
+.zone-body { animation: breathe 5s ease-in-out infinite; }
+.zone-mind { animation: shimmer 4s ease-in-out infinite; }
+
+.decorative {
+    transform-origin: 150px 150px;
+    animation: rotate 60s linear infinite;
+    stroke-dasharray: 4 8;
+}
+
+/* Soul eye elements */
+.soul-iris {
+    transition: filter 0.3s ease;
+}
+
+.soul-pupil,
+.soul-highlight,
+.soul-limbal {
+    pointer-events: none;
+}
+
+/* Soul movement (follows cursor) */
+.soul-moving {
+    transition: transform 0.08s ease-out;
+    transform-origin: 150px 150px;
+}
+
+/* ===================================
+   CURVED NAVIGATION ARC BUTTONS
+   =================================== */
+.nav-ring {
+    pointer-events: all;
+}
+
+.nav-arc {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-arc .arc-bg {
+    transition: stroke 0.3s ease, stroke-opacity 0.3s ease;
+}
+
+.nav-arc .arc-text {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    fill: var(--text-dim);
+    transition: fill 0.3s ease;
+}
+
+/* Hover states for arc buttons */
+.nav-arc-theory:hover .arc-bg {
+    stroke: rgba(255, 255, 255, 0.4);
+}
+.nav-arc-theory:hover .arc-text {
+    fill: var(--text);
+}
+
+.nav-arc-physics:hover .arc-bg {
+    stroke: rgba(163, 113, 247, 0.5);
+}
+.nav-arc-physics:hover .arc-text {
+    fill: var(--body-color);
+}
+
+.nav-arc-consciousness:hover .arc-bg {
+    stroke: rgba(88, 166, 255, 0.5);
+}
+.nav-arc-consciousness:hover .arc-text {
+    fill: var(--soul-color);
+}
+
+.nav-arc-ethics:hover .arc-bg {
+    stroke: rgba(240, 180, 41, 0.5);
+}
+.nav-arc-ethics:hover .arc-text {
+    fill: var(--mind-color);
+}
+
+/* Subtle breathing animation for nav ring */
+@keyframes arc-pulse {
+    0%, 100% { stroke-opacity: 1; }
+    50% { stroke-opacity: 0.6; }
+}
+
+.nav-arc .arc-bg {
+    animation: arc-pulse 6s ease-in-out infinite;
+}
+
+.nav-arc-physics .arc-bg { animation-delay: 0s; }
+.nav-arc-consciousness .arc-bg { animation-delay: 1.5s; }
+.nav-arc-ethics .arc-bg { animation-delay: 3s; }
+.nav-arc-theory .arc-bg { animation-delay: 4.5s; }
+
+/* Zone Labels - Always visible */
+.zone-labels {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.label {
+    position: absolute;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    opacity: 1;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    background: rgba(10, 10, 15, 0.85);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.label-body {
+    color: var(--body-color);
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.label-mind {
+    color: var(--mind-color);
+    top: 50%;
+    right: 18%;
+    transform: translateY(-50%);
+}
+
+.label-soul {
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.65rem;
+    background: transparent;
+}
+
+.circumpunct-container:hover .label {
+    opacity: 1;
+    text-shadow: 0 0 25px currentColor, 0 0 50px currentColor;
+}
+
+/* (Old CTA styles removed - navigation now in curved arc buttons) */
+
+/* ===================================
+   PANELS - Slide up from bottom
+   =================================== */
+.panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 85vh;
+    background: var(--panel-bg);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    z-index: 100;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.panel.open {
+    transform: translateY(0);
+}
+
+.panel-close {
+    position: sticky;
+    top: 0;
+    right: 0;
+    float: right;
+    margin: 1rem;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    color: var(--text);
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.panel-content {
+    padding: 0 1.5rem 2rem;
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.panel-symbol {
+    font-size: 2rem;
+}
+
+.panel-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.panel-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    margin-bottom: 1.5rem;
+}
+
+.panel-section {
+    margin-bottom: 1.5rem;
+}
+
+.panel-section h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.panel-section p {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.panel-section ul {
+    list-style: none;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+}
+
+.panel-section li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.panel-section li:last-child {
+    border-bottom: none;
+}
+
+.panel-section strong {
+    color: var(--text);
+}
+
+/* Panel Colors */
+.panel-body .panel-symbol { color: var(--body-color); }
+.panel-body { border-top: 3px solid var(--body-color); }
+
+.panel-mind .panel-symbol { color: var(--mind-color); }
+.panel-mind { border-top: 3px solid var(--mind-color); }
+
+.panel-soul .panel-symbol { color: var(--soul-color); }
+.panel-soul { border-top: 3px solid var(--soul-color); }
+
+.panel-circumpunct .panel-symbol { color: var(--circumpunct-color); }
+.panel-circumpunct { border-top: 3px solid var(--circumpunct-color); }
+.panel-circumpunct .panel-symbol {
+    text-shadow: 0 0 10px var(--soul-color), 0 0 20px var(--mind-color), 0 0 30px var(--body-color);
+}
+
+/* Circumpunct Link in Header */
+.circumpunct-link {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.circumpunct-link:hover {
+    text-shadow: 0 0 8px var(--soul-color), 0 0 16px var(--mind-color);
+}
+
+.circumpunct-link strong {
+    color: var(--text);
+}
+
+/* Essay Styles */
+.panel-essay p:first-child {
+    font-size: 1rem;
+    color: var(--text);
+    font-style: italic;
+}
+
+.panel-essay ul,
+.panel-essay ol {
+    margin: 0.75rem 0;
+    padding-left: 1.25rem;
+}
+
+.panel-essay li {
+    border-bottom: none;
+    padding: 0.3rem 0;
+}
+
+.beta-list {
+    list-style: none;
+    padding-left: 0 !important;
+}
+
+.beta-list li {
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--mind-color);
+    margin-bottom: 0.5rem;
+}
+
+.ethics-questions {
+    list-style: decimal;
+    padding-left: 1.5rem;
+}
+
+.ethics-questions li {
+    padding: 0.4rem 0;
+    border-bottom: none;
+}
+
+.ethics-question {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Practice Section */
+.panel-practice {
+    background: rgba(88, 166, 255, 0.05);
+    border-radius: 12px;
+    padding: 1rem !important;
+    margin-top: 1rem;
+    border-left: 3px solid var(--soul-color);
+}
+
+.panel-practice h3 {
+    color: var(--soul-color);
+}
+
+.closing-thought {
+    font-size: 1rem;
+    color: var(--text);
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+/* Panel Links Navigation */
+.panel-links {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.panel-links span {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+}
+
+.panel-links a {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    transition: all 0.2s ease;
+}
+
+.panel-links a:hover {
+    color: var(--text);
+    border-color: var(--soul-color);
+    background: rgba(88, 166, 255, 0.1);
+}
+
+.panel-links a[data-zone="body"]:hover {
+    border-color: var(--body-color);
+    background: rgba(163, 113, 247, 0.1);
+}
+
+.panel-links a[data-zone="mind"]:hover {
+    border-color: var(--mind-color);
+    background: rgba(240, 180, 41, 0.1);
+}
+
+.panel-links a[data-zone="soul"]:hover {
+    border-color: var(--soul-color);
+    background: rgba(88, 166, 255, 0.1);
+}
+
+.panel-links a[data-zone="circumpunct"]:hover {
+    border-color: var(--circumpunct-color);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Backdrop */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.backdrop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ===================================
+   Responsive
+   =================================== */
+
+/* Small mobile */
+@media (max-width: 400px) {
+    .dimension-text {
+        font-size: 0.75rem;
+    }
+
+    .dimension-math code {
+        font-size: 0.7rem;
+    }
+
+    .tagline {
+        font-size: 0.75rem;
+    }
+
+    .nav-arc .arc-text {
+        font-size: 9px;
+    }
+
+    .label {
+        font-size: 0.6rem;
+        padding: 0.15rem 0.4rem;
+    }
+}
+
+/* Desktop / Wide screens */
+@media (min-width: 900px) {
+    .container {
+        min-height: 100vh;
+        padding: 1rem 2rem;
+    }
+
+    .main-layout {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    .side-panel {
+        max-width: 380px;
+    }
+
+    .left-panel {
+        justify-self: end;
+        text-align: right;
+    }
+
+    .left-panel .equation-title {
+        font-size: 1.1rem;
+    }
+
+    .left-panel .equation-explanation {
+        font-size: 0.8rem;
+    }
+
+    .right-panel {
+        justify-self: start;
+        text-align: left;
+    }
+
+    .right-panel .dimension-table {
+        margin: 0;
+    }
+
+    .right-panel .dimension-row td {
+        padding: 0.25rem 0.5rem;
+        white-space: nowrap;
+    }
+
+    .right-panel .dimension-math code {
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+
+    .center-panel {
+        flex-shrink: 0;
+    }
+
+    .circumpunct-container {
+        width: 320px;
+        height: 320px;
+        max-width: 320px;
+        max-height: 320px;
+    }
+
+    .dimension-text {
+        font-size: 0.8rem;
+    }
+
+    .dimension-math code {
+        font-size: 0.75rem;
+    }
+
+    .nav-arc .arc-text {
+        font-size: 11px;
+    }
+
+    .label {
+        font-size: 0.75rem;
+    }
+
+    .panel {
+        max-width: 500px;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        border-radius: 24px 24px 0 0;
+    }
+
+    .panel.open {
+        transform: translate(-50%, 0);
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 899px) {
+    .circumpunct-container {
+        width: 380px;
+        height: 380px;
+        max-width: 380px;
+        max-height: 380px;
+    }
+
+    .nav-arc .arc-text {
+        font-size: 12px;
+    }
+
+    .label {
+        font-size: 0.85rem;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+.zone:focus {
+    outline: 2px solid var(--soul-color);
+    outline-offset: 4px;
+}
+
+.panel-close:focus {
+    outline: 2px solid var(--soul-color);
+}
