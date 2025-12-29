@@ -10,8 +10,8 @@
     const zones = document.querySelectorAll('.zone');
     const panels = document.querySelectorAll('.panel');
     const closeButtons = document.querySelectorAll('.panel-close');
-    const circumpunctLink = document.querySelector('.circumpunct-link');
     const panelLinks = document.querySelectorAll('.panel-links a[data-zone]');
+    const layerCards = document.querySelectorAll('.layer-card');
 
     // Create backdrop
     const backdrop = document.createElement('div');
@@ -65,20 +65,29 @@
         }, { passive: true });
     });
 
-    // "You ARE ⊙" link handler
-    if (circumpunctLink) {
-        circumpunctLink.addEventListener('click', (e) => {
-            e.preventDefault();
-            openPanelByZone('circumpunct');
-        });
-    }
-
     // Panel navigation links (cross-links between panels)
     panelLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             const zoneName = link.dataset.zone;
             if (zoneName) openPanelByZone(zoneName);
+        });
+    });
+
+    // Equation symbol click - opens circumpunct panel
+    const eqSymbol = document.querySelector('.eq-symbol');
+    if (eqSymbol) {
+        eqSymbol.style.cursor = 'pointer';
+        eqSymbol.addEventListener('click', () => openPanelByZone('circumpunct'));
+    }
+
+    // Layer card subtle interactions
+    layerCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.borderColor = getComputedStyle(card.querySelector('.layer-header')).borderTopColor;
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.borderColor = '';
         });
     });
 
