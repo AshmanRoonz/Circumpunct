@@ -40,6 +40,11 @@ Circumpunct/
 │   ├── 03-time-volume/                # Time-volume theory (v6)
 │   ├── 04-physics/                    # Physics applications
 │   └── 05-philosophy/                 # Consciousness & philosophy
+├── Circumpunct_CPU/                   # ⊙-Core fractal computing architecture
+│   ├── sierpinski-filter-spec.md     # Mathematical specification
+│   ├── substrate-research.md         # Physical implementation survey
+│   ├── sierpinski_sim.py             # Python numerical validation
+│   └── *.html                        # Interactive visualizations
 └── circumpunct-chemistry/             # Chemistry validation project
     ├── 01-core-theory/
     ├── 02-chemistry-theory/
@@ -110,6 +115,21 @@ Experimental derivation of chemistry from geometric first principles:
 - **Status:** Experimental - validation in progress
 
 See [circumpunct-chemistry/README.md](circumpunct-chemistry/README.md) for details.
+
+### Circumpunct CPU (`Circumpunct_CPU/`)
+
+Fractal interface quantum computing architecture—the **Sierpinski Filter**:
+
+| Document | Description |
+|----------|-------------|
+| [sierpinski-filter-spec.md](Circumpunct_CPU/sierpinski-filter-spec.md) | Formal mathematical specification with gate definitions and theorems |
+| [substrate-research.md](Circumpunct_CPU/substrate-research.md) | Physical implementation survey (photonics, superconductors, NV centers) |
+| [fractal-interface-quantum-computing-paper.md](Circumpunct_CPU/fractal-interface-quantum-computing-paper.md) | Academic paper draft |
+| [sierpinski_sim.py](Circumpunct_CPU/sierpinski_sim.py) | Python numerical validation |
+
+**Key Innovation:** Distributes decoherence across a fractal boundary (φ⁻ⁿ amplitude decay) instead of concentrating it at a sharp measurement interface. Projected error rate improvement: 10⁻³ → 10⁻⁸.
+
+See [Circumpunct_CPU/README.md](Circumpunct_CPU/README.md) for details.
 
 ---
 
