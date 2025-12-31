@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Circumpunct Computer ⊙ — Fractal Boundary Architecture</title>
+  <style>
+    :root{
+      --bg:#06070a;
+      --panel:#0b0e14cc;
+      --panel2:#0b0e14f2;
+      --text:#e9eefc;
+      --muted:#a7b2d6;
+      --accent:#7c5cff;
+      --accent2:#00e5ff;
+      --accent3:#5cff8a;
+      --warn:#ffcc66;
+      --danger:#ff5c7a;
+      --shadow: 0 18px 60px rgba(0,0,0,.55);
+      --radius: 18px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+
+    /* cosmic background */
+    body{
+      margin:0;
+      font-family: var(--sans);
+      color: var(--text);
+      background:
+        radial-gradient(1200px 600px at 20% 10%, rgba(124,92,255,.18), transparent 60%),
+        radial-gradient(900px 500px at 80% 20%, rgba(0,229,255,.14), transparent 55%),
+        radial-gradient(1000px 650px at 60% 90%, rgba(92,255,138,.10), transparent 60%),
+        linear-gradient(180deg, #03040a, #070a10 45%, #04050b);
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+
+    a{ color: var(--accent2); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .wrap{ max-width:1100px; margin:0 auto; padding:28px 18px 70px; }
+
+    /* header */
+    .hero{
+      display:grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap:16px;
+      align-items:stretch;
+      margin-bottom:18px;
+    }
+    @media (max-width: 900px){
+      .hero{ grid-template-columns: 1fr; }
+    }
+    .card{
+      background: var(--panel);
+      border:1px solid rgba(255,255,255,.08);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .hero .card{ padding:18px 18px 16px; }
+    h1{
+      margin:0 0 8px;
+      font-size: clamp(26px, 3vw, 36px);
+      line-height:1.05;
+      letter-spacing: .2px;
+    }
+    .sub{
+      margin:0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height:1.6;
+    }
+
+    .pillrow{ margin-top:12px; display:flex; flex-wrap:wrap; gap:8px; }
+    .pill{
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      color: var(--text);
+      padding:6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      letter-spacing: .2px;
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      cursor:pointer;
+      user-select:none;
+      transition: transform .08s ease, border-color .12s ease, background .12s ease;
+    }
+    .pill:hover{
+      transform: translateY(-1px);
+      border-color: rgba(0,229,255,.28);
+      background: rgba(0,229,255,.06);
+    }
+    .dot{ width:10px; height:10px; border-radius: 999px; display:inline-block; }
+    .d1{ background: var(--accent2); box-shadow: 0 0 18px rgba(0,229,255,.55); }
+    .d2{ background: var(--accent); box-shadow: 0 0 18px rgba(124,92,255,.50); }
+    .d3{ background: var(--accent3); box-shadow: 0 0 18px rgba(92,255,138,.40); }
+
+    /* sections */
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:16px;
+      margin-top:16px;
+    }
+    @media (max-width: 900px){
+      .grid{ grid-template-columns:1fr; }
+    }
+    .section{ padding:16px; }
+    .section h2{
+      margin:0 0 10px;
+      font-size: 18px;
+      letter-spacing: .2px;
+    }
+    .section p{ margin:0 0 10px; color: var(--muted); line-height:1.65; font-size: 14px; }
+
+    /* diagram */
+    .diagramWrap{
+      position:relative;
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .zoomRow{
+      display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+      padding:10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+    }
+    .zoomRow label{ font-size: 12px; color: var(--muted); }
+    input[type="range"]{ width:260px; }
+    .zoomState{
+      font-family: var(--mono);
+      font-size: 12px;
+      padding:6px 10px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.25);
+      color: var(--text);
+    }
+
+    .nest{
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      padding: 18px;
+      box-shadow: 0 18px 60px rgba(0,0,0,.45);
+      position:relative;
+      overflow:hidden;
+    }
+    .nest:before{
+      content:"";
+      position:absolute; inset:-80px;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(124,92,255,.24), transparent 55%),
+        radial-gradient(circle at 70% 30%, rgba(0,229,255,.18), transparent 55%),
+        radial-gradient(circle at 50% 80%, rgba(92,255,138,.12), transparent 55%);
+      filter: blur(24px);
+      opacity:.75;
+      pointer-events:none;
+    }
+    .nestInner{ position:relative; z-index:1; }
+
+    .shell{
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.12);
+      padding: 18px;
+      background: rgba(0,0,0,.25);
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .label{
+      display:flex; justify-content:space-between; align-items:center; gap:10px;
+      font-size: 13px;
+      color: var(--text);
+      letter-spacing:.2px;
+    }
+    .badge{
+      font-family: var(--mono);
+      font-size: 12px;
+      padding:4px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color: var(--muted);
+      white-space:nowrap;
+    }
+    .shell.boundary{ border-color: rgba(0,229,255,.28); }
+    .shell.field{ border-color: rgba(124,92,255,.30); }
+    .shell.center{ border-color: rgba(92,255,138,.30); }
+
+    .mini{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:12px;
+    }
+    @media (max-width: 600px){
+      .mini{ grid-template-columns:1fr; }
+      input[type="range"]{ width: 100%; }
+    }
+
+    .list{
+      margin:0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height:1.65;
+    }
+
+    /* regime tables */
+    table{
+      width:100%;
+      border-collapse: collapse;
+      overflow:hidden;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.22);
+    }
+    th, td{
+      padding: 10px 10px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      vertical-align: top;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    th{
+      color: var(--text);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      background: rgba(255,255,255,.05);
+    }
+    tr:last-child td{ border-bottom:none; }
+    td strong{ color: var(--text); }
+
+    /* state explorer */
+    .stateBox{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .bits{
+      display:grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap:10px;
+    }
+    .bit{
+      padding:10px 10px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      align-items:flex-start;
+    }
+    .bit input{ transform: scale(1.15); }
+    .bit .k{ font-family: var(--mono); color: var(--text); font-size:12px; }
+    .bit .d{ color: var(--muted); font-size:11px; line-height:1.3; }
+
+    .readout{
+      display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+      padding:10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.25);
+    }
+    .readout .n{
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--text);
+      padding:6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+    }
+    .readout .hint{ color: var(--muted); font-size: 13px; }
+
+    /* tooltip + modal */
+    .hintLink{
+      color: var(--accent2);
+      border-bottom: 1px dotted rgba(0,229,255,.55);
+      cursor:pointer;
+      white-space:nowrap;
+    }
+
+    .modalBack{
+      position:fixed;
+      inset:0;
+      background: rgba(0,0,0,.72);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:18px;
+      z-index:999;
+    }
+    .modal{
+      max-width: 780px;
+      width:100%;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: var(--panel2);
+      box-shadow: 0 30px 90px rgba(0,0,0,.65);
+      overflow:hidden;
+    }
+    .modalHead{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,.05);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .modalHead h3{ margin:0; font-size: 14px; letter-spacing: .2px; }
+    .closeBtn{
+      border:none;
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      padding:8px 10px;
+      border-radius: 12px;
+      cursor:pointer;
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .closeBtn:hover{ background: rgba(255,255,255,.09); }
+    .modalBody{
+      padding: 14px 16px 18px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height:1.7;
+    }
+    .modalBody code{
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text);
+      background: rgba(0,0,0,.35);
+      border:1px solid rgba(255,255,255,.08);
+      padding:2px 6px;
+      border-radius: 10px;
+    }
+    .modalBody .callout{
+      margin-top:10px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(0,229,255,.06);
+      border: 1px solid rgba(0,229,255,.18);
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    /* footer */
+    .footer{
+      margin-top:18px;
+      padding:14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-size: 12px;
+      line-height:1.6;
+    }
+
+    /* dynamic “zoom” effects */
+    .binaryGlow .boundaryNote{ color: var(--accent2); }
+    .quantumGlow .boundaryNote{ color: var(--accent); }
+    .mixedGlow .boundaryNote{ color: var(--warn); }
+
+    .binaryGlow .shell.boundary{ box-shadow: 0 0 0 rgba(0,0,0,0); }
+    .mixedGlow .shell.boundary{ box-shadow: 0 0 26px rgba(255,204,102,.16); }
+    .quantumGlow .shell.boundary{ box-shadow: 0 0 28px rgba(124,92,255,.18); }
+
+    .legend{
+      display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+      font-size: 12px; color: var(--muted);
+    }
+    .key{ display:inline-flex; gap:8px; align-items:center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="hero">
+      <div class="card">
+        <h1>The Circumpunct Computer ⊙</h1>
+        <p class="sub">
+          A tri-regime computational architecture: <strong>• Center (binary decision)</strong>, <strong>Φ Field (quantum processing)</strong>,
+          and a <strong>○ Fractal Boundary (multi-scale translation)</strong> that distributes decoherence instead of concentrating it at a single interface.
+        </p>
+
+        <div class="pillrow">
+          <div class="pill" data-modal="center"><span class="dot d3"></span>• Center</div>
+          <div class="pill" data-modal="field"><span class="dot d2"></span>Φ Field</div>
+          <div class="pill" data-modal="boundary"><span class="dot d1"></span>○ Boundary</div>
+          <div class="pill" data-modal="ops"><span class="dot d2"></span>≻ i ⊰ Flow</div>
+          <div class="pill" data-modal="64"><span class="dot d1"></span>64‑State Map</div>
+        </div>
+      </div>
+
+      <div class="card diagramWrap">
+        <div class="zoomRow">
+          <label for="zoom">Boundary zoom:</label>
+          <input id="zoom" type="range" min="0" max="100" value="20" />
+          <span class="zoomState" id="zoomState">COARSE → looks binary</span>
+          <span class="legend">
+            <span class="key"><span class="dot d1"></span>interface</span>
+            <span class="key"><span class="dot d2"></span>superposition</span>
+            <span class="key"><span class="dot d3"></span>decision</span>
+          </span>
+        </div>
+
+        <div class="nest" id="nest">
+          <div class="nestInner">
+            <div class="shell boundary">
+              <div class="label">
+                <span>○ Boundary: <span class="boundaryNote" id="boundaryNote">Fractal Interface</span></span>
+                <span class="badge">translate at every scale</span>
+              </div>
+
+              <div class="shell field">
+                <div class="label">
+                  <span>Φ Field: Quantum Core</span>
+                  <span class="badge">superposition • entanglement • interference</span>
+                </div>
+
+                <div class="shell center">
+                  <div class="label">
+                    <span>• Center: Classical Decision</span>
+                    <span class="badge">bits {0,1}</span>
+                  </div>
+
+                  <ul class="list">
+                    <li><strong>Collapse / commit</strong> happens here—after the boundary has pre-conditioned the field.</li>
+                    <li>Think: <span class="hintLink" data-modal="validation">validation gate</span> rather than “raw measurement.”</li>
+                  </ul>
+                </div>
+
+                <ul class="list">
+                  <li>Compute as a controlled unitary <code>U</code> in Φ (or an open-system channel when needed).</li>
+                  <li>Let the boundary manage readout bandwidth, filtering, and multiscale stabilization.</li>
+                </ul>
+              </div>
+
+              <ul class="list">
+                <li>Zoom out → feels like digital gates (thresholds, toggles).</li>
+                <li>Zoom in → reveals phase + amplitude (quantum-like clouds).</li>
+                <li>Same motif repeats → no single “sharp place” where things break.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="zoomRow" style="justify-content:space-between;">
+          <span class="zoomState">INPUT → ○ → Φ → • → Φ → ○ → OUTPUT</span>
+          <span class="zoomState">encode ≻ | rotate i | decode ⊰</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card section">
+        <h2>Three Computational Regimes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>Type</th>
+              <th>Information</th>
+              <th>Operations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>• Center</strong></td>
+              <td>Classical</td>
+              <td>Bits: {0,1}</td>
+              <td>Deterministic logic, commit / decide</td>
+            </tr>
+            <tr>
+              <td><strong>Φ Field</strong></td>
+              <td>Quantum</td>
+              <td>Qubits: α|0⟩ + β|1⟩</td>
+              <td>Superposition, entanglement, interference</td>
+            </tr>
+            <tr>
+              <td><strong>○ Boundary</strong></td>
+              <td>Fractal</td>
+              <td>Nested gates (scale‑dependent)</td>
+              <td>Translation between regimes + distributed stabilization</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top:10px">
+          The boundary is the architectural bet: instead of a single brittle interface, use a <em>multiscale stack</em> that resembles wavelet / renormalization flow (coarse ↔ fine).
+        </p>
+      </div>
+
+      <div class="card section">
+        <h2>64‑State Explorer (Q₆)</h2>
+        <p>Toggle the six bits. See the vertex index and a simple “spatial/temporal” split.</p>
+
+        <div class="stateBox">
+          <div class="bits" id="bits"></div>
+
+          <div class="readout">
+            <span class="n" id="stateNum">state = 0</span>
+            <span class="n" id="stateBits">bits = 000000</span>
+            <span class="hint" id="stateHint">bits 1–3: “spatial / center‑like” • bits 4–6: “temporal / field‑like”</span>
+          </div>
+
+          <p style="margin:0">
+            In your framing: computation is a <strong>path</strong> through the hypercube; the ○ boundary defines which moves stay coherent at each scale.
+          </p>
+        </div>
+      </div>
+
+      <div class="card section">
+        <h2>Architecture Layers</h2>
+        <p>
+          A practical way to spec the boundary is as a ladder of encode/decode maps:
+          <span class="hintLink" data-modal="formal">Eₛ, Dₛ</span> at each scale <em>s</em>.
+        </p>
+
+        <table>
+          <thead>
+            <tr><th>Layer</th><th>Role</th><th>Behavior</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>0</strong></td><td>Classical I/O</td><td>standard bits, protocols</td></tr>
+            <tr><td><strong>1</strong></td><td>Boundary (coarse)</td><td>thresholdable “digital‑looking” gates</td></tr>
+            <tr><td><strong>2</strong></td><td>Boundary (mixed)</td><td>partial measurement + filtering + stabilization</td></tr>
+            <tr><td><strong>3</strong></td><td>Boundary (fine)</td><td>phase‑aware coherent couplers</td></tr>
+            <tr><td><strong>4</strong></td><td>Φ Field</td><td>unitaries / channels (the “quantum core”)</td></tr>
+            <tr><td><strong>5</strong></td><td>• Center</td><td>commit / decide (final collapse)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card section">
+        <h2>Ethics Fit (Good / Right / True)</h2>
+        <p>
+          The same triad maps cleanly onto “validation.” If you want the architecture to be ethically interpretable:
+        </p>
+        <ul class="list">
+          <li><strong>○ GOOD</strong> = boundary conditions + safety envelope (what must be protected).</li>
+          <li><strong>Φ RIGHT</strong> = the field’s exploration (how to act through uncertainty).</li>
+          <li><strong>• TRUE</strong> = binary validation / decision (what passes, what fails).</li>
+        </ul>
+        <p style="margin:0">
+          In other words: the processor becomes a “truth‑driven relativism” machine: flexible in Φ, bounded by ○, committed at •.
+        </p>
+      </div>
+    </div>
+
+    <div class="card footer">
+      <strong>How to use this page:</strong> Click any pill at the top to open a glossary popup. Use the zoom slider to see how the boundary “looks”
+      as you coarse‑grain or fine‑grain observation. Toggle bits in the 64‑state explorer to think about computation as paths through Q₆.
+      <br/><br/>
+      <strong>Tip:</strong> If you want a paper-style version next, export this content as a PDF and add a one-page “formal spec” that defines Eₛ/Dₛ, error models, and validation semantics.
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modalBack" id="modalBack" role="dialog" aria-modal="true" aria-label="Details popup">
+    <div class="modal">
+      <div class="modalHead">
+        <h3 id="modalTitle">Title</h3>
+        <button class="closeBtn" id="closeBtn">Close</button>
+      </div>
+      <div class="modalBody" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script>
+    const modalBack = document.getElementById('modalBack');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBody  = document.getElementById('modalBody');
+    const closeBtn   = document.getElementById('closeBtn');
+
+    const MODALS = {
+      center: {
+        title: "• Center — Classical Decision",
+        body: `
+          The <strong>center</strong> is the commit point: it holds binary truth values (0/1) and finalizes outcomes.
+          <div class="callout">
+            Key idea: the • center should not “poke” the quantum field directly; the ○ boundary mediates measurement and conditioning.
+          </div>
+          Think of it as a <em>validation gate</em> that receives already‑structured information.
+        `
+      },
+      field: {
+        title: "Φ Field — Quantum Core",
+        body: `
+          The <strong>field</strong> is where superposition, entanglement, and interference live.
+          In a minimal spec, this is a Hilbert space <code>H</code> with evolution <code>|ψ⟩ → U|ψ⟩</code> (or a channel for open dynamics).
+          <div class="callout">
+            Your contribution is not “quantum inside” — lots of systems do that — it’s how you treat the interface: multi-scale, self-similar translation.
+          </div>
+        `
+      },
+      boundary: {
+        title: "○ Boundary — Fractal Interface (the breakthrough bet)",
+        body: `
+          The <strong>boundary</strong> is a nested interface that looks digital when coarse‑grained and quantum when fine‑grained.
+          Conceptually, it’s a stack of scale‑indexed maps <code>Eₛ</code> (encode) and <code>Dₛ</code> (decode) plus multiscale stabilization.
+          <div class="callout">
+            Instead of a single brittle classical↔quantum handoff, decoherence and error are distributed across levels.
+          </div>
+        `
+      },
+      ops: {
+        title: "Flow Operators — ≻ i ⊰",
+        body: `
+          <strong>≻</strong> (inward) = convergence / encoding toward the field.<br/>
+          <strong>i</strong> (center rotation) = the transformation step (aperture operator).<br/>
+          <strong>⊰</strong> (outward) = emergence / decoding back to classical output.
+          <div class="callout">
+            The “rotation” metaphor is useful: input and output are related but not identical — the aperture changes basis.
+          </div>
+        `
+      },
+      "64": {
+        title: "64 States — The Q₆ Map",
+        body: `
+          With 6 bits, the state space has <code>2⁶ = 64</code> vertices (a 6D hypercube).
+          If you interpret the first 3 bits as “center‑like” channels and the last 3 as “field‑like” channels, you get a clean split:
+          <code>000***</code> ↔ more classical; <code>***111</code> ↔ more quantum‑biased.
+          <div class="callout">
+            Use this as a toy simulator substrate: a boundary rule-set constrains which bit flips are allowed at each scale.
+          </div>
+        `
+      },
+      formal: {
+        title: "A Minimal Formal Spec (Eₛ/Dₛ idea)",
+        body: `
+          Define scales s = 0..S and maps:
+          <br/><br/>
+          <code>Eₛ: {0,1}^n → Hₛ</code> (encode into a progressively more coherent subspace)<br/>
+          <code>Uₛ: Hₛ → Hₛ</code> (evolution / processing at that scale)<br/>
+          <code>Dₛ: Hₛ → {0,1}^n</code> (decode / readout at that scale)<br/>
+          <br/>
+          The “fractal boundary” means these maps repeat a motif across s (self-similar structure), and that errors are corrected/absorbed gradually across scales rather than at one interface.
+        `
+      },
+      validation: {
+        title: "Validation vs Measurement",
+        body: `
+          Measurement is just one physical mechanism for extracting classical data from a quantum system.
+          Your • center is closer to “validation”: a binary pass/fail of a coherence test after multiscale conditioning.
+          <div class="callout">
+            This wording helps: you can design the boundary to enforce validity conditions (bandwidth limits, thermal filtering, dynamical decoupling, error correction) before the center commits.
+          </div>
+        `
+      }
+    };
+
+    function openModal(key){
+      const m = MODALS[key];
+      if(!m) return;
+      modalTitle.textContent = m.title;
+      modalBody.innerHTML = m.body;
+      modalBack.style.display = "flex";
+    }
+    function closeModal(){
+      modalBack.style.display = "none";
+    }
+    closeBtn.addEventListener('click', closeModal);
+    modalBack.addEventListener('click', (e)=>{ if(e.target === modalBack) closeModal(); });
+    document.addEventListener('keydown', (e)=>{ if(e.key === "Escape") closeModal(); });
+
+    document.querySelectorAll('[data-modal]').forEach(el=>{
+      el.addEventListener('click', ()=> openModal(el.getAttribute('data-modal')));
+    });
+
+    // Zoom behavior
+    const zoom = document.getElementById('zoom');
+    const zoomState = document.getElementById('zoomState');
+    const nest = document.getElementById('nest');
+    const boundaryNote = document.getElementById('boundaryNote');
+
+    function setZoom(v){
+      // v in [0,100]
+      nest.classList.remove('binaryGlow','mixedGlow','quantumGlow');
+      if(v < 35){
+        nest.classList.add('binaryGlow');
+        zoomState.textContent = "COARSE → looks binary";
+        boundaryNote.textContent = "Fractal Interface (digital‑looking)";
+      } else if(v < 70){
+        nest.classList.add('mixedGlow');
+        zoomState.textContent = "MID → mixed regime";
+        boundaryNote.textContent = "Fractal Interface (mixed)";
+      } else {
+        nest.classList.add('quantumGlow');
+        zoomState.textContent = "FINE → looks quantum";
+        boundaryNote.textContent = "Fractal Interface (phase‑aware)";
+      }
+    }
+    zoom.addEventListener('input', (e)=> setZoom(+e.target.value));
+    setZoom(+zoom.value);
+
+    // 64-state explorer
+    const bitsEl = document.getElementById('bits');
+    const stateNum = document.getElementById('stateNum');
+    const stateBits = document.getElementById('stateBits');
+
+    const labels = [
+      ["b1", "Spatial / center‑like"],
+      ["b2", "Spatial / center‑like"],
+      ["b3", "Spatial / center‑like"],
+      ["b4", "Temporal / field‑like"],
+      ["b5", "Temporal / field‑like"],
+      ["b6", "Temporal / field‑like"]
+    ];
+
+    const state = [0,0,0,0,0,0];
+
+    function renderBits(){
+      bitsEl.innerHTML = "";
+      for(let i=0;i<6;i++){
+        const d = document.createElement('div');
+        d.className = "bit";
+        d.innerHTML = `
+          <label class="k">
+            <input type="checkbox" ${state[i] ? "checked" : ""} data-i="${i}">
+            ${labels[i][0]}
+          </label>
+          <div class="d">${labels[i][1]}</div>
+        `;
+        bitsEl.appendChild(d);
+      }
+      bitsEl.querySelectorAll('input[type="checkbox"]').forEach(cb=>{
+        cb.addEventListener('change', (e)=>{
+          const i = +e.target.getAttribute('data-i');
+          state[i] = e.target.checked ? 1 : 0;
+          updateReadout();
+        });
+      });
+      updateReadout();
+    }
+
+    function updateReadout(){
+      // Interpret b1 as MSB, b6 as LSB for display
+      let num = 0;
+      for(let i=0;i<6;i++){
+        num = (num<<1) | (state[i] & 1);
+      }
+      stateNum.textContent = `state = ${num}`;
+      stateBits.textContent = `bits = ${state.join("")}`;
+    }
+
+    renderBits();
+  </script>
+</body>
+</html>

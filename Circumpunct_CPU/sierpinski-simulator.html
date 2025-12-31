@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⊙-Core Logic Simulator | Sierpinski Filter Computation</title>
+    <style>
+        :root {
+            --bg: #0a0a0c;
+            --panel: #111114;
+            --border: #222;
+            --gold: #d4af37;
+            --quantum: #00f3ff;
+            --fractal: #ff3366;
+            --classical: #d4af37;
+            --success: #00ff88;
+            --text: #888;
+            --text-bright: #ccc;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Courier New', monospace;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background: var(--panel);
+            border-bottom: 1px solid var(--border);
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        h1 {
+            color: var(--gold);
+            font-size: 1.2rem;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+        
+        .equation {
+            color: #555;
+            font-size: 0.85rem;
+        }
+        
+        main {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 300px 1fr 350px;
+            gap: 1px;
+            background: var(--border);
+        }
+        
+        .panel {
+            background: var(--panel);
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            color: var(--gold);
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #222;
+        }
+        
+        /* Input Panel */
+        .input-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-label {
+            font-size: 0.75rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .bit-input {
+            display: flex;
+            gap: 10px;
+            margin-top: 8px;
+        }
+        
+        .bit-btn {
+            width: 50px;
+            height: 50px;
+            border: 2px solid var(--border);
+            background: transparent;
+            color: var(--text);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-radius: 4px;
+        }
+        
+        .bit-btn:hover {
+            border-color: var(--gold);
+        }
+        
+        .bit-btn.active {
+            background: var(--gold);
+            color: #000;
+            border-color: var(--gold);
+        }
+        
+        .operation-select {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            margin-top: 8px;
+        }
+        
+        .op-btn {
+            padding: 12px;
+            border: 1px solid var(--border);
+            background: transparent;
+            color: var(--text);
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+        }
+        
+        .op-btn:hover {
+            border-color: var(--quantum);
+            color: var(--quantum);
+        }
+        
+        .op-btn.active {
+            background: var(--quantum);
+            color: #000;
+            border-color: var(--quantum);
+        }
+        
+        .compute-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--gold);
+            border: none;
+            color: #000;
+            font-family: inherit;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.2s;
+        }
+        
+        .compute-btn:hover {
+            background: #e5c048;
+        }
+        
+        .compute-btn:disabled {
+            background: #333;
+            color: #666;
+            cursor: not-allowed;
+        }
+        
+        /* Visualization Panel */
+        #viz-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--bg);
+        }
+        
+        canvas {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        /* Output Panel */
+        .result-display {
+            background: #0a0a0a;
+            border: 1px solid var(--border);
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .result-label {
+            font-size: 0.7rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        
+        .result-value {
+            font-size: 3rem;
+            color: var(--success);
+            font-weight: bold;
+        }
+        
+        .result-value.pending {
+            color: #333;
+        }
+        
+        .trace-log {
+            background: #0a0a0a;
+            border: 1px solid var(--border);
+            padding: 15px;
+            max-height: 300px;
+            overflow-y: auto;
+            font-size: 0.7rem;
+            line-height: 1.6;
+        }
+        
+        .trace-entry {
+            padding: 3px 0;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        
+        .trace-entry.classical { color: var(--classical); }
+        .trace-entry.fractal { color: var(--fractal); }
+        .trace-entry.quantum { color: var(--quantum); }
+        .trace-entry.aperture { color: #fff; }
+        .trace-entry.result { color: var(--success); }
+        
+        .amplitude-bar {
+            height: 4px;
+            background: var(--border);
+            margin-top: 5px;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        
+        .amplitude-fill {
+            height: 100%;
+            background: var(--quantum);
+            transition: width 0.3s;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .stat-box {
+            background: #0a0a0a;
+            border: 1px solid var(--border);
+            padding: 12px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.4rem;
+            color: var(--text-bright);
+        }
+        
+        .stat-label {
+            font-size: 0.65rem;
+            color: #555;
+            margin-top: 5px;
+        }
+        
+        .formula-display {
+            background: #0a0a0a;
+            border: 1px solid var(--border);
+            padding: 15px;
+            font-size: 0.75rem;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .formula-display .highlight {
+            color: var(--quantum);
+        }
+        
+        .formula-display .gold {
+            color: var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>⊙-CORE LOGIC SIMULATOR</h1>
+    <div class="equation">SIERPINSKI FILTER COMPUTATION</div>
+</header>
+
+<main>
+    <!-- Input Panel -->
+    <div class="panel" id="input-panel">
+        <div class="section">
+            <div class="section-title">Input Bits</div>
+            
+            <div class="input-group">
+                <div class="input-label">Input A</div>
+                <div class="bit-input">
+                    <button class="bit-btn active" onclick="setInput('A', 0)" id="btnA0">0</button>
+                    <button class="bit-btn" onclick="setInput('A', 1)" id="btnA1">1</button>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <div class="input-label">Input B</div>
+                <div class="bit-input">
+                    <button class="bit-btn active" onclick="setInput('B', 0)" id="btnB0">0</button>
+                    <button class="bit-btn" onclick="setInput('B', 1)" id="btnB1">1</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Operation</div>
+            <div class="operation-select">
+                <button class="op-btn active" onclick="setOp('AND')" id="opAND">AND</button>
+                <button class="op-btn" onclick="setOp('OR')" id="opOR">OR</button>
+                <button class="op-btn" onclick="setOp('XOR')" id="opXOR">XOR</button>
+                <button class="op-btn" onclick="setOp('NAND')" id="opNAND">NAND</button>
+                <button class="op-btn" onclick="setOp('NOR')" id="opNOR">NOR</button>
+                <button class="op-btn" onclick="setOp('XNOR')" id="opXNOR">XNOR</button>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Fractal Parameters</div>
+            <div class="input-group">
+                <div class="input-label">Depth (levels): <span id="depth-display">7</span></div>
+                <input type="range" min="3" max="12" value="7" id="depth-slider" 
+                       style="width: 100%; margin-top: 8px;"
+                       oninput="updateDepth(this.value)">
+            </div>
+            <div class="input-group">
+                <div class="input-label">Speed: <span id="speed-display">Normal</span></div>
+                <input type="range" min="1" max="5" value="3" id="speed-slider"
+                       style="width: 100%; margin-top: 8px;"
+                       oninput="updateSpeed(this.value)">
+            </div>
+        </div>
+        
+        <button class="compute-btn" onclick="compute()" id="compute-btn">
+            ▶ COMPUTE
+        </button>
+        
+        <div class="section" style="margin-top: 25px;">
+            <div class="section-title">Current Formula</div>
+            <div class="formula-display" id="formula-display">
+                <span class="gold">A</span> AND <span class="gold">B</span><br><br>
+                Path: <span class="highlight">≻</span> → <span class="highlight">i</span> → <span class="highlight">⊰</span><br>
+                Amplitude: <span class="highlight">Aₙ = φ⁻ⁿ</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Visualization -->
+    <div class="panel" id="viz-container">
+        <canvas id="canvas"></canvas>
+    </div>
+    
+    <!-- Output Panel -->
+    <div class="panel" id="output-panel">
+        <div class="section">
+            <div class="section-title">Result</div>
+            <div class="result-display">
+                <div class="result-label">OUTPUT BIT</div>
+                <div class="result-value pending" id="result-value">—</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Statistics</div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-value" id="stat-paths">1</div>
+                    <div class="stat-label">PATHS EXPLORED</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="stat-amplitude">1.00</div>
+                    <div class="stat-label">MIN AMPLITUDE</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="stat-phase">0°</div>
+                    <div class="stat-label">PHASE ROTATION</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="stat-time">0ms</div>
+                    <div class="stat-label">COMPUTE TIME</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Amplitude Profile</div>
+            <div id="amplitude-profile"></div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Computation Trace</div>
+            <div class="trace-log" id="trace-log">
+                <div class="trace-entry" style="color: #555;">
+                    Waiting for computation...
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+// Constants
+const PHI = (1 + Math.sqrt(5)) / 2;
+const INV_PHI = 1 / PHI;
+
+// State
+let inputA = 0;
+let inputB = 0;
+let operation = 'AND';
+let fractalDepth = 7;
+let speed = 3;
+let computing = false;
+let computeState = null;
+
+// Canvas
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+// Initialize
+function init() {
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    requestAnimationFrame(animate);
+    updateFormulaDisplay();
+    buildAmplitudeProfile();
+}
+
+function resizeCanvas() {
+    const container = document.getElementById('viz-container');
+    canvas.width = container.offsetWidth;
+    canvas.height = container.offsetHeight;
+}
+
+// Input handlers
+function setInput(which, value) {
+    if (which === 'A') {
+        inputA = value;
+        document.getElementById('btnA0').classList.toggle('active', value === 0);
+        document.getElementById('btnA1').classList.toggle('active', value === 1);
+    } else {
+        inputB = value;
+        document.getElementById('btnB0').classList.toggle('active', value === 0);
+        document.getElementById('btnB1').classList.toggle('active', value === 1);
+    }
+    updateFormulaDisplay();
+}
+
+function setOp(op) {
+    operation = op;
+    document.querySelectorAll('.op-btn').forEach(btn => btn.classList.remove('active'));
+    document.getElementById('op' + op).classList.add('active');
+    updateFormulaDisplay();
+}
+
+function updateDepth(val) {
+    fractalDepth = parseInt(val);
+    document.getElementById('depth-display').textContent = val;
+    buildAmplitudeProfile();
+}
+
+function updateSpeed(val) {
+    speed = parseInt(val);
+    const labels = ['Slow', 'Slower', 'Normal', 'Fast', 'Instant'];
+    document.getElementById('speed-display').textContent = labels[val - 1];
+}
+
+function updateFormulaDisplay() {
+    const display = document.getElementById('formula-display');
+    display.innerHTML = `
+        <span class="gold">${inputA}</span> ${operation} <span class="gold">${inputB}</span> = ?<br><br>
+        Path: <span class="highlight">≻</span> → <span class="highlight">i</span> → <span class="highlight">⊰</span><br>
+        Depth: <span class="highlight">${fractalDepth}</span> levels<br>
+        Min amplitude: <span class="highlight">${Math.pow(INV_PHI, fractalDepth).toFixed(4)}</span>
+    `;
+}
+
+function buildAmplitudeProfile() {
+    const container = document.getElementById('amplitude-profile');
+    let html = '';
+    for (let n = 0; n <= fractalDepth; n++) {
+        const amp = Math.pow(INV_PHI, n);
+        const width = amp * 100;
+        html += `
+            <div style="margin: 4px 0; font-size: 0.7rem;">
+                <div style="display: flex; justify-content: space-between; color: #555;">
+                    <span>n=${n}</span>
+                    <span>${amp.toFixed(3)}</span>
+                </div>
+                <div class="amplitude-bar">
+                    <div class="amplitude-fill" style="width: ${width}%"></div>
+                </div>
+            </div>
+        `;
+    }
+    container.innerHTML = html;
+}
+
+// Computation
+function compute() {
+    if (computing) return;
+    
+    computing = true;
+    document.getElementById('compute-btn').disabled = true;
+    document.getElementById('result-value').textContent = '...';
+    document.getElementById('result-value').classList.add('pending');
+    
+    const startTime = performance.now();
+    
+    // Initialize computation state
+    computeState = {
+        phase: 'CONVERGE',
+        depth: 0,
+        maxDepth: fractalDepth,
+        particles: [],
+        trace: [],
+        pathsExplored: 0,
+        minAmplitude: 1,
+        totalPhase: 0,
+        inputA: inputA,
+        inputB: inputB,
+        operation: operation,
+        startTime: startTime
+    };
+    
+    // Spawn input particles
+    const angleA = -30;
+    const angleB = 30;
+    
+    if (inputA === 1) {
+        computeState.particles.push({
+            source: 'A',
+            angle: angleA,
+            radius: 250,
+            amplitude: 1,
+            phase: 0,
+            state: 'CONVERGE'
+        });
+        addTrace('classical', `Input A = 1 entering at ${angleA}°`);
+    } else {
+        addTrace('classical', `Input A = 0 (no particle)`);
+    }
+    
+    if (inputB === 1) {
+        computeState.particles.push({
+            source: 'B',
+            angle: angleB,
+            radius: 250,
+            amplitude: 1,
+            phase: 0,
+            state: 'CONVERGE'
+        });
+        addTrace('classical', `Input B = 1 entering at ${angleB}°`);
+    } else {
+        addTrace('classical', `Input B = 0 (no particle)`);
+    }
+    
+    if (computeState.particles.length === 0) {
+        // No inputs = result is 0 for AND/OR, depends for others
+        finishComputation(computeLogic(false, false));
+    }
+    
+    clearTraceLog();
+    computeState.trace.forEach(t => appendTrace(t.type, t.msg));
+}
+
+function addTrace(type, msg) {
+    if (computeState) {
+        computeState.trace.push({ type, msg });
+    }
+}
+
+function clearTraceLog() {
+    document.getElementById('trace-log').innerHTML = '';
+}
+
+function appendTrace(type, msg) {
+    const log = document.getElementById('trace-log');
+    const entry = document.createElement('div');
+    entry.className = `trace-entry ${type}`;
+    entry.textContent = msg;
+    log.appendChild(entry);
+    log.scrollTop = log.scrollHeight;
+}
+
+function computeLogic(hasA, hasB) {
+    switch (operation) {
+        case 'AND': return hasA && hasB ? 1 : 0;
+        case 'OR': return hasA || hasB ? 1 : 0;
+        case 'XOR': return hasA !== hasB ? 1 : 0;
+        case 'NAND': return !(hasA && hasB) ? 1 : 0;
+        case 'NOR': return !(hasA || hasB) ? 1 : 0;
+        case 'XNOR': return hasA === hasB ? 1 : 0;
+    }
+}
+
+function finishComputation(result) {
+    const endTime = performance.now();
+    const elapsed = endTime - computeState.startTime;
+    
+    document.getElementById('result-value').textContent = result;
+    document.getElementById('result-value').classList.remove('pending');
+    
+    document.getElementById('stat-paths').textContent = Math.pow(3, fractalDepth).toLocaleString();
+    document.getElementById('stat-amplitude').textContent = Math.pow(INV_PHI, fractalDepth).toFixed(4);
+    document.getElementById('stat-phase').textContent = computeState.totalPhase + '°';
+    document.getElementById('stat-time').textContent = elapsed.toFixed(0) + 'ms';
+    
+    appendTrace('result', `══════════════════════`);
+    appendTrace('result', `OUTPUT = ${result}`);
+    appendTrace('result', `Verified: ${inputA} ${operation} ${inputB} = ${result}`);
+    
+    computing = false;
+    document.getElementById('compute-btn').disabled = false;
+    computeState = null;
+}
+
+// Animation
+function animate() {
+    draw();
+    
+    if (computing && computeState) {
+        updateComputation();
+    }
+    
+    requestAnimationFrame(animate);
+}
+
+function updateComputation() {
+    const speedMult = [0.3, 0.5, 1, 2, 100][speed - 1];
+    
+    // Update each particle
+    let allDone = true;
+    let anyReachedCenter = false;
+    let anyEmerged = false;
+    
+    for (let p of computeState.particles) {
+        if (p.state === 'CONVERGE') {
+            allDone = false;
+            p.radius -= 2 * speedMult;
+            p.amplitude = Math.pow(INV_PHI, (250 - p.radius) / 250 * fractalDepth);
+            p.angle += (Math.random() - 0.5) * (1 - p.amplitude) * 10;
+            
+            computeState.minAmplitude = Math.min(computeState.minAmplitude, p.amplitude);
+            
+            if (p.radius <= 30) {
+                p.state = 'CENTER';
+                anyReachedCenter = true;
+            }
+        } else if (p.state === 'CENTER') {
+            // Aperture rotation
+            p.phase += 90;
+            computeState.totalPhase += 90;
+            p.state = 'EMERGE';
+            appendTrace('aperture', `Aperture rotation: i (90° phase shift)`);
+        } else if (p.state === 'EMERGE') {
+            allDone = false;
+            p.radius += 2 * speedMult;
+            p.amplitude = 1 - Math.pow(INV_PHI, (p.radius - 30) / 220 * fractalDepth);
+            p.angle += (Math.random() - 0.5) * (1 - p.amplitude) * 5;
+            
+            if (p.radius >= 250) {
+                p.state = 'DONE';
+                anyEmerged = true;
+            }
+        }
+    }
+    
+    // Check for completion
+    if (computeState.particles.every(p => p.state === 'DONE')) {
+        // Compute result based on operation
+        const hasA = computeState.inputA === 1;
+        const hasB = computeState.inputB === 1;
+        
+        appendTrace('classical', `Signal re-coalesced to classical`);
+        
+        finishComputation(computeLogic(hasA, hasB));
+    }
+    
+    // Add trace messages at transitions
+    if (anyReachedCenter && !computeState.centerLogged) {
+        appendTrace('quantum', `Entered quantum field (Φ)`);
+        appendTrace('quantum', `Amplitude: ${computeState.minAmplitude.toFixed(4)}`);
+        appendTrace('quantum', `Paths: ${Math.pow(3, fractalDepth)} superposed`);
+        computeState.centerLogged = true;
+    }
+}
+
+function draw() {
+    ctx.fillStyle = '#0a0a0c';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    const cx = canvas.width / 2;
+    const cy = canvas.height / 2;
+    const baseR = Math.min(canvas.width, canvas.height) * 0.35;
+    
+    // Draw layers
+    ctx.strokeStyle = 'rgba(212, 175, 55, 0.2)';
+    ctx.beginPath();
+    ctx.arc(cx, cy, baseR, 0, Math.PI * 2);
+    ctx.stroke();
+    
+    ctx.strokeStyle = 'rgba(255, 51, 102, 0.15)';
+    ctx.beginPath();
+    ctx.arc(cx, cy, baseR * INV_PHI, 0, Math.PI * 2);
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.arc(cx, cy, baseR * INV_PHI * INV_PHI, 0, Math.PI * 2);
+    ctx.stroke();
+    
+    // Quantum field glow
+    const gradient = ctx.createRadialGradient(cx, cy, 0, cx, cy, baseR * INV_PHI * INV_PHI);
+    gradient.addColorStop(0, 'rgba(0, 243, 255, 0.1)');
+    gradient.addColorStop(1, 'rgba(0, 243, 255, 0)');
+    ctx.fillStyle = gradient;
+    ctx.beginPath();
+    ctx.arc(cx, cy, baseR * INV_PHI * INV_PHI, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Center
+    const pulse = 1 + Math.sin(Date.now() / 200) * 0.1;
+    ctx.fillStyle = '#fff';
+    ctx.beginPath();
+    ctx.arc(cx, cy, 8 * pulse, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Draw particles
+    if (computeState) {
+        for (let p of computeState.particles) {
+            const scale = baseR / 250;
+            const x = cx + p.radius * scale * Math.cos(p.angle * Math.PI / 180);
+            const y = cy + p.radius * scale * Math.sin(p.angle * Math.PI / 180);
+            
+            if (p.state === 'CONVERGE' || p.state === 'EMERGE') {
+                // Determine color based on position
+                const normR = p.radius / 250;
+                if (normR > INV_PHI) {
+                    // Classical zone
+                    ctx.fillStyle = 'rgba(212, 175, 55, 0.9)';
+                    ctx.beginPath();
+                    ctx.arc(x, y, 8, 0, Math.PI * 2);
+                    ctx.fill();
+                } else if (normR > INV_PHI * INV_PHI) {
+                    // Fractal zone
+                    ctx.fillStyle = 'rgba(255, 51, 102, 0.8)';
+                    ctx.beginPath();
+                    ctx.arc(x, y, 6, 0, Math.PI * 2);
+                    ctx.fill();
+                    
+                    // Ghost particles
+                    for (let i = 0; i < 5; i++) {
+                        const gx = x + (Math.random() - 0.5) * 30;
+                        const gy = y + (Math.random() - 0.5) * 30;
+                        ctx.fillStyle = 'rgba(255, 51, 102, 0.3)';
+                        ctx.beginPath();
+                        ctx.arc(gx, gy, 3, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                } else {
+                    // Quantum zone
+                    for (let i = 0; i < 10; i++) {
+                        const gx = x + (Math.random() - 0.5) * 50;
+                        const gy = y + (Math.random() - 0.5) * 50;
+                        ctx.fillStyle = 'rgba(0, 243, 255, 0.5)';
+                        ctx.beginPath();
+                        ctx.arc(gx, gy, 4, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                }
+            } else if (p.state === 'CENTER') {
+                // Flash at center
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                ctx.beginPath();
+                ctx.arc(cx, cy, 30, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+    }
+    
+    // Labels
+    ctx.fillStyle = '#444';
+    ctx.font = '11px Courier New';
+    ctx.textAlign = 'center';
+    ctx.fillText('CLASSICAL', cx, cy - baseR - 10);
+    ctx.fillText('FRACTAL (○)', cx, cy - baseR * INV_PHI - 10);
+    ctx.fillText('QUANTUM (Φ)', cx, cy - baseR * INV_PHI * INV_PHI - 10);
+    ctx.fillText('• CENTER', cx, cy + 25);
+}
+
+// Initialize
+init();
+</script>
+
+</body>
+</html>

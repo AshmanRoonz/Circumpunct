@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⊙-Core | Sierpinski Fractal Quantum Architecture</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        :root {
+            --bg: #050508;
+            --gold: #d4af37;
+            --quantum: #00f3ff;
+            --fractal: #ff3366;
+            --classical: #d4af37;
+            --panel: #0a0a0a;
+        }
+        * { box-sizing: border-box; }
+        body {
+            background: var(--bg);
+            color: #aaa;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            padding: 15px 20px;
+            background: var(--panel);
+            border-bottom: 1px solid #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        h1 { 
+            margin: 0; 
+            color: var(--gold); 
+            font-size: 1.3rem;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+        .equation {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        main {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+        }
+        
+        #canvas-container {
+            flex: 1;
+            position: relative;
+        }
+        
+        aside {
+            width: 280px;
+            background: var(--panel);
+            border-left: 1px solid #222;
+            padding: 20px;
+            overflow-y: auto;
+            flex-shrink: 0;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            color: var(--gold);
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .layer {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            font-size: 0.8rem;
+        }
+        .layer-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .layer-name { color: #888; }
+        .layer-symbol { color: #fff; margin-left: auto; }
+        
+        .stat {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            font-size: 0.75rem;
+        }
+        .stat-label { color: #555; }
+        .stat-value { color: var(--quantum); font-family: monospace; }
+        
+        .controls {
+            margin-top: 20px;
+        }
+        button {
+            background: transparent;
+            border: 1px solid #333;
+            color: #888;
+            padding: 8px 15px;
+            margin: 3px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.75rem;
+            transition: all 0.2s;
+        }
+        button:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        button.active {
+            background: var(--gold);
+            color: #000;
+        }
+        
+        .formula {
+            background: #0f0f0f;
+            border: 1px solid #222;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 0.7rem;
+            color: #666;
+            line-height: 1.6;
+        }
+        .formula .highlight {
+            color: var(--quantum);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>⊙-CORE ARCHITECTURE</h1>
+    <div class="equation">Φ' = ⊰ ∘ i ∘ ≻[Φ]</div>
+</header>
+
+<main>
+    <div id="canvas-container"></div>
+    
+    <aside>
+        <div class="section">
+            <div class="section-title">Architecture Layers</div>
+            <div class="layer">
+                <div class="layer-dot" style="background: var(--classical)"></div>
+                <span class="layer-name">Classical I/O</span>
+                <span class="layer-symbol">bits</span>
+            </div>
+            <div class="layer">
+                <div class="layer-dot" style="background: var(--fractal)"></div>
+                <span class="layer-name">Fractal Boundary</span>
+                <span class="layer-symbol">○</span>
+            </div>
+            <div class="layer">
+                <div class="layer-dot" style="background: var(--quantum); opacity: 0.6"></div>
+                <span class="layer-name">Quantum Field</span>
+                <span class="layer-symbol">Φ</span>
+            </div>
+            <div class="layer">
+                <div class="layer-dot" style="background: #fff"></div>
+                <span class="layer-name">Logic Center</span>
+                <span class="layer-symbol">•</span>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Sierpinski Filter</div>
+            <div class="formula">
+                Amplitude decay:<br>
+                <span class="highlight">Aₙ = 1/φⁿ</span><br><br>
+                Level 0: A = 1.000 (classical)<br>
+                Level 1: A = 0.618<br>
+                Level 2: A = 0.382<br>
+                Level 3: A = 0.236<br>
+                Level 4: A = 0.146<br>
+                Level ∞: A → 0 (quantum)
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Live Statistics</div>
+            <div class="stat">
+                <span class="stat-label">Active particles</span>
+                <span class="stat-value" id="stat-particles">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">In quantum field</span>
+                <span class="stat-value" id="stat-quantum">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Computations</span>
+                <span class="stat-value" id="stat-computed">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Fractal depth</span>
+                <span class="stat-value" id="stat-depth">5</span>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Controls</div>
+            <div class="controls">
+                <button onclick="spawnBit()">Inject Bit</button>
+                <button onclick="spawnBurst()">Burst (8)</button>
+                <button onclick="toggleAuto()" id="btn-auto">Auto: ON</button>
+                <button onclick="toggleSierpinski()" id="btn-sierpinski" class="active">Fractal: ON</button>
+                <button onclick="clearAll()">Clear</button>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Data Flow</div>
+            <div class="formula">
+                <span style="color: var(--classical)">INPUT</span> → 
+                <span style="color: var(--fractal)">○</span> → 
+                <span style="color: var(--quantum)">Φ</span> → 
+                <span style="color: #fff">•</span> → 
+                <span style="color: var(--quantum)">Φ</span> → 
+                <span style="color: var(--fractal)">○</span> → 
+                <span style="color: var(--classical)">OUTPUT</span>
+                <br><br>
+                ≻ converge → i rotate → ⊰ emerge
+            </div>
+        </div>
+    </aside>
+</main>
+
+<script>
+const PHI = (1 + Math.sqrt(5)) / 2;
+const INV_PHI = 1 / PHI;
+
+let bits = [];
+let computedCount = 0;
+let autoSpawn = true;
+let showSierpinski = true;
+let fractalDepth = 5;
+
+// Layer radii
+let R_classical, R_fractal_outer, R_fractal_inner, R_quantum, R_center;
+
+function setup() {
+    let container = document.getElementById('canvas-container');
+    let canvas = createCanvas(container.offsetWidth, container.offsetHeight);
+    canvas.parent('canvas-container');
+    angleMode(DEGREES);
+    calculateRadii();
+}
+
+function calculateRadii() {
+    let baseR = min(width, height) * 0.4;
+    R_classical = baseR;
+    R_fractal_outer = baseR * INV_PHI;
+    R_fractal_inner = baseR * INV_PHI * INV_PHI;
+    R_quantum = baseR * INV_PHI * INV_PHI * INV_PHI;
+    R_center = 15;
+}
+
+function draw() {
+    background(5, 5, 8, 30);
+    translate(width/2, height/2);
+    
+    // Draw Sierpinski boundary if enabled
+    if (showSierpinski) {
+        drawSierpinskiBoundary();
+    }
+    
+    // Draw layer rings
+    drawLayers();
+    
+    // Draw center (the aperture •)
+    drawCenter();
+    
+    // Auto-spawn
+    if (autoSpawn && frameCount % 50 === 0) {
+        spawnBit();
+    }
+    
+    // Update and render bits
+    for (let i = bits.length - 1; i >= 0; i--) {
+        bits[i].update();
+        bits[i].show();
+        if (bits[i].done) {
+            if (bits[i].computed) computedCount++;
+            bits.splice(i, 1);
+        }
+    }
+    
+    // Update stats
+    updateStats();
+}
+
+function drawLayers() {
+    noFill();
+    strokeWeight(1);
+    
+    // Classical layer
+    stroke(212, 175, 55, 40);
+    ellipse(0, 0, R_classical * 2);
+    
+    // Fractal boundary (outer)
+    stroke(255, 51, 102, 30);
+    ellipse(0, 0, R_fractal_outer * 2);
+    
+    // Fractal boundary (inner)
+    stroke(255, 51, 102, 20);
+    ellipse(0, 0, R_fractal_inner * 2);
+    
+    // Quantum field glow
+    noStroke();
+    for (let i = 5; i > 0; i--) {
+        fill(0, 243, 255, 3);
+        ellipse(0, 0, R_quantum * 2 + i * 20);
+    }
+}
+
+function drawCenter() {
+    // Pulsing center
+    let pulse = 1 + sin(frameCount * 3) * 0.2;
+    
+    // Glow
+    noStroke();
+    for (let i = 5; i > 0; i--) {
+        fill(255, 255, 255, 10);
+        ellipse(0, 0, R_center * pulse * 2 + i * 8);
+    }
+    
+    // Core
+    fill(255);
+    ellipse(0, 0, R_center * pulse);
+    
+    // Aperture symbol
+    fill(0);
+    textAlign(CENTER, CENTER);
+    textSize(10);
+    text('•', 0, -1);
+}
+
+function drawSierpinskiBoundary() {
+    // Draw Sierpinski-like triangles in the fractal zone
+    stroke(255, 51, 102, 15);
+    strokeWeight(0.5);
+    noFill();
+    
+    let numTriangles = 12;
+    for (let t = 0; t < numTriangles; t++) {
+        let baseAngle = (360 / numTriangles) * t + frameCount * 0.1;
+        drawSierpinskiTriangle(
+            0, 0,
+            R_fractal_outer * 0.9,
+            baseAngle,
+            fractalDepth
+        );
+    }
+}
+
+function drawSierpinskiTriangle(cx, cy, size, angle, depth) {
+    if (depth === 0 || size < 3) return;
+    
+    // Three vertices of triangle
+    let r = size * 0.5;
+    let x1 = cx + r * cos(angle);
+    let y1 = cy + r * sin(angle);
+    let x2 = cx + r * cos(angle + 120);
+    let y2 = cy + r * sin(angle + 120);
+    let x3 = cx + r * cos(angle + 240);
+    let y3 = cy + r * sin(angle + 240);
+    
+    // Draw triangle
+    triangle(x1, y1, x2, y2, x3, y3);
+    
+    // Recurse into three sub-triangles (skip middle = Sierpinski)
+    let newSize = size * INV_PHI; // Golden ratio scaling!
+    let offset = size * 0.25;
+    
+    drawSierpinskiTriangle(cx + offset * cos(angle), cy + offset * sin(angle), newSize, angle, depth - 1);
+    drawSierpinskiTriangle(cx + offset * cos(angle + 120), cy + offset * sin(angle + 120), newSize, angle, depth - 1);
+    drawSierpinskiTriangle(cx + offset * cos(angle + 240), cy + offset * sin(angle + 240), newSize, angle, depth - 1);
+}
+
+class Bit {
+    constructor() {
+        this.angle = random(360);
+        this.r = R_classical + 50;
+        this.state = "CLASSICAL_IN";
+        this.amplitude = 1.0; // Starts at full classical certainty
+        this.phase = 0;
+        this.done = false;
+        this.computed = false;
+        this.ghostAngles = []; // For quantum superposition
+    }
+    
+    update() {
+        switch(this.state) {
+            case "CLASSICAL_IN":
+                this.r -= 2.5;
+                if (this.r < R_fractal_outer) {
+                    this.state = "FRACTAL_IN";
+                }
+                break;
+                
+            case "FRACTAL_IN":
+                this.r -= 1.5;
+                // Amplitude decays by golden ratio at each "level"
+                this.amplitude *= 0.995; // Gradual decay
+                // Angle jitters more as we go deeper
+                let jitter = (1 - this.amplitude) * 8;
+                this.angle += random(-jitter, jitter);
+                
+                // Spawn ghost paths (branching)
+                if (random() < 0.05 && this.ghostAngles.length < 5) {
+                    this.ghostAngles.push(this.angle + random(-30, 30));
+                }
+                
+                if (this.r < R_fractal_inner) {
+                    this.state = "QUANTUM";
+                    // Full superposition - many ghost angles
+                    for (let i = 0; i < 8; i++) {
+                        this.ghostAngles.push(this.angle + random(-60, 60));
+                    }
+                }
+                break;
+                
+            case "QUANTUM":
+                this.r -= 0.5;
+                this.amplitude *= 0.99;
+                // High uncertainty - all angles explored
+                this.angle += random(-25, 25);
+                this.phase += 5; // Rotating in complex plane
+                
+                // Update ghosts
+                for (let i = 0; i < this.ghostAngles.length; i++) {
+                    this.ghostAngles[i] += random(-20, 20);
+                }
+                
+                if (this.r < R_center + 5) {
+                    // APERTURE ROTATION - the computation
+                    this.state = "COLLAPSE";
+                    this.computed = true;
+                    // Flash
+                    this.flashTimer = 10;
+                    // Collapse to single angle
+                    this.angle = random(360);
+                    this.ghostAngles = [];
+                    this.amplitude = 0.1;
+                }
+                break;
+                
+            case "COLLAPSE":
+                this.flashTimer--;
+                if (this.flashTimer <= 0) {
+                    this.state = "QUANTUM_OUT";
+                }
+                break;
+                
+            case "QUANTUM_OUT":
+                this.r += 0.8;
+                this.amplitude = lerp(this.amplitude, 0.3, 0.02);
+                this.angle += random(-10, 10);
+                
+                if (this.r > R_fractal_inner) {
+                    this.state = "FRACTAL_OUT";
+                }
+                break;
+                
+            case "FRACTAL_OUT":
+                this.r += 1.5;
+                // Amplitude rebuilds
+                this.amplitude = lerp(this.amplitude, 1.0, 0.02);
+                // Angle stabilizes
+                this.angle += random(-3, 3);
+                
+                if (this.r > R_fractal_outer) {
+                    this.state = "CLASSICAL_OUT";
+                }
+                break;
+                
+            case "CLASSICAL_OUT":
+                this.r += 3;
+                this.amplitude = 1.0;
+                if (this.r > R_classical + 80) {
+                    this.done = true;
+                }
+                break;
+        }
+    }
+    
+    show() {
+        let x = this.r * cos(this.angle);
+        let y = this.r * sin(this.angle);
+        
+        if (this.state === "COLLAPSE") {
+            // Flash at center
+            noStroke();
+            fill(255, 255, 255, this.flashTimer * 25);
+            ellipse(0, 0, 60);
+            fill(0, 243, 255, this.flashTimer * 20);
+            ellipse(0, 0, 100);
+            return;
+        }
+        
+        if (this.state.includes("QUANTUM")) {
+            // Draw ghost cloud
+            noStroke();
+            fill(0, 243, 255, 50);
+            for (let ga of this.ghostAngles) {
+                let gx = this.r * cos(ga) + random(-5, 5);
+                let gy = this.r * sin(ga) + random(-5, 5);
+                ellipse(gx, gy, 4);
+            }
+            // Main particle as cloud
+            fill(0, 243, 255, 100);
+            for (let i = 0; i < 6; i++) {
+                let ox = random(-8, 8);
+                let oy = random(-8, 8);
+                ellipse(x + ox, y + oy, 5);
+            }
+        } else if (this.state.includes("FRACTAL")) {
+            // Branching particle
+            stroke(255, 51, 102, 150);
+            strokeWeight(2);
+            point(x, y);
+            
+            // Ghost branches
+            stroke(255, 51, 102, 50);
+            strokeWeight(1);
+            for (let ga of this.ghostAngles) {
+                let gx = this.r * cos(ga);
+                let gy = this.r * sin(ga);
+                point(gx, gy);
+                // Connecting lines (probability paths)
+                line(x, y, gx, gy);
+            }
+        } else {
+            // Classical particle - solid dot
+            noStroke();
+            fill(212, 175, 55);
+            ellipse(x, y, 10 * this.amplitude);
+            
+            // Certainty halo
+            fill(212, 175, 55, 30);
+            ellipse(x, y, 20 * this.amplitude);
+        }
+    }
+}
+
+function spawnBit() {
+    bits.push(new Bit());
+}
+
+function spawnBurst() {
+    for (let i = 0; i < 8; i++) {
+        setTimeout(() => bits.push(new Bit()), i * 50);
+    }
+}
+
+function toggleAuto() {
+    autoSpawn = !autoSpawn;
+    document.getElementById('btn-auto').textContent = 'Auto: ' + (autoSpawn ? 'ON' : 'OFF');
+    document.getElementById('btn-auto').classList.toggle('active', autoSpawn);
+}
+
+function toggleSierpinski() {
+    showSierpinski = !showSierpinski;
+    document.getElementById('btn-sierpinski').textContent = 'Fractal: ' + (showSierpinski ? 'ON' : 'OFF');
+    document.getElementById('btn-sierpinski').classList.toggle('active', showSierpinski);
+}
+
+function clearAll() {
+    bits = [];
+}
+
+function updateStats() {
+    document.getElementById('stat-particles').textContent = bits.length;
+    document.getElementById('stat-quantum').textContent = bits.filter(b => b.state.includes('QUANTUM')).length;
+    document.getElementById('stat-computed').textContent = computedCount;
+    document.getElementById('stat-depth').textContent = fractalDepth;
+}
+
+function windowResized() {
+    let container = document.getElementById('canvas-container');
+    resizeCanvas(container.offsetWidth, container.offsetHeight);
+    calculateRadii();
+}
+</script>
+
+</body>
+</html>
